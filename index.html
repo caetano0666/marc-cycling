@@ -319,12 +319,46 @@ a.qr:hover{border-color:var(--yellow)}
 .p-list{list-style:none; display:grid; gap:10px; margin-top:16px}
 .p-list li{display:flex; gap:11px; font-size:15px; color:var(--muted2)}
 .p-list li::before{content:"\2713"; color:var(--yellow); font-weight:800; flex:0 0 auto}
-.p-note{color:var(--muted); font-size:14.5px; margin-bottom:26px}
+.p-note{color:var(--muted); font-size:14.5px; margin-bottom:10px}
 .p-note b{color:var(--ink)}
+.guarantee{display:flex; align-items:center; gap:8px; color:var(--muted2); font-size:15px; font-weight:600; margin:0 0 8px}
+.guarantee .ck{color:var(--yellow); font-weight:800}
+.paynote{color:var(--muted); font-size:13.5px; margin:0 0 24px}
+.reminder-box{display:grid; grid-template-columns:1fr; gap:24px; align-items:center}
+.reminder-copy h3{font-size:26px}
+.reminder-copy p{color:var(--muted2); font-size:16px; margin-top:10px; max-width:440px}
+@media(min-width:760px){ .reminder-box{grid-template-columns:1fr 1fr; gap:40px} }
 @media(min-width:760px){
   .price-grid{grid-template-columns:1fr 1fr}
   .price.feat{grid-column:1 / -1}
 }
+
+/* Photo carousel */
+.carousel{position:relative; margin-top:26px}
+.car-track{display:flex; gap:14px; overflow-x:auto; scroll-snap-type:x mandatory; scroll-behavior:smooth; -webkit-overflow-scrolling:touch; padding-bottom:4px; scrollbar-width:none}
+.car-track::-webkit-scrollbar{display:none}
+.car-slide{flex:0 0 auto; width:84%; max-width:540px; scroll-snap-align:center; margin:0}
+.car-slide img{width:100%; aspect-ratio:4/3; object-fit:cover; border-radius:14px; border:1px solid var(--line); background:var(--bg2); cursor:zoom-in; display:block}
+.car-arrow{position:absolute; top:50%; transform:translateY(-50%); width:44px; height:44px; border-radius:50%; border:1px solid var(--line2); background:rgba(12,12,14,.82); color:#fff; font-size:26px; line-height:1; cursor:pointer; z-index:3; display:none; align-items:center; justify-content:center; backdrop-filter:blur(6px)}
+.car-arrow:hover{border-color:var(--yellow); color:var(--yellow)}
+.car-arrow.prev{left:-6px} .car-arrow.next{right:-6px}
+.car-dots{display:flex; justify-content:center; flex-wrap:wrap; gap:7px; margin-top:18px}
+.car-dots button{width:8px; height:8px; border-radius:50%; border:none; background:var(--line2); cursor:pointer; padding:0; transition:width .2s, background .2s}
+.car-dots button.active{background:var(--yellow); width:20px; border-radius:5px}
+@media(min-width:760px){
+  .car-arrow{display:flex}
+  .car-slide{width:47%; max-width:none}
+}
+@media(min-width:1080px){ .car-slide{width:31.5%} }
+
+/* Lightbox */
+.lightbox{position:fixed; inset:0; z-index:120; background:rgba(0,0,0,.93); display:flex; align-items:center; justify-content:center; padding:18px}
+.lightbox[hidden]{display:none}
+.lightbox img{max-width:94vw; max-height:86vh; border-radius:10px; object-fit:contain}
+.lb-close{position:absolute; top:16px; right:18px; width:46px; height:46px; border-radius:50%; background:rgba(255,255,255,.12); color:#fff; border:none; font-size:18px; cursor:pointer}
+.lb-nav{position:absolute; top:50%; transform:translateY(-50%); width:52px; height:52px; border-radius:50%; background:rgba(255,255,255,.12); color:#fff; border:none; font-size:30px; line-height:1; cursor:pointer}
+.lb-nav.prev{left:14px} .lb-nav.next{right:14px}
+.lb-close:hover, .lb-nav:hover{background:rgba(247,198,0,.28)}
 
 /* Floating WhatsApp button (all screens) */
 .wa-float{
@@ -581,6 +615,8 @@ a.qr:hover{border-color:var(--yellow)}
       </div>
     </div>
     <p class="p-note"><b>Prices are for service only, parts not included.</b> E-bikes: add $60. Free estimate by phone, no surprises.</p>
+    <p class="guarantee"><span class="ck">✓</span> Workmanship guaranteed. If something isn't right, we make it right.</p>
+    <p class="paynote">We accept Zelle, Venmo, Apple Pay, checks and cash. No credit cards.</p>
     <div class="cta-row">
       <a class="btn btn-call" href="tel:+17542525245" onclick="trackCall()">
         <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1l-2.2 2.2z"/></svg>
@@ -608,6 +644,55 @@ a.qr:hover{border-color:var(--yellow)}
       <img src="img/work/dusk.jpg" alt="On-site bike service at dusk in South Florida" loading="lazy">
       <img src="img/work/working.jpg" alt="Marc working on a bike" loading="lazy">
       <img src="img/work/workshop.jpg" alt="Professional bike repair tools" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- ================= CAROUSEL (more photos) ================= -->
+<section class="sec how" id="more-photos">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">More from the road</div>
+      <h2>See the work</h2>
+      <p>Real jobs across Broward and South Florida. Homes, driveways, offices, wherever your bike is.</p>
+    </div>
+    <div id="carReveal" style="text-align:center">
+      <button class="btn-ghost" type="button" onclick="openCarousel()">See more photos</button>
+    </div>
+    <div class="carousel" id="carousel" hidden>
+      <button class="car-arrow prev" type="button" onclick="carScroll(-1)" aria-label="Previous photo">&#8249;</button>
+      <div class="car-track" id="carTrack">
+        <figure class="car-slide"><img data-src="img/carousel/c01.jpg" alt="Marc Cycling mobile repair van on location in South Florida" loading="lazy" onclick="openLightbox(0)"></figure>
+        <figure class="car-slide"><img data-src="img/carousel/c02.jpg" alt="Bikes loaded for mobile bike service in Broward County" loading="lazy" onclick="openLightbox(1)"></figure>
+        <figure class="car-slide"><img data-src="img/carousel/c03.jpg" alt="Bike on a repair stand beside the Marc Cycling service van" loading="lazy" onclick="openLightbox(2)"></figure>
+        <figure class="car-slide"><img data-src="img/carousel/c04.jpg" alt="On-location bike tune-up at sunset in a driveway" loading="lazy" onclick="openLightbox(3)"></figure>
+        <figure class="car-slide"><img data-src="img/carousel/c05.jpg" alt="Mobile bike repair set up on a backyard deck" loading="lazy" onclick="openLightbox(4)"></figure>
+        <figure class="car-slide"><img data-src="img/carousel/c06.jpg" alt="E-bikes and scooters serviced at the customer's home" loading="lazy" onclick="openLightbox(5)"></figure>
+        <figure class="car-slide"><img data-src="img/carousel/c07.jpg" alt="Marc working on a bike at the customer's location" loading="lazy" onclick="openLightbox(6)"></figure>
+        <figure class="car-slide"><img data-src="img/carousel/c08.jpg" alt="Close-up of Marc servicing a bike drivetrain" loading="lazy" onclick="openLightbox(7)"></figure>
+        <figure class="car-slide"><img data-src="img/carousel/c09.jpg" alt="Marc adjusting a bike on the repair stand" loading="lazy" onclick="openLightbox(8)"></figure>
+        <figure class="car-slide"><img data-src="img/carousel/c10.jpg" alt="Fixing a flat tire on location" loading="lazy" onclick="openLightbox(9)"></figure>
+        <figure class="car-slide"><img data-src="img/carousel/c11.jpg" alt="Truing a wheel during a full tune-up" loading="lazy" onclick="openLightbox(10)"></figure>
+        <figure class="car-slide"><img data-src="img/carousel/c12.jpg" alt="BMC triathlon bike serviced on-site" loading="lazy" onclick="openLightbox(11)"></figure>
+        <figure class="car-slide"><img data-src="img/carousel/c13.jpg" alt="Mountain bike tune-up in a home garage" loading="lazy" onclick="openLightbox(12)"></figure>
+        <figure class="car-slide"><img data-src="img/carousel/c14.jpg" alt="Freshly serviced bike ready to ride" loading="lazy" onclick="openLightbox(13)"></figure>
+        <figure class="car-slide"><img data-src="img/carousel/c15.jpg" alt="Happy customer after a mobile bike repair" loading="lazy" onclick="openLightbox(14)"></figure>
+        <figure class="car-slide"><img data-src="img/carousel/c16.jpg" alt="Satisfied riders with Marc Cycling" loading="lazy" onclick="openLightbox(15)"></figure>
+        <figure class="car-slide"><img data-src="img/carousel/c17.jpg" alt="Family watching an at-home bike repair" loading="lazy" onclick="openLightbox(16)"></figure>
+        <figure class="car-slide"><img data-src="img/carousel/c18.jpg" alt="Marc riding at an endurance cycling event" loading="lazy" onclick="openLightbox(17)"></figure>
+      </div>
+      <button class="car-arrow next" type="button" onclick="carScroll(1)" aria-label="Next photo">&#8250;</button>
+      <div class="car-dots" id="carDots"></div>
+    </div>
+    <div class="cta-row" style="justify-content:center; margin-top:30px">
+      <a class="btn btn-call" href="tel:+17542525245" onclick="trackCall()">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1l-2.2 2.2z"/></svg>
+        Call now
+      </a>
+      <a class="btn btn-wa" href="https://wa.me/17542525245?text=Hi%20Marc%2C%20my%20bike%20needs%20service.%20I%27m%20in%20%5Bcity%5D%20and%20I%27d%20like%20a%20quote." target="_blank" rel="noopener" onclick="trackWhatsApp()">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1 0 12 2zm0 2a8 8 0 1 1-4.1 14.9l-.3-.2-2.8.7.8-2.7-.2-.3A8 8 0 0 1 12 4zm4.6 10.3c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1l-.7.9c-.1.2-.3.2-.5.1a6.5 6.5 0 0 1-3.2-2.8c-.1-.2 0-.4.1-.5l.4-.5.2-.4v-.4l-.7-1.7c-.2-.5-.4-.4-.5-.4h-.5c-.2 0-.4.1-.6.3-.8.8-.9 1.9-.4 3.1a10 10 0 0 0 3.9 4.2c1.9 1 2.5.9 3 .8.5-.1 1.4-.6 1.6-1.2.2-.6.2-1.1.1-1.2z"/></svg>
+        WhatsApp
+      </a>
     </div>
   </div>
 </section>
@@ -733,6 +818,32 @@ a.qr:hover{border-color:var(--yellow)}
   </div>
 </section>
 
+<!-- ================= MAINTENANCE REMINDER ================= -->
+<section class="sec" id="reminder">
+  <div class="wrap">
+    <div class="reminder-box">
+      <div class="reminder-copy">
+        <div class="kicker">Stay on the road</div>
+        <h3>Never miss a tune-up</h3>
+        <p>Want a reminder when your bike is due for a tune-up? Leave your number and we'll text you when it's time.</p>
+      </div>
+      <div class="lead-box">
+        <form class="lead-form" data-intent="reminder" onsubmit="return submitLead(event)" novalidate>
+          <label class="field"><span>Name</span><input name="name" type="text" autocomplete="name" required></label>
+          <label class="field"><span>Phone</span><input name="phone" type="tel" autocomplete="tel" required></label>
+          <p class="lead-warn" hidden>Please add your name and phone number.</p>
+          <button type="submit" class="btn btn-wa lead-submit">Text me a reminder</button>
+        </form>
+        <div class="lead-confirm" hidden>
+          <div class="lc-ico">✓</div>
+          <b>You're on the list.</b>
+          <p>We'll reach out when it's time for your next tune-up.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ================= FINAL CTA ================= -->
 <section class="final">
   <div class="wrap">
@@ -763,6 +874,7 @@ a.qr:hover{border-color:var(--yellow)}
       <h4>Contact</h4>
       <a class="foot-phone" href="tel:+17542525245" onclick="trackCall()">(754) 252-5245</a>
       <a href="https://wa.me/17542525245?text=Hi%20Marc%2C%20my%20bike%20needs%20service.%20I%27m%20in%20%5Bcity%5D%20and%20I%27d%20like%20a%20quote." target="_blank" rel="noopener" onclick="trackWhatsApp()">WhatsApp us</a>
+      <p class="paynote" style="margin-top:14px">We accept Zelle, Venmo, Apple Pay, checks and cash. No credit cards.</p>
     </div>
     <div class="foot-col">
       <h4>Service area</h4>
@@ -775,6 +887,14 @@ a.qr:hover{border-color:var(--yellow)}
     <span>Mobile bike repair · Broward County, FL</span>
   </div>
 </footer>
+
+<!-- ================= LIGHTBOX ================= -->
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lb-close" type="button" onclick="closeLightbox()" aria-label="Close">&#10005;</button>
+  <button class="lb-nav prev" type="button" onclick="lbStep(-1)" aria-label="Previous photo">&#8249;</button>
+  <img id="lbImg" src="" alt="">
+  <button class="lb-nav next" type="button" onclick="lbStep(1)" aria-label="Next photo">&#8250;</button>
+</div>
 
 <!-- ================= FLOATING WHATSAPP (all screens) ================= -->
 <a class="wa-float" href="https://wa.me/17542525245?text=Hi%20Marc%2C%20my%20bike%20needs%20service.%20I%27m%20in%20%5Bcity%5D%20and%20I%27d%20like%20a%20quote." target="_blank" rel="noopener" onclick="trackWhatsApp()" aria-label="Chat with us on WhatsApp">
@@ -863,20 +983,30 @@ a.qr:hover{border-color:var(--yellow)}
     if (!name || !phone) { if (warn) warn.hidden = false; return false; }
     if (warn) warn.hidden = true;
 
+    // Monta mensagem conforme a intencao (servico ou lembrete de manutencao)
+    var intent = f.getAttribute('data-intent');
+    var msg, subj;
+    if (intent === 'reminder') {
+      msg = 'Hi Marc, please text me a reminder when my bike is due for a tune-up. Name: ' + name + '. Phone: ' + phone + '.';
+      subj = 'Tune-up reminder request from marccycling.com';
+    } else {
+      msg = 'Hi Marc, I need bike service. Name: ' + name + '. Phone: ' + phone + '. Issue: ' + (issue || '(not specified)') + '.';
+      subj = 'New lead from marccycling.com';
+    }
+
     // (b) Backup por e-mail, em segundo plano, sem travar
     try {
       fetch('https://formsubmit.co/ajax/marcbikebr@gmail.com', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-        body: JSON.stringify({ name: name, phone: phone, issue: issue || '(not specified)', _subject: 'New lead from marccycling.com' })
+        body: JSON.stringify({ name: name, phone: phone, issue: issue || '(not specified)', _subject: subj })
       }).catch(function(){});
     } catch (err) {}
 
     // (d) Conversao de WhatsApp no Google Ads
     if (typeof gtag === 'function') { gtag('event','conversion',{ 'send_to':'AW-459053867/SsQyCMKhnNAcEKu28toB' }); }
 
-    // (c) Mensagem pronta do WhatsApp
-    var msg = 'Hi Marc, I need bike service. Name: ' + name + '. Phone: ' + phone + '. Issue: ' + (issue || '(not specified)') + '.';
+    // (c) Abre o WhatsApp com a mensagem pronta
     var url = 'https://wa.me/17542525245?text=' + encodeURIComponent(msg);
 
     // (e) Confirmacao na tela
@@ -888,6 +1018,56 @@ a.qr:hover{border-color:var(--yellow)}
     if (isMobile) { window.location.href = url; } else { window.open(url, '_blank', 'noopener'); }
     return false;
   }
+
+  // ---- Carrossel de fotos + lightbox (vanilla, sem storage) ----
+  var carLoaded = false, lbIdx = 0;
+  function carTrack(){ return document.getElementById('carTrack'); }
+  function carSlideStep(){ var s = document.querySelector('.car-slide'); return s ? s.getBoundingClientRect().width + 14 : 300; }
+  function openCarousel(){
+    var c = document.getElementById('carousel');
+    if (!carLoaded){
+      c.querySelectorAll('img[data-src]').forEach(function(im){ im.src = im.getAttribute('data-src'); });
+      buildCarDots();
+      carTrack().addEventListener('scroll', updateCarDots, { passive:true });
+      carLoaded = true;
+    }
+    c.hidden = false;
+    document.getElementById('carReveal').style.display = 'none';
+    c.scrollIntoView({ behavior:'smooth', block:'nearest' });
+  }
+  function carScroll(dir){ carTrack().scrollBy({ left: dir * carSlideStep(), behavior:'smooth' }); }
+  function buildCarDots(){
+    var dots = document.getElementById('carDots');
+    var n = carTrack().querySelectorAll('.car-slide').length;
+    dots.innerHTML = '';
+    for (var i = 0; i < n; i++){
+      (function(i){
+        var b = document.createElement('button');
+        b.type = 'button';
+        b.setAttribute('aria-label', 'Go to photo ' + (i + 1));
+        if (i === 0) b.className = 'active';
+        b.onclick = function(){ carTrack().scrollTo({ left: i * carSlideStep(), behavior:'smooth' }); };
+        dots.appendChild(b);
+      })(i);
+    }
+  }
+  function updateCarDots(){
+    var i = Math.round(carTrack().scrollLeft / carSlideStep());
+    var bs = document.getElementById('carDots').children;
+    for (var k = 0; k < bs.length; k++){ bs[k].className = (k === i) ? 'active' : ''; }
+  }
+  function lbImgs(){ return document.querySelectorAll('#carTrack img'); }
+  function setLb(){ var im = lbImgs()[lbIdx]; var t = document.getElementById('lbImg'); t.src = im.getAttribute('data-src') || im.src; t.alt = im.alt; }
+  function openLightbox(i){ lbIdx = i; setLb(); document.getElementById('lightbox').hidden = false; document.body.style.overflow = 'hidden'; }
+  function lbStep(d){ var n = lbImgs().length; lbIdx = (lbIdx + d + n) % n; setLb(); }
+  function closeLightbox(){ document.getElementById('lightbox').hidden = true; document.body.style.overflow = ''; }
+  document.addEventListener('keydown', function(e){
+    if (document.getElementById('lightbox').hidden) return;
+    if (e.key === 'Escape') closeLightbox();
+    else if (e.key === 'ArrowLeft') lbStep(-1);
+    else if (e.key === 'ArrowRight') lbStep(1);
+  });
+  document.getElementById('lightbox').addEventListener('click', function(e){ if (e.target === this) closeLightbox(); });
 </script>
 
 </body>
