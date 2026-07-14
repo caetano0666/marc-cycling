@@ -310,6 +310,7 @@ a.qr:hover{border-color:var(--yellow)}
 .price{background:var(--bg2); border:1px solid var(--line); border-radius:var(--radius); padding:22px 24px}
 .price:not(.feat){display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap}
 .p-name{font-family:'Oswald',sans-serif; font-size:20px; text-transform:uppercase; font-weight:600}
+.p-sub{font-size:13.5px; color:var(--muted); margin-top:6px; max-width:360px; line-height:1.4}
 .p-val{font-size:15px; color:var(--muted2)}
 .p-val b{font-family:'Oswald',sans-serif; font-size:27px; color:var(--yellow); font-weight:700; margin-left:4px}
 .price.feat{border-color:var(--yellow); box-shadow:0 0 0 1px var(--yellow) inset}
@@ -532,7 +533,10 @@ a.qr:hover{border-color:var(--yellow)}
         <div class="p-val">from <b>$39</b></div>
       </div>
       <div class="price">
-        <div class="p-name">Basic tune-up</div>
+        <div>
+          <div class="p-name">Basic tune-up</div>
+          <div class="p-sub">Brakes and gears adjustment, tires, wipe-down, chain lube</div>
+        </div>
         <div class="p-val">from <b>$95</b></div>
       </div>
       <div class="price feat">
