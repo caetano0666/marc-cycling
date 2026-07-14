@@ -119,9 +119,11 @@ h1 .em{color:var(--yellow); display:block}
 .trilingual b{color:var(--muted2); font-weight:600}
 .hero-photo{position:relative}
 .hero-photo img{
-  width:100%; border-radius:20px; border:1px solid var(--line2);
+  width:100%; height:auto; display:block; object-fit:cover;
+  border-radius:20px; border:1px solid var(--line2);
   box-shadow:0 30px 70px -30px rgba(0,0,0,.9);
 }
+.hero-logo{height:64px; width:auto; margin-bottom:26px}
 .hero-photo .badge{
   position:absolute; left:-6px; bottom:18px;
   background:var(--yellow); color:#000; font-family:'Oswald',sans-serif; font-weight:700;
@@ -256,6 +258,9 @@ footer{background:#08080a; border-top:1px solid var(--line); padding:50px 0 120p
   .nav-call span{display:none}
   .nav-call{padding:9px 12px}
 }
+@media(max-width:759px){
+  .hero-logo{display:none}
+}
 </style>
 </head>
 <body>
@@ -283,6 +288,7 @@ footer{background:#08080a; border-top:1px solid var(--line); padding:50px 0 120p
 <section class="hero">
   <div class="wrap hero-grid">
     <div>
+      <img class="hero-logo" src="img/logo-white.png" alt="Marc Cycling" width="300" height="102">
       <span class="eyebrow"><span class="dot"></span>E-Bike Specialist · Mobile Service</span>
       <h1>Mobile Bike &amp; E-Bike Repair.<span class="em">We come to you.</span></h1>
       <p class="lead">Expert repairs at your home, office, or building — anywhere in Broward County and South Florida. No shop visits. No hauling your bike around. Just call, and we handle the rest.</p>
