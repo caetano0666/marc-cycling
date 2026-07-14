@@ -333,23 +333,28 @@ a.qr:hover{border-color:var(--yellow)}
   .price.feat{grid-column:1 / -1}
 }
 
-/* Photo carousel */
+/* Photo showcase + carousel */
+.showcase{padding:72px 0; background:linear-gradient(180deg,#141416,#101012); border-top:1px solid var(--line2); border-bottom:1px solid var(--line2); position:relative; overflow:hidden}
+.showcase::before{content:""; position:absolute; top:-130px; left:50%; transform:translateX(-50%); width:760px; height:360px; background:radial-gradient(ellipse,rgba(247,198,0,.13),transparent 70%); pointer-events:none}
+.sc-head{max-width:760px; position:relative}
+.sc-badge{display:inline-flex; align-items:center; gap:7px; background:rgba(247,198,0,.12); border:1px solid rgba(247,198,0,.4); color:var(--yellow); font-size:12px; font-weight:700; letter-spacing:.09em; text-transform:uppercase; padding:6px 13px; border-radius:100px; margin-bottom:16px}
 .carousel{position:relative; margin-top:26px}
-.car-track{display:flex; gap:14px; overflow-x:auto; scroll-snap-type:x mandatory; scroll-behavior:smooth; -webkit-overflow-scrolling:touch; padding-bottom:4px; scrollbar-width:none}
+.car-track{display:flex; gap:16px; overflow-x:auto; scroll-snap-type:x proximity; scroll-behavior:smooth; -webkit-overflow-scrolling:touch; padding-bottom:4px; scrollbar-width:none}
 .car-track::-webkit-scrollbar{display:none}
-.car-slide{flex:0 0 auto; width:84%; max-width:540px; scroll-snap-align:center; margin:0}
-.car-slide img{width:100%; aspect-ratio:4/3; object-fit:cover; border-radius:14px; border:1px solid var(--line); background:var(--bg2); cursor:zoom-in; display:block}
-.car-arrow{position:absolute; top:50%; transform:translateY(-50%); width:44px; height:44px; border-radius:50%; border:1px solid var(--line2); background:rgba(12,12,14,.82); color:#fff; font-size:26px; line-height:1; cursor:pointer; z-index:3; display:none; align-items:center; justify-content:center; backdrop-filter:blur(6px)}
+.car-slide{flex:0 0 auto; width:84%; max-width:none; scroll-snap-align:start; margin:0}
+.car-slide img{width:100%; aspect-ratio:4/3; object-fit:cover; border-radius:16px; border:1px solid var(--line2); background:var(--bg2); cursor:zoom-in; display:block}
+.car-arrow{position:absolute; top:50%; transform:translateY(-50%); width:48px; height:48px; border-radius:50%; border:1px solid var(--line2); background:rgba(12,12,14,.85); color:#fff; font-size:28px; line-height:1; cursor:pointer; z-index:3; display:none; align-items:center; justify-content:center; backdrop-filter:blur(6px)}
 .car-arrow:hover{border-color:var(--yellow); color:var(--yellow)}
-.car-arrow.prev{left:-6px} .car-arrow.next{right:-6px}
-.car-dots{display:flex; justify-content:center; flex-wrap:wrap; gap:7px; margin-top:18px}
+.car-arrow.prev{left:-10px} .car-arrow.next{right:-10px}
+.car-dots{display:flex; justify-content:center; flex-wrap:wrap; gap:7px; margin-top:20px}
 .car-dots button{width:8px; height:8px; border-radius:50%; border:none; background:var(--line2); cursor:pointer; padding:0; transition:width .2s, background .2s}
-.car-dots button.active{background:var(--yellow); width:20px; border-radius:5px}
+.car-dots button.active{background:var(--yellow); width:22px; border-radius:5px}
 @media(min-width:760px){
   .car-arrow{display:flex}
-  .car-slide{width:47%; max-width:none}
+  .car-slide{width:56%}
 }
-@media(min-width:1080px){ .car-slide{width:31.5%} }
+@media(min-width:1000px){ .car-slide{width:42%} }
+@media(min-width:1180px){ .car-slide{width:31.5%} }
 
 /* Lightbox */
 .lightbox{position:fixed; inset:0; z-index:120; background:rgba(0,0,0,.93); display:flex; align-items:center; justify-content:center; padding:18px}
@@ -630,68 +635,47 @@ a.qr:hover{border-color:var(--yellow)}
   </div>
 </section>
 
-<!-- ================= GALLERY ================= -->
-<section class="sec" id="gallery">
+<!-- ================= PHOTO SHOWCASE (merged gallery + carousel) ================= -->
+<section class="showcase" id="gallery">
   <div class="wrap">
-    <div class="sec-head">
-      <div class="kicker">On the road</div>
-      <h2>Real work, real results</h2>
-      <p>Every day, across South Florida, driveways, garages, offices. Wherever your bike is, that's our workshop.</p>
-    </div>
-    <div class="gallery">
-      <img class="tall" src="img/work/van.jpg" alt="Marc Cycling mobile service van" loading="lazy">
-      <img src="img/work/driveway.jpg" alt="Bike repair in a driveway" loading="lazy">
-      <img src="img/work/dusk.jpg" alt="On-site bike service at dusk in South Florida" loading="lazy">
-      <img src="img/work/working.jpg" alt="Marc working on a bike" loading="lazy">
-      <img src="img/work/workshop.jpg" alt="Professional bike repair tools" loading="lazy">
-    </div>
-  </div>
-</section>
-
-<!-- ================= CAROUSEL (more photos) ================= -->
-<section class="sec how" id="more-photos">
-  <div class="wrap">
-    <div class="sec-head">
-      <div class="kicker">More from the road</div>
+    <div class="sec-head sc-head">
+      <span class="sc-badge">★ 20 real repairs, on location</span>
+      <div class="kicker">Real work on the road</div>
       <h2>See the work</h2>
-      <p>Real jobs across Broward and South Florida. Homes, driveways, offices, wherever your bike is.</p>
+      <p>Every day across Broward and South Florida. Driveways, garages, offices, wherever your bike is, that is our workshop.</p>
     </div>
-    <div id="carReveal" style="text-align:center">
-      <button class="btn-ghost" type="button" onclick="openCarousel()">See more photos</button>
-    </div>
-    <div class="carousel" id="carousel" hidden>
+    <div class="carousel" id="carousel">
       <button class="car-arrow prev" type="button" onclick="carScroll(-1)" aria-label="Previous photo">&#8249;</button>
       <div class="car-track" id="carTrack">
-        <figure class="car-slide"><img data-src="img/carousel/c01.jpg" alt="Marc Cycling mobile repair van on location in South Florida" loading="lazy" onclick="openLightbox(0)"></figure>
-        <figure class="car-slide"><img data-src="img/carousel/c02.jpg" alt="Bikes loaded for mobile bike service in Broward County" loading="lazy" onclick="openLightbox(1)"></figure>
-        <figure class="car-slide"><img data-src="img/carousel/c03.jpg" alt="Bike on a repair stand beside the Marc Cycling service van" loading="lazy" onclick="openLightbox(2)"></figure>
-        <figure class="car-slide"><img data-src="img/carousel/c04.jpg" alt="On-location bike tune-up at sunset in a driveway" loading="lazy" onclick="openLightbox(3)"></figure>
-        <figure class="car-slide"><img data-src="img/carousel/c05.jpg" alt="Mobile bike repair set up on a backyard deck" loading="lazy" onclick="openLightbox(4)"></figure>
-        <figure class="car-slide"><img data-src="img/carousel/c06.jpg" alt="E-bikes and scooters serviced at the customer's home" loading="lazy" onclick="openLightbox(5)"></figure>
-        <figure class="car-slide"><img data-src="img/carousel/c07.jpg" alt="Marc working on a bike at the customer's location" loading="lazy" onclick="openLightbox(6)"></figure>
-        <figure class="car-slide"><img data-src="img/carousel/c08.jpg" alt="Close-up of Marc servicing a bike drivetrain" loading="lazy" onclick="openLightbox(7)"></figure>
-        <figure class="car-slide"><img data-src="img/carousel/c09.jpg" alt="Marc adjusting a bike on the repair stand" loading="lazy" onclick="openLightbox(8)"></figure>
-        <figure class="car-slide"><img data-src="img/carousel/c10.jpg" alt="Fixing a flat tire on location" loading="lazy" onclick="openLightbox(9)"></figure>
-        <figure class="car-slide"><img data-src="img/carousel/c11.jpg" alt="Truing a wheel during a full tune-up" loading="lazy" onclick="openLightbox(10)"></figure>
-        <figure class="car-slide"><img data-src="img/carousel/c12.jpg" alt="BMC triathlon bike serviced on-site" loading="lazy" onclick="openLightbox(11)"></figure>
-        <figure class="car-slide"><img data-src="img/carousel/c13.jpg" alt="Mountain bike tune-up in a home garage" loading="lazy" onclick="openLightbox(12)"></figure>
-        <figure class="car-slide"><img data-src="img/carousel/c14.jpg" alt="Freshly serviced bike ready to ride" loading="lazy" onclick="openLightbox(13)"></figure>
-        <figure class="car-slide"><img data-src="img/carousel/c15.jpg" alt="Happy customer after a mobile bike repair" loading="lazy" onclick="openLightbox(14)"></figure>
-        <figure class="car-slide"><img data-src="img/carousel/c16.jpg" alt="Satisfied riders with Marc Cycling" loading="lazy" onclick="openLightbox(15)"></figure>
-        <figure class="car-slide"><img data-src="img/carousel/c17.jpg" alt="Family watching an at-home bike repair" loading="lazy" onclick="openLightbox(16)"></figure>
-        <figure class="car-slide"><img data-src="img/carousel/c18.jpg" alt="Marc riding at an endurance cycling event" loading="lazy" onclick="openLightbox(17)"></figure>
+        <figure class="car-slide"><img src="img/gallery/g01.jpg" alt="Marc Cycling branded mobile service van" onclick="openLightbox(0)"></figure>
+        <figure class="car-slide"><img src="img/gallery/g02.jpg" alt="Bike on a repair stand in a driveway" onclick="openLightbox(1)"></figure>
+        <figure class="car-slide"><img src="img/gallery/g03.jpg" alt="Bikes set up for mobile service on a deck" onclick="openLightbox(2)"></figure>
+        <figure class="car-slide"><img src="img/gallery/g04.jpg" alt="On-location bike service at sunset in South Florida" onclick="openLightbox(3)"></figure>
+        <figure class="car-slide"><img data-src="img/gallery/g05.jpg" alt="E-bikes and scooters serviced at the customer's home" onclick="openLightbox(4)"></figure>
+        <figure class="car-slide"><img data-src="img/gallery/g06.jpg" alt="Marc working on a bike at the customer's location" onclick="openLightbox(5)"></figure>
+        <figure class="car-slide"><img data-src="img/gallery/g07.jpg" alt="Close-up of Marc servicing a bike" onclick="openLightbox(6)"></figure>
+        <figure class="car-slide"><img data-src="img/gallery/g08.jpg" alt="Marc adjusting a bike on the repair stand" onclick="openLightbox(7)"></figure>
+        <figure class="car-slide"><img data-src="img/gallery/g09.jpg" alt="Fixing a flat tire on location" onclick="openLightbox(8)"></figure>
+        <figure class="car-slide"><img data-src="img/gallery/g10.jpg" alt="Truing a wheel during a tune-up" onclick="openLightbox(9)"></figure>
+        <figure class="car-slide"><img data-src="img/gallery/g11.jpg" alt="Marc tuning a bike on the stand" onclick="openLightbox(10)"></figure>
+        <figure class="car-slide"><img data-src="img/gallery/g12.jpg" alt="Professional mobile bike repair tools" onclick="openLightbox(11)"></figure>
+        <figure class="car-slide"><img data-src="img/gallery/g13.jpg" alt="BMC triathlon bike serviced on-site" onclick="openLightbox(12)"></figure>
+        <figure class="car-slide"><img data-src="img/gallery/g14.jpg" alt="Mountain bike tune-up in a home garage" onclick="openLightbox(13)"></figure>
+        <figure class="car-slide"><img data-src="img/gallery/g15.jpg" alt="Bikes loaded for mobile bike service" onclick="openLightbox(14)"></figure>
+        <figure class="car-slide"><img data-src="img/gallery/g16.jpg" alt="Bike on a stand beside the service van" onclick="openLightbox(15)"></figure>
+        <figure class="car-slide"><img data-src="img/gallery/g17.jpg" alt="Happy customer after a mobile bike repair" onclick="openLightbox(16)"></figure>
+        <figure class="car-slide"><img data-src="img/gallery/g18.jpg" alt="Satisfied riders with Marc Cycling" onclick="openLightbox(17)"></figure>
+        <figure class="car-slide"><img data-src="img/gallery/g19.jpg" alt="Family watching an at-home bike repair" onclick="openLightbox(18)"></figure>
+        <figure class="car-slide"><img data-src="img/gallery/g20.jpg" alt="Marc riding at an endurance cycling event" onclick="openLightbox(19)"></figure>
       </div>
       <button class="car-arrow next" type="button" onclick="carScroll(1)" aria-label="Next photo">&#8250;</button>
       <div class="car-dots" id="carDots"></div>
     </div>
     <div class="cta-row" style="justify-content:center; margin-top:30px">
+      <button class="btn-ghost" type="button" onclick="openLightbox(0)">View all 20 photos</button>
       <a class="btn btn-call" href="tel:+17542525245" onclick="trackCall()">
         <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1l-2.2 2.2z"/></svg>
         Call now
-      </a>
-      <a class="btn btn-wa" href="https://wa.me/17542525245?text=Hi%20Marc%2C%20my%20bike%20needs%20service.%20I%27m%20in%20%5Bcity%5D%20and%20I%27d%20like%20a%20quote." target="_blank" rel="noopener" onclick="trackWhatsApp()">
-        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1 0 12 2zm0 2a8 8 0 1 1-4.1 14.9l-.3-.2-2.8.7.8-2.7-.2-.3A8 8 0 0 1 12 4zm4.6 10.3c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1l-.7.9c-.1.2-.3.2-.5.1a6.5 6.5 0 0 1-3.2-2.8c-.1-.2 0-.4.1-.5l.4-.5.2-.4v-.4l-.7-1.7c-.2-.5-.4-.4-.5-.4h-.5c-.2 0-.4.1-.6.3-.8.8-.9 1.9-.4 3.1a10 10 0 0 0 3.9 4.2c1.9 1 2.5.9 3 .8.5-.1 1.4-.6 1.6-1.2.2-.6.2-1.1.1-1.2z"/></svg>
-        WhatsApp
       </a>
     </div>
   </div>
@@ -1019,23 +1003,12 @@ a.qr:hover{border-color:var(--yellow)}
     return false;
   }
 
-  // ---- Carrossel de fotos + lightbox (vanilla, sem storage) ----
-  var carLoaded = false, lbIdx = 0;
+  // ---- Vitrine de fotos: carrossel + lightbox (vanilla, sem storage) ----
+  var lbIdx = 0, carTimer = null;
+  var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   function carTrack(){ return document.getElementById('carTrack'); }
-  function carSlideStep(){ var s = document.querySelector('.car-slide'); return s ? s.getBoundingClientRect().width + 14 : 300; }
-  function openCarousel(){
-    var c = document.getElementById('carousel');
-    if (!carLoaded){
-      c.querySelectorAll('img[data-src]').forEach(function(im){ im.src = im.getAttribute('data-src'); });
-      buildCarDots();
-      carTrack().addEventListener('scroll', updateCarDots, { passive:true });
-      carLoaded = true;
-    }
-    c.hidden = false;
-    document.getElementById('carReveal').style.display = 'none';
-    c.scrollIntoView({ behavior:'smooth', block:'nearest' });
-  }
-  function carScroll(dir){ carTrack().scrollBy({ left: dir * carSlideStep(), behavior:'smooth' }); }
+  function carSlideStep(){ var s = document.querySelector('.car-slide'); return s ? s.getBoundingClientRect().width + 16 : 300; }
+  function carScroll(dir){ carAutoStop(); carTrack().scrollBy({ left: dir * carSlideStep(), behavior:'smooth' }); }
   function buildCarDots(){
     var dots = document.getElementById('carDots');
     var n = carTrack().querySelectorAll('.car-slide').length;
@@ -1046,7 +1019,7 @@ a.qr:hover{border-color:var(--yellow)}
         b.type = 'button';
         b.setAttribute('aria-label', 'Go to photo ' + (i + 1));
         if (i === 0) b.className = 'active';
-        b.onclick = function(){ carTrack().scrollTo({ left: i * carSlideStep(), behavior:'smooth' }); };
+        b.onclick = function(){ carAutoStop(); carTrack().scrollTo({ left: i * carSlideStep(), behavior:'smooth' }); };
         dots.appendChild(b);
       })(i);
     }
@@ -1056,11 +1029,43 @@ a.qr:hover{border-color:var(--yellow)}
     var bs = document.getElementById('carDots').children;
     for (var k = 0; k < bs.length; k++){ bs[k].className = (k === i) ? 'active' : ''; }
   }
+  // Auto-avanco suave (pausa no hover, no toque e com a lightbox aberta)
+  function carAutoStop(){ if (carTimer){ clearInterval(carTimer); carTimer = null; } }
+  function carAutoStart(){
+    if (reduceMotion || carTimer) return;
+    if (!document.getElementById('lightbox').hidden) return;
+    carTimer = setInterval(function(){
+      var t = carTrack();
+      if (t.scrollLeft + t.clientWidth >= t.scrollWidth - 4){ t.scrollTo({ left:0, behavior:'smooth' }); }
+      else { t.scrollBy({ left: carSlideStep(), behavior:'smooth' }); }
+    }, 4500);
+  }
+  // Lazy load: as 4 primeiras ja vem com src; as demais carregam ao aproximar
+  (function initCarousel(){
+    var track = carTrack(); if (!track) return;
+    buildCarDots();
+    track.addEventListener('scroll', updateCarDots, { passive:true });
+    if ('IntersectionObserver' in window){
+      var io = new IntersectionObserver(function(ents){
+        ents.forEach(function(e){
+          if (e.isIntersecting){ var im = e.target; if (im.dataset.src && !im.getAttribute('src')){ im.src = im.dataset.src; } io.unobserve(im); }
+        });
+      }, { root: track, rootMargin: '0px 500px 0px 500px', threshold: 0.01 });
+      track.querySelectorAll('img[data-src]').forEach(function(im){ if (!im.getAttribute('src')) io.observe(im); });
+    } else {
+      track.querySelectorAll('img[data-src]').forEach(function(im){ if (!im.getAttribute('src')) im.src = im.dataset.src; });
+    }
+    var car = document.getElementById('carousel');
+    car.addEventListener('mouseenter', carAutoStop);
+    car.addEventListener('mouseleave', carAutoStart);
+    car.addEventListener('touchstart', carAutoStop, { passive:true });
+    carAutoStart();
+  })();
   function lbImgs(){ return document.querySelectorAll('#carTrack img'); }
   function setLb(){ var im = lbImgs()[lbIdx]; var t = document.getElementById('lbImg'); t.src = im.getAttribute('data-src') || im.src; t.alt = im.alt; }
-  function openLightbox(i){ lbIdx = i; setLb(); document.getElementById('lightbox').hidden = false; document.body.style.overflow = 'hidden'; }
+  function openLightbox(i){ carAutoStop(); lbIdx = i; setLb(); document.getElementById('lightbox').hidden = false; document.body.style.overflow = 'hidden'; }
   function lbStep(d){ var n = lbImgs().length; lbIdx = (lbIdx + d + n) % n; setLb(); }
-  function closeLightbox(){ document.getElementById('lightbox').hidden = true; document.body.style.overflow = ''; }
+  function closeLightbox(){ document.getElementById('lightbox').hidden = true; document.body.style.overflow = ''; carAutoStart(); }
   document.addEventListener('keydown', function(e){
     if (document.getElementById('lightbox').hidden) return;
     if (e.key === 'Escape') closeLightbox();
