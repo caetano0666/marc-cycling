@@ -304,6 +304,26 @@ a.qr:hover{border-color:var(--yellow)}
 .lead-confirm b{font-family:'Oswald',sans-serif; font-size:20px; text-transform:uppercase; display:block}
 .lead-confirm p{color:var(--muted2); font-size:15px; margin:8px 0 18px}
 @media(min-width:760px){ .lead-wrap{grid-template-columns:1fr 1fr; gap:44px; align-items:center} }
+
+/* Pricing */
+.price-grid{display:grid; grid-template-columns:1fr; gap:16px; margin-bottom:18px}
+.price{background:var(--bg2); border:1px solid var(--line); border-radius:var(--radius); padding:22px 24px}
+.price:not(.feat){display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap}
+.p-name{font-family:'Oswald',sans-serif; font-size:20px; text-transform:uppercase; font-weight:600}
+.p-val{font-size:15px; color:var(--muted2)}
+.p-val b{font-family:'Oswald',sans-serif; font-size:27px; color:var(--yellow); font-weight:700; margin-left:4px}
+.price.feat{border-color:var(--yellow); box-shadow:0 0 0 1px var(--yellow) inset}
+.p-tag{display:inline-block; background:var(--yellow); color:#000; font-family:'Oswald',sans-serif; font-size:12px; letter-spacing:.08em; text-transform:uppercase; font-weight:700; padding:5px 12px; border-radius:100px; margin-bottom:14px}
+.p-head{display:flex; align-items:baseline; justify-content:space-between; gap:12px; flex-wrap:wrap}
+.p-list{list-style:none; display:grid; gap:10px; margin-top:16px}
+.p-list li{display:flex; gap:11px; font-size:15px; color:var(--muted2)}
+.p-list li::before{content:"\2713"; color:var(--yellow); font-weight:800; flex:0 0 auto}
+.p-note{color:var(--muted); font-size:14.5px; margin-bottom:26px}
+.p-note b{color:var(--ink)}
+@media(min-width:760px){
+  .price-grid{grid-template-columns:1fr 1fr}
+  .price.feat{grid-column:1 / -1}
+}
 </style>
 </head>
 <body>
@@ -488,10 +508,34 @@ a.qr:hover{border-color:var(--yellow)}
     <div class="sec-head">
       <div class="kicker">Honest pricing</div>
       <h2>Fair, upfront pricing. No surprises.</h2>
-      <!-- PRECOS: para mostrar valores, troque a linha <p> abaixo por:
-           <p>Free estimate by phone. Flat tire repair from $[X]. Full tune-up from $[Y]. No shop markup, no hidden fees.</p> -->
-      <p>Free estimate by phone before any work. No shop markup, no hidden fees. You know the price before we start, that's why riders keep calling our pricing fair.</p>
+      <p>Free estimate by phone before any work. No shop markup, no hidden fees. You know the price before we start.</p>
     </div>
+    <div class="price-grid">
+      <div class="price">
+        <div class="p-name">Flat tire repair</div>
+        <div class="p-val">from <b>$39</b></div>
+      </div>
+      <div class="price">
+        <div class="p-name">Basic tune-up</div>
+        <div class="p-val">from <b>$95</b></div>
+      </div>
+      <div class="price feat">
+        <div class="p-tag">Most popular</div>
+        <div class="p-head">
+          <div class="p-name">Full bike tune-up</div>
+          <div class="p-val">from <b>$125</b></div>
+        </div>
+        <ul class="p-list">
+          <li>Precision adjustment of gears and brakes</li>
+          <li>Deep clean and lubrication of the chain, cassette and derailleurs</li>
+          <li>Wheel true check for perfect alignment</li>
+          <li>Full bike wipe-down and frame cleaning</li>
+          <li>Technical lubrication of all moving parts</li>
+          <li>Comprehensive safety check of all bolts and components</li>
+        </ul>
+      </div>
+    </div>
+    <p class="p-note"><b>E-bikes:</b> add $60. Free estimate by phone, upfront pricing, no surprises.</p>
     <div class="cta-row">
       <a class="btn btn-call" href="tel:+17542525245" onclick="trackCall()">
         <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1l-2.2 2.2z"/></svg>
