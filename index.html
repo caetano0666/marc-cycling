@@ -60,6 +60,16 @@ h1,h2,h3,.display{font-family:'Oswald',sans-serif; font-weight:700; line-height:
 .yellow{color:var(--yellow)}
 section{position:relative}
 
+/* Hero art (image + clickable hotspots over the drawn buttons) */
+.visually-hidden{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.hero-art{background:#0c0c0e; overflow:hidden}
+.hero-art-wrap{position:relative; max-width:1536px; margin:0 auto; line-height:0; font-size:0}
+.hero-art-wrap img{width:100%; height:auto; display:block}
+.hero-hot{position:absolute; display:block; z-index:2; border-radius:12px; cursor:pointer; -webkit-tap-highlight-color:rgba(255,255,255,.15)}
+.hero-hot:focus-visible{outline:3px solid #fff; outline-offset:2px}
+.hh-call{left:2.0%; top:82.6%; width:19.2%; height:9.2%}
+.hh-wa{left:23.0%; top:82.6%; width:18.8%; height:9.2%}
+
 /* ---------- Header ---------- */
 header{
   position:sticky; top:0; z-index:60;
@@ -416,58 +426,14 @@ a.qr:hover{border-color:var(--yellow)}
 <a id="top"></a>
 
 <!-- ================= HERO ================= -->
-<section class="hero">
-  <div class="lang-badge-wrap">
-    <div class="lang-badge" title="We speak English, Spanish and Portuguese">
-      <span class="flags">
-        <span class="flag" aria-label="English"><svg viewBox="0 0 24 16" preserveAspectRatio="none" aria-hidden="true"><rect width="24" height="16" fill="#B22234"/><g fill="#fff"><rect y="1.23" width="24" height="1.23"/><rect y="3.69" width="24" height="1.23"/><rect y="6.15" width="24" height="1.23"/><rect y="8.62" width="24" height="1.23"/><rect y="11.08" width="24" height="1.23"/><rect y="13.54" width="24" height="1.23"/></g><rect width="9.6" height="8.62" fill="#3C3B6E"/><g fill="#fff"><circle cx="1.8" cy="1.6" r=".5"/><circle cx="4.2" cy="1.6" r=".5"/><circle cx="6.6" cy="1.6" r=".5"/><circle cx="8.4" cy="1.6" r=".5"/><circle cx="3" cy="3.2" r=".5"/><circle cx="5.4" cy="3.2" r=".5"/><circle cx="7.8" cy="3.2" r=".5"/><circle cx="1.8" cy="4.8" r=".5"/><circle cx="4.2" cy="4.8" r=".5"/><circle cx="6.6" cy="4.8" r=".5"/><circle cx="8.4" cy="4.8" r=".5"/><circle cx="3" cy="6.4" r=".5"/><circle cx="5.4" cy="6.4" r=".5"/><circle cx="7.8" cy="6.4" r=".5"/></g></svg></span>
-        <span class="flag" aria-label="Español"><svg viewBox="0 0 24 16" preserveAspectRatio="none" aria-hidden="true"><rect width="24" height="16" fill="#C60B1E"/><rect y="4" width="24" height="8" fill="#FFC400"/></svg></span>
-        <span class="flag" aria-label="Português"><svg viewBox="0 0 24 16" preserveAspectRatio="none" aria-hidden="true"><rect width="24" height="16" fill="#009C3B"/><polygon points="12,1.6 22.4,8 12,14.4 1.6,8" fill="#FFDF00"/><circle cx="12" cy="8" r="3.1" fill="#002776"/></svg></span>
-      </span>
-      <span class="lt">Trilingual</span>
-    </div>
-  </div>
-  <div class="wrap hero-grid">
-    <div>
-      <img class="hero-logo" src="img/logo-white.png" alt="Marc Cycling" width="300" height="102">
-      <span class="eyebrow"><span class="dot"></span>E-Bike Specialist · Mobile Service</span>
-      <h1>Mobile Bike &amp; E-Bike Repair.<span class="em">We come to you.</span></h1>
-      <p class="lead">Expert repairs at your home, office, or building, anywhere in Broward County and South Florida. No shop visits. No hauling your bike around. Just call, and we handle the rest.</p>
-      <div class="stars">
-        <span class="s">★★★★★</span>
-        <a class="rev-inline" href="https://g.page/marccycling/review" target="_blank" rel="noopener"><b>5.0</b> on Google · <b>115</b> five-star reviews</a>
-      </div>
-      <div class="cta-row">
-        <a class="btn btn-call" href="tel:+17542525245" onclick="trackCall()">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1l-2.2 2.2z"/></svg>
-          Call now
-        </a>
-        <a class="btn btn-wa" href="https://wa.me/17542525245?text=Hi%20Marc%2C%20my%20bike%20needs%20service.%20I%27m%20in%20%5Bcity%5D%20and%20I%27d%20like%20a%20quote." target="_blank" rel="noopener" onclick="trackWhatsApp()">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1 0 12 2zm0 2a8 8 0 1 1-4.1 14.9l-.3-.2-2.8.7.8-2.7-.2-.3A8 8 0 0 1 12 4zm4.6 10.3c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1l-.7.9c-.1.2-.3.2-.5.1a6.5 6.5 0 0 1-3.2-2.8c-.1-.2 0-.4.1-.5l.4-.5.2-.4v-.4l-.7-1.7c-.2-.5-.4-.4-.5-.4h-.5c-.2 0-.4.1-.6.3-.8.8-.9 1.9-.4 3.1a10 10 0 0 0 3.9 4.2c1.9 1 2.5.9 3 .8.5-.1 1.4-.6 1.6-1.2.2-.6.2-1.1.1-1.2z"/></svg>
-          WhatsApp
-        </a>
-      </div>
-      <p class="trilingual">🌎 <b>Trilingual service:</b> English · Español · Português</p>
-      <p class="availability"><span class="ck">✓</span> Available 7 days a week. Fast response, usually within minutes.</p>
-      <a class="hero-formlink" href="#quote">Prefer to text? Leave your info and we'll message you →</a>
-    </div>
-    <div class="hero-photo">
-      <img src="img/marc.jpg" alt="Marc, expert mobile bike technician, in his workshop" width="1000" height="1000">
-      <span class="badge">Experienced · Reliable · Professional</span>
-    </div>
+<section class="hero-art" id="hero">
+  <h1 class="visually-hidden">Marc Cycling: professional mobile bike and e-bike repair in Broward County and South Florida. We come to you. 5.0 on Google, 115 five-star reviews.</h1>
+  <div class="hero-art-wrap">
+    <img src="img/hero.jpg" alt="Marc Cycling, professional mobile bike repair. We come to you across Broward County and South Florida. Trilingual service. 5.0 on Google with 115 five-star reviews." width="1536" height="1024" fetchpriority="high">
+    <a class="hero-hot hh-call" href="tel:+17542525245" onclick="trackCall()" aria-label="Call now, (754) 252-5245"></a>
+    <a class="hero-hot hh-wa" href="https://wa.me/17542525245?text=Hi%20Marc%2C%20my%20bike%20needs%20service.%20I%27m%20in%20%5Bcity%5D%20and%20I%27d%20like%20a%20quote." target="_blank" rel="noopener" onclick="trackWhatsApp()" aria-label="Message us on WhatsApp"></a>
   </div>
 </section>
-
-<!-- ================= TRUST STRIP ================= -->
-<div class="trust">
-  <div class="wrap">
-    <div class="t"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Expert technicians</div>
-    <div class="t"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Premium tools</div>
-    <div class="t"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Top brands serviced</div>
-    <div class="t"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Fast response</div>
-    <div class="t"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Quality you can trust</div>
-  </div>
-</div>
 
 <!-- ================= LEAD FORM (top) ================= -->
 <section class="sec lead-sec" id="quote">
