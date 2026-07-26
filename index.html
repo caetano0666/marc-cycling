@@ -391,6 +391,63 @@ a.qr:hover{border-color:var(--yellow)}
   .wa-float svg{width:30px; height:30px}
 }
 
+/* Book Now button (header) */
+.nav-book{display:inline-flex; align-items:center; gap:8px; margin-left:10px;
+  background:#E8352B; color:#fff; font-weight:700; font-size:14px;
+  padding:9px 16px; border-radius:100px; white-space:nowrap;
+  box-shadow:0 0 0 3px rgba(232,53,43,.22), 0 8px 22px -6px rgba(232,53,43,.6)}
+.nav-book:hover{background:#ff4a40}
+.nav-book svg{width:16px;height:16px}
+@media(max-width:820px){ .nav-book{padding:9px 13px; font-size:13px; margin-left:8px} }
+@media(max-width:359px){ .nav-book span{display:none} .nav-book{padding:9px 12px} }
+
+/* Flat tire highlight cards */
+.flat-sec{padding:36px 0 6px}
+.flat-grid{display:grid; grid-template-columns:1fr; gap:14px}
+.flat-card{background:linear-gradient(135deg, rgba(247,198,0,.13), rgba(247,198,0,.04) 60%);
+  border:1px solid rgba(247,198,0,.45); border-radius:var(--radius); padding:24px}
+.flat-card h3{font-size:21px}
+.flat-price{font-family:'Oswald',sans-serif; font-weight:700; font-size:34px; color:var(--yellow); line-height:1.1; margin:8px 0 10px}
+.flat-price small{font-size:17px; font-weight:600; color:var(--yellow2)}
+.flat-card p{color:var(--muted2); font-size:15px}
+@media(min-width:760px){ .flat-grid{grid-template-columns:1fr 1fr; gap:18px} }
+
+/* Service packages */
+.pkg-grid{display:grid; grid-template-columns:1fr; gap:16px}
+.pkg{background:var(--bg2); border:1px solid var(--line); border-radius:var(--radius); padding:24px}
+.pkg.feat{border-color:var(--yellow); box-shadow:0 0 0 1px var(--yellow) inset}
+.pkg-desc{color:var(--muted); font-size:14.5px; margin-top:8px; line-height:1.5}
+.pkg-sub{font-size:24px; margin:36px 0 16px}
+@media(min-width:760px){
+  .pkg-grid{grid-template-columns:1fr 1fr}
+  .pkg-grid.bikes .pkg.feat{grid-column:1 / -1}
+}
+@media(min-width:980px){
+  .pkg-grid.bikes{grid-template-columns:1fr 1fr 1fr}
+  .pkg-grid.bikes .pkg.feat{grid-column:auto}
+}
+.howwork{border:1px dashed var(--line2); border-radius:12px; padding:18px 20px; margin:28px 0 18px; color:var(--muted2); font-size:15px}
+.howwork p + p{margin-top:10px}
+.howwork b{color:var(--ink)}
+
+/* Price comparison (minimal) */
+.cmp-wrap{max-width:680px}
+table.cmp{width:100%; border-collapse:collapse}
+.cmp th, .cmp td{padding:14px 10px; text-align:left; border-bottom:1px solid var(--line); font-size:15px; color:var(--muted2); vertical-align:middle}
+.cmp thead th{font-size:11.5px; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); font-weight:600}
+.cmp th.me, .cmp td.me{background:rgba(247,198,0,.07)}
+.cmp thead th.me{color:var(--yellow)}
+.cmp td.me{font-family:'Oswald',sans-serif; font-size:21px; font-weight:600; color:var(--yellow)}
+.cmp td:first-child{font-weight:600; color:var(--ink)}
+.cmp tbody tr:last-child td{border-bottom:none}
+.save{display:block; width:max-content; margin:6px 0 0; background:rgba(247,198,0,.12); border:1px solid rgba(247,198,0,.35); color:var(--yellow);
+  font-family:'Inter',sans-serif; font-size:11px; font-weight:700; letter-spacing:.02em; padding:3px 9px; border-radius:100px; line-height:1.4}
+.cmp-note{color:var(--muted); font-size:12.5px; margin-top:14px}
+@media(min-width:760px){
+  .cmp th, .cmp td{padding:15px 16px; font-size:15.5px; white-space:nowrap}
+  .save{display:inline-block; margin:0 0 0 10px; vertical-align:2px}
+}
+
 /* Trilingual flag badge (top right, below phone) */
 .lang-badge-wrap{position:absolute; top:14px; left:0; right:0; z-index:6; width:100%; max-width:1120px; margin:0 auto; padding:0 22px; display:flex; justify-content:flex-end; pointer-events:none}
 .lang-badge{pointer-events:auto; display:inline-flex; align-items:center; gap:9px; background:rgba(20,20,23,.72); border:1px solid var(--line2); padding:6px 12px; border-radius:100px; backdrop-filter:blur(8px)}
@@ -420,6 +477,10 @@ a.qr:hover{border-color:var(--yellow)}
       <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1l-2.2 2.2z"/></svg>
       <span>(754) 252-5245</span>
     </a>
+    <a class="nav-book" href="/book/">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 10h18"/></svg>
+      <span>Book Now</span>
+    </a>
   </div>
 </header>
 
@@ -432,6 +493,24 @@ a.qr:hover{border-color:var(--yellow)}
     <img src="img/hero.jpg" alt="Marc Cycling, professional mobile bike repair. We come to you across Broward County and South Florida. Trilingual service. 5.0 on Google with 115 five-star reviews." width="1536" height="1024" fetchpriority="high">
     <a class="hero-hot hh-call" href="tel:+17542525245" onclick="trackCall()" aria-label="Call now, (754) 252-5245"></a>
     <a class="hero-hot hh-wa" href="https://wa.me/17542525245?text=Hi%20Marc%2C%20my%20bike%20needs%20service.%20I%27m%20in%20%5Bcity%5D%20and%20I%27d%20like%20a%20quote." target="_blank" rel="noopener" onclick="trackWhatsApp()" aria-label="Message us on WhatsApp"></a>
+  </div>
+</section>
+
+<!-- ================= FLAT TIRE (urgent service highlight) ================= -->
+<section class="flat-sec" id="flat">
+  <div class="wrap">
+    <div class="flat-grid">
+      <div class="flat-card">
+        <h3>Flat tire, standard bike</h3>
+        <div class="flat-price">$49 <small>+ tube</small></div>
+        <p>New tube installed on-site, tire and pressure check included. Tubes run $24 to $40 depending on size.</p>
+      </div>
+      <div class="flat-card">
+        <h3>Flat tire, e-bike</h3>
+        <div class="flat-price">$120 <small>+ tube</small></div>
+        <p>Front or rear, any e-bike. We do the heavy lifting.</p>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -551,43 +630,77 @@ a.qr:hover{border-color:var(--yellow)}
   <div class="wrap">
     <div class="sec-head">
       <div class="kicker">Honest pricing</div>
-      <h2>Fair, upfront pricing. No surprises.</h2>
-      <p>Free estimate by phone before any work. No shop markup, no hidden fees. You know the price before we start.</p>
+      <h2>Bike Service Packages</h2>
     </div>
-    <div class="price-grid">
-      <div class="price">
-        <div>
-          <div class="p-name">Flat tire repair</div>
-          <div class="p-sub">New tubes only. Tire and pressure check, done on-site.</div>
+    <div class="pkg-grid bikes">
+      <div class="pkg">
+        <div class="p-head">
+          <div class="p-name">Bronze</div>
+          <div class="p-val">from <b>$95</b></div>
         </div>
-        <div class="p-val">from <b>$39</b></div>
+        <p class="pkg-desc">Quick safety check for bikes in good shape or coming out of storage.</p>
+        <ul class="p-list">
+          <li>35-point safety inspection</li>
+          <li>Chain lube</li>
+          <li>Tire pressure check and inflation</li>
+          <li>Bolt check</li>
+          <li>Quote for anything else your bike needs</li>
+        </ul>
       </div>
-      <div class="price">
-        <div>
-          <div class="p-name">Basic tune-up</div>
-          <div class="p-sub">Brakes and gears adjustment, tires, wipe-down, chain lube</div>
+      <div class="pkg">
+        <div class="p-head">
+          <div class="p-name">Silver</div>
+          <div class="p-val">from <b>$140</b></div>
         </div>
-        <div class="p-val">from <b>$95</b></div>
+        <p class="pkg-desc">The full mechanical tune. Your bike shifts and brakes like new.</p>
+        <ul class="p-list">
+          <li>Everything in Bronze</li>
+          <li>Front and rear derailleur adjustment</li>
+          <li>Front and rear brake adjustment</li>
+          <li>Wheel truing</li>
+          <li>Frame wipe-down</li>
+          <li>Test ride</li>
+        </ul>
       </div>
-      <div class="price feat">
+      <div class="pkg feat">
         <div class="p-tag">Most popular</div>
         <div class="p-head">
-          <div class="p-name">Full bike tune-up</div>
-          <div class="p-val">from <b>$125</b></div>
+          <div class="p-name">Gold</div>
+          <div class="p-val">from <b>$215</b></div>
         </div>
+        <p class="pkg-desc">The deep service. Recommended once a year for regular riders.</p>
         <ul class="p-list">
-          <li>Precision adjustment of gears and brakes</li>
-          <li>Deep clean and lubrication of the chain, cassette and derailleurs</li>
-          <li>Wheel true check for perfect alignment</li>
-          <li>Full bike wipe-down and frame cleaning</li>
-          <li>Technical lubrication of all moving parts</li>
-          <li>Comprehensive safety check of all bolts and components</li>
+          <li>Everything in Silver</li>
+          <li>Full bike wash and detailing</li>
+          <li>Chain, cassette and chainrings removed and degreased</li>
+          <li>Bearing check and adjustment (bottom bracket, hubs, headset)</li>
+          <li>All bolts regreased and torqued to spec</li>
+          <li>Frame polish</li>
         </ul>
       </div>
     </div>
-    <p class="p-note"><b>Prices are for service only, parts not included.</b> E-bikes: add $60. Free estimate by phone, no surprises.</p>
+    <h3 class="pkg-sub">E-Bike Service Packages</h3>
+    <div class="pkg-grid">
+      <div class="pkg">
+        <div class="p-head">
+          <div class="p-name">E-Bike Silver</div>
+          <div class="p-val">from <b>$150</b></div>
+        </div>
+        <p class="pkg-desc">Safety and function inspection, derailleur and brake adjustment, chain lube, bolt check, test ride.</p>
+      </div>
+      <div class="pkg">
+        <div class="p-head">
+          <div class="p-name">E-Bike Gold</div>
+          <div class="p-val">from <b>$220</b></div>
+        </div>
+        <p class="pkg-desc">Everything in Silver, plus full wash and detailing, drivetrain degrease, spoke re-tension and wheel check.</p>
+      </div>
+    </div>
+    <div class="howwork">
+      <p><b>How we work:</b> we come to you, the price is the price, no pickup fees. Every service is done based on what your bike actually needs. If your bike doesn't need something on the list, we tell you on the spot.</p>
+      <p>Prices are for labor only, parts not included. Free estimates by phone, no hidden fees. We accept Zelle, Venmo, Apple Pay, checks and cash.</p>
+    </div>
     <p class="guarantee"><span class="ck">✓</span> Workmanship guaranteed. If something isn't right, we make it right.</p>
-    <p class="paynote">We accept Zelle, Venmo, Apple Pay, checks and cash. No credit cards.</p>
     <div class="cta-row">
       <a class="btn btn-call" href="tel:+17542525245" onclick="trackCall()">
         <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1l-2.2 2.2z"/></svg>
@@ -597,6 +710,45 @@ a.qr:hover{border-color:var(--yellow)}
         <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1 0 12 2zm0 2a8 8 0 1 1-4.1 14.9l-.3-.2-2.8.7.8-2.7-.2-.3A8 8 0 0 1 12 4zm4.6 10.3c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1l-.7.9c-.1.2-.3.2-.5.1a6.5 6.5 0 0 1-3.2-2.8c-.1-.2 0-.4.1-.5l.4-.5.2-.4v-.4l-.7-1.7c-.2-.5-.4-.4-.5-.4h-.5c-.2 0-.4.1-.6.3-.8.8-.9 1.9-.4 3.1a10 10 0 0 0 3.9 4.2c1.9 1 2.5.9 3 .8.5-.1 1.4-.6 1.6-1.2.2-.6.2-1.1.1-1.2z"/></svg>
         WhatsApp
       </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PRICE COMPARISON ================= -->
+<section class="sec" id="compare">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">Compare and save</div>
+      <h2>Same mobile service. Around 20% less.</h2>
+    </div>
+    <div class="cmp-wrap">
+      <table class="cmp">
+        <thead>
+          <tr>
+            <th>Package</th>
+            <th class="me">Marc Cycling</th>
+            <th>Mobile bike franchises in Miami</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Bronze</td>
+            <td class="me">$95<span class="save">Save 36%</span></td>
+            <td>$149</td>
+          </tr>
+          <tr>
+            <td>Silver</td>
+            <td class="me">$140<span class="save">Save 22%</span></td>
+            <td>$179</td>
+          </tr>
+          <tr>
+            <td>Gold</td>
+            <td class="me">$215<span class="save">Save 20%</span></td>
+            <td>$269</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="cmp-note">Prices compared with leading mobile bike service franchises in Miami, July 2026.</p>
     </div>
   </div>
 </section>
