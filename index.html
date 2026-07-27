@@ -36,6 +36,15 @@
 </script>
 <!-- ========================================================================= -->
 
+<!-- Google Analytics (GA4) - convive com a tag do Google Ads acima -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-L4GDL2TC5M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-L4GDL2TC5M');
+</script>
+
 <style>
 :root{
   --bg:#0c0c0e; --bg2:#151517; --bg3:#1d1d21;
@@ -1191,6 +1200,21 @@ table.cmp{width:100%; border-collapse:collapse}
     else if (e.key === 'ArrowRight') lbStep(1);
   });
   document.getElementById('lightbox').addEventListener('click', function(e){ if (e.target === this) closeLightbox(); });
+
+  // ---- Google Analytics (GA4): evento em todo clique de WhatsApp (wa.me) e telefone (tel:) ----
+  // Nao substitui as conversoes do Google Ads acima; as duas medicoes convivem.
+  (function(){
+    document.addEventListener('click', function(e){
+      var a = e.target && e.target.closest ? e.target.closest('a[href*="wa.me"], a[href^="tel:"]') : null;
+      if (!a) return;
+      var tipo = (a.getAttribute('href').indexOf('wa.me') > -1) ? 'whatsapp_click' : 'phone_click';
+      var rotulo = (a.textContent || '').replace(/\s+/g, ' ').trim().slice(0, 60)
+                || (a.getAttribute('aria-label') || '').slice(0, 60) || 'icone';
+      if (typeof window.gtag === 'function') {
+        window.gtag('event', tipo, { rotulo: rotulo, pagina: location.pathname });
+      }
+    }, true);
+  })();
 </script>
 
 </body>
