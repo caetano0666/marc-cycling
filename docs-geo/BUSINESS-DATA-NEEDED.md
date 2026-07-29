@@ -26,7 +26,14 @@ O que so o Caetano pode fornecer ou confirmar. Nada disso foi inventado nem publ
 - **Service call fee: $75, descontado do preco final se o servico for aprovado** (confirmado em 29/07/2026). Publicado na FAQ, llms.txt e business.json.
 - E-mail marcbikebr@gmail.com aprovado para o schema (29/07/2026).
 
-## Pendencia de politica ainda aberta
+## Politicas: TODAS RESOLVIDAS em 29/07/2026
 
-- FAQ #3 afirma "We do not rebuild batteries or modify motors" [DEDUZIDA do prompt]. Confirmar se esta correto ou ajustar.
-- Divergencia registrada (21-B): a pagina /book e a descricao da agenda do Google dizem "Miami area"; o resto do site diz "Broward County & South Florida + 12 cidades". Decidir o texto padrao de area para os dois pontos.
+- E-bike: so mecanica; bateria/motor interno, fiacao e kits fora do escopo (publicado com redacao propria).
+- Cancelamento/reagendamento: sem taxa. No-show (reserva nao cancelada): cobra o service-call fee de $75 (valor amarrado ao service-call; avisar se o proprietario definir outro valor).
+- Garantia: reclamacao em ate 15 dias, resolvida sem custo.
+- Cliente pode assistir ao servico; preparo pre-atendimento publicado (bike acessivel, bateria carregada).
+- Mau tempo: politica DESCARTADA pelo proprietario; nao publicar.
+
+## Divergencia registrada (21-B), ainda aberta
+
+- A pagina /book e a descricao da agenda do Google dizem "Miami area"; o resto do site diz "Broward County & South Florida + 12 cidades". Decidir o texto padrao de area para os dois pontos.
