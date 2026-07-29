@@ -36,5 +36,5 @@ O que so o Caetano pode fornecer ou confirmar. Nada disso foi inventado nem publ
 
 ## Divergencia 21-B: RESOLVIDA no site (29/07/2026)
 
-- /book corrigida para "in Miami". A descricao da agenda do Google o proprietario ajusta por fora (unica ponta restante).
+- /book corrigida para "in Miami". Descricao da agenda do Google corrigida em 29/07/2026 para "Mobile bike service in Broward County and South Florida" (feito via Chrome). DIVERGENCIA TOTALMENTE FECHADA.
 - Lista oficial de areas: 13 cidades (incluida Doral em 29/07/2026) + Broward County, igual ao Google Business Profile.
