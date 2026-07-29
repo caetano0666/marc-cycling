@@ -4,9 +4,7 @@ O que so o Caetano pode fornecer ou confirmar. Nada disso foi inventado nem publ
 
 ## Confirmar
 
-1. **Cidades atendidas**: o site publica Broward County + Fort Lauderdale, Hollywood, Pembroke Pines, Pompano Beach, Coral Springs, Davie, Plantation, Sunrise, Weston, Miramar, Coconut Creek e "Miami area". Confirme que todas sao atendidas de verdade e diga se falta alguma. Weston esta nas chips e no schema.
-2. **Anos de experiencia** do Marc (numero real, ex.: "20+ years"): necessario para a pagina About e Person schema. Nao publicar sem confirmacao.
-3. **E-mail comercial oficial**: usei marcbikebr@gmail.com (ja publico no codigo do formulario). Confirmar se e o correto para schema e perfis.
+(1, 2 e 3 RESOLVIDOS em 29/07/2026: as 12 cidades + Broward confirmadas; experiencia desde 2005 publicada no site, Person schema e llms.txt; e-mail marcbikebr@gmail.com aprovado.)
 
 ## Fornecer (quando existirem)
 
