@@ -20,7 +20,7 @@
 
 ## Service area
 
-Broward County and South Florida: Fort Lauderdale, Hollywood, Pembroke Pines, Pompano Beach, Coral Springs, Davie, Plantation, Sunrise, Weston, Miramar, Coconut Creek and the Miami area.
+Broward County and South Florida: Fort Lauderdale, Hollywood, Pembroke Pines, Pompano Beach, Coral Springs, Davie, Plantation, Sunrise, Weston, Miramar, Coconut Creek and Miami.
 
 ## Service-call fee and cancellation
 
@@ -32,5 +32,5 @@ Zelle, Venmo, Apple Pay, checks and cash. No credit cards.
 
 ## Notes
 
-- Mechanical e-bike service and battery checks are offered. Battery rebuilds and motor modifications are not.
+- All e-bike work is mechanical (brakes, gears, tires, wheels, drivetrain, tune-ups, battery charge check). Internal battery and motor repairs, wiring faults and motor conversion kits are outside the service scope.
 - Responsible mechanic: Caetano Marc Zammataro ("Marc"), working on bikes since 2005.

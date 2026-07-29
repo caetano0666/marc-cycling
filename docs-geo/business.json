@@ -35,6 +35,7 @@
     { "name": "E-Bike Silver Service", "priceFrom": 150 },
     { "name": "E-Bike Gold Service", "priceFrom": 220 }
   ],
-  "notOffered": ["Battery rebuilds", "Motor modifications", "Controller programming"],
+  "notOffered": ["Internal battery repairs and rebuilds", "Internal motor repairs", "Wiring and electrical fault troubleshooting", "Motor conversion kits", "Controller programming"],
+  "_notOfferedNote": "Politica adotada pelo proprietario em 29/07/2026: todo servico de e-bike e mecanico; trabalho eletrico interno fica fora do escopo. Redacao propria, nao copiar concorrente.",
   "reviews": { "rating": "5.0", "count": "115+", "asOf": "2026-07", "source": "https://g.page/marccycling", "rule": "numero muda; nunca hard-codar sem data 'as of'" }
 }
