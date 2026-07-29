@@ -1,0 +1,56 @@
+# Marc Cycling - robots.txt
+# Search and AI crawlers are welcome. Internal docs are excluded.
+
+User-agent: Googlebot
+Allow: /
+Disallow: /docs-geo/
+
+User-agent: Bingbot
+Allow: /
+Disallow: /docs-geo/
+
+User-agent: GPTBot
+Allow: /
+Disallow: /docs-geo/
+
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /docs-geo/
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /docs-geo/
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /docs-geo/
+
+User-agent: Claude-User
+Allow: /
+Disallow: /docs-geo/
+
+User-agent: Claude-SearchBot
+Allow: /
+Disallow: /docs-geo/
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /docs-geo/
+
+User-agent: Perplexity-User
+Allow: /
+Disallow: /docs-geo/
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /docs-geo/
+
+User-agent: Applebot
+Allow: /
+Disallow: /docs-geo/
+
+User-agent: *
+Allow: /
+Disallow: /docs-geo/
+
+Sitemap: https://marccycling.com/sitemap.xml

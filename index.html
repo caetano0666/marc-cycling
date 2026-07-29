@@ -11,9 +11,17 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="Marc Cycling | Mobile E-Bike & Bike Repair, We Come to You">
 <meta property="og:description" content="Expert mobile bike & e-bike repair across Broward County and South Florida. 5.0 stars from 115 Google reviews. Call (754) 252-5245.">
-<meta property="og:image" content="img/marc.jpg">
+<meta property="og:image" content="https://marccycling.com/img/marc.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="1200">
+<meta property="og:site_name" content="Marc Cycling">
+<meta property="og:locale" content="en_US">
 <link rel="canonical" href="https://marccycling.com/">
 <meta property="og:url" content="https://marccycling.com/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Marc Cycling | Mobile E-Bike & Bike Repair, We Come to You">
+<meta name="twitter:description" content="Expert mobile bike & e-bike repair across Broward County and South Florida. 5.0 stars on Google. Call (754) 252-5245.">
+<meta name="twitter:image" content="https://marccycling.com/img/marc.jpg">
 
 <link rel="icon" type="image/png" href="img/favicon.png">
 <link rel="apple-touch-icon" href="img/favicon.png">
@@ -457,6 +465,33 @@ table.cmp{width:100%; border-collapse:collapse}
   .save{display:inline-block; margin:0 0 0 10px; vertical-align:2px}
 }
 
+/* GEO: resposta direta no topo */
+.intro-sec{padding:28px 0 0}
+.intro-sec p{color:var(--muted2); font-size:15.5px; max-width:820px; line-height:1.6}
+.intro-sec b{color:var(--ink)}
+.intro-sec a{color:var(--yellow); font-weight:600}
+
+/* Data de atualizacao de precos */
+.price-upd{color:var(--muted); font-size:12.5px; margin-top:10px}
+
+/* FAQ */
+.faq-list{display:grid; gap:12px; max-width:820px}
+.faq-item{background:var(--bg2); border:1px solid var(--line); border-radius:14px; overflow:hidden}
+.faq-item summary{cursor:pointer; list-style:none; display:flex; justify-content:space-between; align-items:center; gap:14px;
+  padding:18px 20px; font-weight:600; font-size:16px}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:"+"; color:var(--yellow); font-size:22px; font-weight:700; flex:0 0 auto; line-height:1}
+.faq-item[open] summary::after{content:"\2212"}
+.faq-item[open] summary{border-bottom:1px solid var(--line)}
+.faq-item .fa{padding:16px 20px 20px; color:var(--muted2); font-size:15px; line-height:1.6}
+.faq-item .fa a{color:var(--yellow); font-weight:600}
+
+/* Breadcrumbs (paginas internas) */
+.crumbs{font-size:13px; color:var(--muted); padding:14px 0 0}
+.crumbs a{color:var(--muted2)}
+.crumbs a:hover{color:var(--yellow)}
+.crumbs .sep{margin:0 7px; color:var(--muted)}
+
 /* Trilingual flag badge (top right, below phone) */
 .lang-badge-wrap{position:absolute; top:14px; left:0; right:0; z-index:6; width:100%; max-width:1120px; margin:0 auto; padding:0 22px; display:flex; justify-content:flex-end; pointer-events:none}
 .lang-badge{pointer-events:auto; display:inline-flex; align-items:center; gap:9px; background:rgba(20,20,23,.72); border:1px solid var(--line2); padding:6px 12px; border-radius:100px; backdrop-filter:blur(8px)}
@@ -480,6 +515,7 @@ table.cmp{width:100%; border-collapse:collapse}
       <a href="#services">Services</a>
       <a href="#how">How it works</a>
       <a href="#area">Service area</a>
+      <a href="#faq">FAQ</a>
       <a href="https://g.page/marccycling/review" target="_blank" rel="noopener">Reviews</a>
     </nav>
     <a class="nav-call" href="tel:+17542525245" onclick="trackCall()">
@@ -502,6 +538,13 @@ table.cmp{width:100%; border-collapse:collapse}
     <img src="img/hero.jpg" alt="Marc Cycling, professional mobile bike repair. We come to you across Broward County and South Florida. Trilingual service. 5.0 on Google with 115 five-star reviews." width="1536" height="1024" fetchpriority="high">
     <a class="hero-hot hh-call" href="tel:+17542525245" onclick="trackCall()" aria-label="Call now, (754) 252-5245"></a>
     <a class="hero-hot hh-wa" href="https://wa.me/17542525245?text=Hi%20Marc%2C%20my%20bike%20needs%20service.%20I%27m%20in%20%5Bcity%5D%20and%20I%27d%20like%20a%20quote." target="_blank" rel="noopener" onclick="trackWhatsApp()" aria-label="Message us on WhatsApp"></a>
+  </div>
+</section>
+
+<!-- ================= GEO: resposta direta (quem, o que, onde, como) ================= -->
+<section class="intro-sec" aria-label="About Marc Cycling">
+  <div class="wrap">
+    <p><b>Marc Cycling is a mobile bicycle and e-bike repair service in Broward County and South Florida.</b> Marc, the mechanic, comes to your home or office with professional tools and fixes most problems on the spot. Labor prices are published upfront: flat tires from $49, tune-ups from $95, e-bike service from $150, parts not included. <a href="/book/">Book a Saturday or Sunday visit online (7am to 5pm)</a>, or call and WhatsApp any day at <a href="tel:+17542525245" onclick="trackCall()">(754) 252-5245</a>. Service in English, Portuguese and Spanish.</p>
   </div>
 </section>
 
@@ -710,6 +753,7 @@ table.cmp{width:100%; border-collapse:collapse}
       <p>Prices are for labor only, parts not included. Free estimates by phone, no hidden fees. We accept Zelle, Venmo, Apple Pay, checks and cash.</p>
     </div>
     <p class="guarantee"><span class="ck">✓</span> Workmanship guaranteed. If something isn't right, we make it right.</p>
+    <p class="price-upd">Prices updated July 2026.</p>
     <div class="cta-row">
       <a class="btn btn-call" href="tel:+17542525245" onclick="trackCall()">
         <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1l-2.2 2.2z"/></svg>
@@ -828,7 +872,7 @@ table.cmp{width:100%; border-collapse:collapse}
       <span class="chip">Weston</span>
       <span class="chip">Miramar</span>
       <span class="chip">Coconut Creek</span>
-      <span class="chip">Miami area</span>
+      <span class="chip">Miami</span>
     </div>
     <p class="note">Not sure if we cover your area? <a href="tel:+17542525245" onclick="trackCall()">Just call (754) 252-5245</a>, we'll let you know right away.</p>
   </div>
@@ -955,6 +999,50 @@ table.cmp{width:100%; border-collapse:collapse}
   </div>
 </section>
 
+<!-- ================= FAQ (conteudo espelha o FAQPage schema) ================= -->
+<section class="sec how" id="faq">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">Questions riders ask us</div>
+      <h2>Frequently asked questions</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>Do you come to the customer's location?</summary>
+        <div class="fa">Yes. Marc Cycling is a fully mobile service: the mechanic comes to your home, office or building with professional tools, and most repairs are done on the spot. There is no shop to visit and no pickup fee.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Which areas do you serve?</summary>
+        <div class="fa">Broward County and South Florida, including Fort Lauderdale, Hollywood, Pembroke Pines, Pompano Beach, Coral Springs, Davie, Plantation, Sunrise, Weston, Miramar, Coconut Creek and Miami. Not sure about your city? <a href="tel:+17542525245" onclick="trackCall()">Call (754) 252-5245</a> and we'll tell you right away.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Do you work on e-bikes?</summary>
+        <div class="fa">Yes. We service e-bikes mechanically: motor and system diagnostics, battery checks, brakes, gears, tires and full tune-ups (E-Bike Silver from $150, E-Bike Gold from $220). We do not rebuild batteries or modify motors.</div>
+      </details>
+      <details class="faq-item">
+        <summary>How much does a mobile bike tune-up cost?</summary>
+        <div class="fa">Tune-up packages start at $95: Bronze from $95, Silver from $140 and Gold from $215. For e-bikes, Silver is from $150 and Gold from $220. A standard flat tire repair is $49 plus tube. Prices are for labor only, parts not included. Prices updated July 2026.</div>
+      </details>
+      <details class="faq-item">
+        <summary>How do I schedule an appointment?</summary>
+        <div class="fa">Book online at <a href="/book/">marccycling.com/book</a>, with Saturday and Sunday appointments from 7am to 5pm Eastern. You can also call or WhatsApp <a href="tel:+17542525245" onclick="trackCall()">(754) 252-5245</a> any day of the week, we usually reply within minutes.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Is there a service-call or pickup fee?</summary>
+        <div class="fa">No. The price is the price: no pickup fees and no hidden fees. Estimates by phone are free, and if your bike doesn't need something on the list, we tell you on the spot.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Do you provide the parts?</summary>
+        <div class="fa">Prices cover labor only; parts are charged separately. Common parts like inner tubes are installed on-site (tubes run $24 to $40 depending on size).</div>
+      </details>
+      <details class="faq-item">
+        <summary>What payment methods do you accept?</summary>
+        <div class="fa">Zelle, Venmo, Apple Pay, checks and cash. Credit cards are not accepted.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
 <!-- ================= FINAL CTA ================= -->
 <section class="final">
   <div class="wrap">
@@ -984,6 +1072,8 @@ table.cmp{width:100%; border-collapse:collapse}
     <div class="foot-col">
       <h4>Contact</h4>
       <a class="foot-phone" href="tel:+17542525245" onclick="trackCall()">(754) 252-5245</a>
+      <a href="/book/">Book online</a>
+      <a href="#faq">Frequently asked questions</a>
       <a href="https://wa.me/17542525245?text=Hi%20Marc%2C%20my%20bike%20needs%20service.%20I%27m%20in%20%5Bcity%5D%20and%20I%27d%20like%20a%20quote." target="_blank" rel="noopener" onclick="trackWhatsApp()">WhatsApp us</a>
       <p class="paynote" style="margin-top:14px">We accept Zelle, Venmo, Apple Pay, checks and cash. No credit cards.</p>
     </div>
@@ -1024,37 +1114,112 @@ table.cmp{width:100%; border-collapse:collapse}
   </a>
 </div>
 
-<!-- ================= SCHEMA.ORG (SEO) ================= -->
+<!-- ================= SCHEMA.ORG (SEO + GEO) =================
+     Entidades estaveis (ver docs-geo/ENTITY-MAP.md). Fonte de verdade: docs-geo/business.json.
+     Regras: sem aggregateRating proprio, sem endereco (service-area business),
+     horario oficial sab+dom 7am-5pm ET confirmado pelo proprietario em 27/07/2026. -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Marc Cycling",
-  "description": "Mobile e-bike and bicycle repair service. We come to your home or office across Broward County and South Florida.",
-  "image": "img/marc.jpg",
-  "telephone": "+1-754-252-5245",
-  "priceRange": "$$",
-  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "115", "bestRating": "5" },
-  "areaServed": [
-    { "@type": "AdministrativeArea", "name": "Broward County, FL" },
-    { "@type": "City", "name": "Fort Lauderdale" },
-    { "@type": "City", "name": "Hollywood" },
-    { "@type": "City", "name": "Pompano Beach" },
-    { "@type": "City", "name": "Coral Springs" },
-    { "@type": "City", "name": "Davie" },
-    { "@type": "City", "name": "Plantation" }
-  ],
-  "knowsLanguage": ["en", "es", "pt"],
-  "openingHoursSpecification": [{
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
-    "opens": "08:00",
-    "closes": "18:00"
-  }],
-  "makesOffer": {
-    "@type": "Offer",
-    "itemOffered": { "@type": "Service", "name": "Mobile bike and e-bike repair" }
-  }
+  "@graph": [
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://marccycling.com/#localbusiness",
+      "name": "Marc Cycling",
+      "legalName": "Marc Cycling LLC",
+      "url": "https://marccycling.com/",
+      "description": "Marc Cycling provides professional mobile bicycle repair, assembly, maintenance and diagnostic services at the customer's location across Broward County and South Florida. Service-area business: the mechanic comes to you.",
+      "image": "https://marccycling.com/img/marc.jpg",
+      "logo": { "@type": "ImageObject", "@id": "https://marccycling.com/#logo", "url": "https://marccycling.com/img/logo-white.png", "caption": "Marc Cycling logo" },
+      "telephone": "+1-754-252-5245",
+      "email": "marcbikebr@gmail.com",
+      "founder": { "@id": "https://marccycling.com/#person-caetano" },
+      "knowsLanguage": ["en", "pt", "es"],
+      "sameAs": ["https://g.page/marccycling"],
+      "areaServed": [
+        { "@type": "AdministrativeArea", "name": "Broward County", "containedInPlace": { "@type": "State", "name": "Florida" } },
+        { "@type": "City", "name": "Fort Lauderdale", "containedInPlace": { "@type": "State", "name": "Florida" } },
+        { "@type": "City", "name": "Hollywood", "containedInPlace": { "@type": "State", "name": "Florida" } },
+        { "@type": "City", "name": "Pembroke Pines", "containedInPlace": { "@type": "State", "name": "Florida" } },
+        { "@type": "City", "name": "Pompano Beach", "containedInPlace": { "@type": "State", "name": "Florida" } },
+        { "@type": "City", "name": "Coral Springs", "containedInPlace": { "@type": "State", "name": "Florida" } },
+        { "@type": "City", "name": "Davie", "containedInPlace": { "@type": "State", "name": "Florida" } },
+        { "@type": "City", "name": "Plantation", "containedInPlace": { "@type": "State", "name": "Florida" } },
+        { "@type": "City", "name": "Sunrise", "containedInPlace": { "@type": "State", "name": "Florida" } },
+        { "@type": "City", "name": "Weston", "containedInPlace": { "@type": "State", "name": "Florida" } },
+        { "@type": "City", "name": "Miramar", "containedInPlace": { "@type": "State", "name": "Florida" } },
+        { "@type": "City", "name": "Coconut Creek", "containedInPlace": { "@type": "State", "name": "Florida" } },
+        { "@type": "City", "name": "Miami", "containedInPlace": { "@type": "State", "name": "Florida" } }
+      ],
+      "openingHoursSpecification": [{
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Saturday", "Sunday"],
+        "opens": "07:00",
+        "closes": "17:00"
+      }],
+      "paymentAccepted": "Zelle, Venmo, Apple Pay, Check, Cash",
+      "currenciesAccepted": "USD",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Mobile Bicycle Services",
+        "itemListElement": [
+          { "@type": "Offer", "url": "https://marccycling.com/#flat", "priceSpecification": { "@type": "PriceSpecification", "minPrice": 49, "priceCurrency": "USD" }, "description": "New tube installed on-site, tire and pressure check included. Tube not included in labor price.", "itemOffered": { "@type": "Service", "name": "Flat Tire Repair (standard bike)", "serviceType": "Bicycle flat tire repair", "provider": { "@id": "https://marccycling.com/#localbusiness" } } },
+          { "@type": "Offer", "url": "https://marccycling.com/#flat", "priceSpecification": { "@type": "PriceSpecification", "minPrice": 120, "priceCurrency": "USD" }, "description": "Front or rear flat tire on any e-bike, repaired on-site. Tube not included in labor price.", "itemOffered": { "@type": "Service", "name": "Flat Tire Repair (e-bike)", "serviceType": "E-bike flat tire repair", "provider": { "@id": "https://marccycling.com/#localbusiness" } } },
+          { "@type": "Offer", "url": "https://marccycling.com/#pricing", "priceSpecification": { "@type": "PriceSpecification", "minPrice": 95, "priceCurrency": "USD" }, "description": "Quick safety check: 35-point safety inspection, chain lube, tire pressure check and inflation, bolt check.", "itemOffered": { "@type": "Service", "name": "Bronze Bike Tune-Up", "serviceType": "Bicycle tune-up", "provider": { "@id": "https://marccycling.com/#localbusiness" } } },
+          { "@type": "Offer", "url": "https://marccycling.com/#pricing", "priceSpecification": { "@type": "PriceSpecification", "minPrice": 140, "priceCurrency": "USD" }, "description": "Full mechanical tune: Bronze plus derailleur and brake adjustment, wheel truing, frame wipe-down, test ride.", "itemOffered": { "@type": "Service", "name": "Silver Bike Tune-Up", "serviceType": "Bicycle tune-up", "provider": { "@id": "https://marccycling.com/#localbusiness" } } },
+          { "@type": "Offer", "url": "https://marccycling.com/#pricing", "priceSpecification": { "@type": "PriceSpecification", "minPrice": 215, "priceCurrency": "USD" }, "description": "Deep service: Silver plus full wash and detailing, drivetrain degrease, bearing check and adjustment, frame polish.", "itemOffered": { "@type": "Service", "name": "Gold Bike Tune-Up", "serviceType": "Bicycle tune-up", "provider": { "@id": "https://marccycling.com/#localbusiness" } } },
+          { "@type": "Offer", "url": "https://marccycling.com/#pricing", "priceSpecification": { "@type": "PriceSpecification", "minPrice": 150, "priceCurrency": "USD" }, "description": "Safety and function inspection, derailleur and brake adjustment, chain lube, bolt check, test ride.", "itemOffered": { "@type": "Service", "name": "E-Bike Silver Service", "serviceType": "E-bike mechanical service", "provider": { "@id": "https://marccycling.com/#localbusiness" } } },
+          { "@type": "Offer", "url": "https://marccycling.com/#pricing", "priceSpecification": { "@type": "PriceSpecification", "minPrice": 220, "priceCurrency": "USD" }, "description": "E-Bike Silver plus full wash and detailing, drivetrain degrease, spoke re-tension and wheel check.", "itemOffered": { "@type": "Service", "name": "E-Bike Gold Service", "serviceType": "E-bike mechanical service", "provider": { "@id": "https://marccycling.com/#localbusiness" } } }
+        ]
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://marccycling.com/#person-caetano",
+      "name": "Caetano Marc Zammataro",
+      "alternateName": ["Marc", "Cae"],
+      "jobTitle": "Founder and Bicycle Mechanic",
+      "description": "Professional bicycle mechanic with long experience in bicycle assembly, maintenance, diagnostics and customer service. Runs Marc Cycling, a mobile repair service in South Florida.",
+      "image": "https://marccycling.com/img/marc.jpg",
+      "url": "https://marccycling.com/",
+      "worksFor": { "@id": "https://marccycling.com/#localbusiness" },
+      "knowsLanguage": ["en", "pt", "es"],
+      "knowsAbout": ["Bicycle repair", "Bicycle assembly", "Bicycle maintenance", "Bicycle tune-ups", "Brake adjustment", "Drivetrain maintenance", "Wheel truing", "Mobile bicycle service", "E-bike mechanical service"]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://marccycling.com/#website",
+      "url": "https://marccycling.com/",
+      "name": "Marc Cycling",
+      "publisher": { "@id": "https://marccycling.com/#localbusiness" },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://marccycling.com/#webpage",
+      "url": "https://marccycling.com/",
+      "name": "Marc Cycling | Mobile E-Bike & Bike Repair, We Come to You (Broward & South Florida)",
+      "isPartOf": { "@id": "https://marccycling.com/#website" },
+      "about": { "@id": "https://marccycling.com/#localbusiness" },
+      "primaryImageOfPage": "https://marccycling.com/img/marc.jpg",
+      "inLanguage": "en",
+      "dateModified": "2026-07-28"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://marccycling.com/#faq",
+      "mainEntity": [
+        { "@type": "Question", "name": "Do you come to the customer's location?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Marc Cycling is a fully mobile service: the mechanic comes to your home, office or building with professional tools, and most repairs are done on the spot. There is no shop to visit and no pickup fee." } },
+        { "@type": "Question", "name": "Which areas do you serve?", "acceptedAnswer": { "@type": "Answer", "text": "Broward County and South Florida, including Fort Lauderdale, Hollywood, Pembroke Pines, Pompano Beach, Coral Springs, Davie, Plantation, Sunrise, Weston, Miramar, Coconut Creek and Miami. Not sure about your city? Call (754) 252-5245 and we'll tell you right away." } },
+        { "@type": "Question", "name": "Do you work on e-bikes?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. We service e-bikes mechanically: motor and system diagnostics, battery checks, brakes, gears, tires and full tune-ups (E-Bike Silver from $150, E-Bike Gold from $220). We do not rebuild batteries or modify motors." } },
+        { "@type": "Question", "name": "How much does a mobile bike tune-up cost?", "acceptedAnswer": { "@type": "Answer", "text": "Tune-up packages start at $95: Bronze from $95, Silver from $140 and Gold from $215. For e-bikes, Silver is from $150 and Gold from $220. A standard flat tire repair is $49 plus tube. Prices are for labor only, parts not included. Prices updated July 2026." } },
+        { "@type": "Question", "name": "How do I schedule an appointment?", "acceptedAnswer": { "@type": "Answer", "text": "Book online at marccycling.com/book, with Saturday and Sunday appointments from 7am to 5pm Eastern. You can also call or WhatsApp (754) 252-5245 any day of the week, we usually reply within minutes." } },
+        { "@type": "Question", "name": "Is there a service-call or pickup fee?", "acceptedAnswer": { "@type": "Answer", "text": "No. The price is the price: no pickup fees and no hidden fees. Estimates by phone are free, and if your bike doesn't need something on the list, we tell you on the spot." } },
+        { "@type": "Question", "name": "Do you provide the parts?", "acceptedAnswer": { "@type": "Answer", "text": "Prices cover labor only; parts are charged separately. Common parts like inner tubes are installed on-site (tubes run $24 to $40 depending on size)." } },
+        { "@type": "Question", "name": "What payment methods do you accept?", "acceptedAnswer": { "@type": "Answer", "text": "Zelle, Venmo, Apple Pay, checks and cash. Credit cards are not accepted." } }
+      ]
+    }
+  ]
 }
 </script>
 
@@ -1114,8 +1279,11 @@ table.cmp{width:100%; border-collapse:collapse}
       }).catch(function(){});
     } catch (err) {}
 
-    // (d) Conversao de WhatsApp no Google Ads
-    if (typeof gtag === 'function') { gtag('event','conversion',{ 'send_to':'AW-459053867/SsQyCMKhnNAcEKu28toB' }); }
+    // (d) Conversao de WhatsApp no Google Ads + evento GA4 do formulario
+    if (typeof gtag === 'function') {
+      gtag('event','conversion',{ 'send_to':'AW-459053867/SsQyCMKhnNAcEKu28toB' });
+      gtag('event','contact_form_submit',{ intent: intent || 'service', pagina: location.pathname });
+    }
 
     // (c) Abre o WhatsApp com a mensagem pronta
     var url = 'https://wa.me/17542525245?text=' + encodeURIComponent(msg);
@@ -1201,13 +1369,17 @@ table.cmp{width:100%; border-collapse:collapse}
   });
   document.getElementById('lightbox').addEventListener('click', function(e){ if (e.target === this) closeLightbox(); });
 
-  // ---- Google Analytics (GA4): evento em todo clique de WhatsApp (wa.me) e telefone (tel:) ----
+  // ---- Google Analytics (GA4): eventos de conversao (WhatsApp, telefone, booking, reviews) ----
   // Nao substitui as conversoes do Google Ads acima; as duas medicoes convivem.
   (function(){
     document.addEventListener('click', function(e){
-      var a = e.target && e.target.closest ? e.target.closest('a[href*="wa.me"], a[href^="tel:"]') : null;
+      var a = e.target && e.target.closest ? e.target.closest('a[href*="wa.me"], a[href^="tel:"], a[href*="/book"], a[href*="calendar.app.google"], a[href*="g.page"], a[href*="search.google.com/local/writereview"]') : null;
       if (!a) return;
-      var tipo = (a.getAttribute('href').indexOf('wa.me') > -1) ? 'whatsapp_click' : 'phone_click';
+      var h = a.getAttribute('href') || '';
+      var tipo = h.indexOf('wa.me') > -1 ? 'whatsapp_click'
+               : h.indexOf('tel:') === 0 ? 'phone_click'
+               : (h.indexOf('g.page') > -1 || h.indexOf('writereview') > -1) ? 'google_reviews_click'
+               : 'book_appointment_click';
       var rotulo = (a.textContent || '').replace(/\s+/g, ' ').trim().slice(0, 60)
                 || (a.getAttribute('aria-label') || '').slice(0, 60) || 'icone';
       if (typeof window.gtag === 'function') {

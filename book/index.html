@@ -10,9 +10,46 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="Book Your Service | Marc Cycling">
 <meta property="og:description" content="Book your mobile bike or e-bike service online. We come to you. Saturdays and Sundays, 7am to 5pm, Miami.">
-<meta property="og:image" content="/img/marc.jpg">
+<meta property="og:image" content="https://marccycling.com/img/marc.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="1200">
+<meta property="og:site_name" content="Marc Cycling">
+<meta property="og:locale" content="en_US">
 <link rel="canonical" href="https://marccycling.com/book/">
 <meta property="og:url" content="https://marccycling.com/book/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Book Your Service | Marc Cycling">
+<meta name="twitter:description" content="Book your mobile bike or e-bike service online. We come to you. Saturdays and Sundays, 7am to 5pm, Miami.">
+<meta name="twitter:image" content="https://marccycling.com/img/marc.jpg">
+
+<!-- Schema: pagina de booking reutilizando as entidades do site (ver docs-geo/ENTITY-MAP.md) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://marccycling.com/book/#webpage",
+      "url": "https://marccycling.com/book/",
+      "name": "Book Your Service | Marc Cycling, Mobile Bike & E-Bike Repair",
+      "description": "Book your mobile bike or e-bike service online. Saturdays and Sundays, 7am to 5pm Eastern. We come to you across Broward County and South Florida.",
+      "isPartOf": { "@id": "https://marccycling.com/#website" },
+      "about": { "@id": "https://marccycling.com/#localbusiness" },
+      "inLanguage": "en",
+      "dateModified": "2026-07-28",
+      "breadcrumb": { "@id": "https://marccycling.com/book/#breadcrumb" }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://marccycling.com/book/#breadcrumb",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://marccycling.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Book your service", "item": "https://marccycling.com/book/" }
+      ]
+    }
+  ]
+}
+</script>
 
 <link rel="icon" type="image/png" href="/img/favicon.png">
 <link rel="apple-touch-icon" href="/img/favicon.png">
@@ -94,8 +131,14 @@ header{
 }
 @media(max-width:359px){ .nav-book span{display:none} .nav-book{padding:9px 12px} }
 
+/* Breadcrumb */
+.crumbs{font-size:13px; color:var(--muted); padding:14px 0 0}
+.crumbs a{color:var(--muted2)}
+.crumbs a:hover{color:var(--yellow)}
+.crumbs .sep{margin:0 7px; color:var(--muted)}
+
 /* Page head */
-.book-hero{padding:52px 0 10px; position:relative; overflow:hidden}
+.book-hero{padding:36px 0 10px; position:relative; overflow:hidden}
 .book-hero::before{
   content:""; position:absolute; top:-160px; right:-120px; width:620px; height:620px; z-index:0;
   background:radial-gradient(circle, rgba(247,198,0,.14), rgba(247,198,0,.04) 45%, transparent 68%);
@@ -179,6 +222,7 @@ footer{background:#08080a; border-top:1px solid var(--line); padding:50px 0 120p
       <a href="/#services">Services</a>
       <a href="/#pricing">Pricing</a>
       <a href="/#area">Service area</a>
+      <a href="/#faq">FAQ</a>
       <a href="https://g.page/marccycling/review" target="_blank" rel="noopener">Reviews</a>
     </nav>
     <a class="nav-call" href="tel:+17542525245" onclick="trackCall()">
@@ -195,6 +239,7 @@ footer{background:#08080a; border-top:1px solid var(--line); padding:50px 0 120p
 <!-- ================= PAGE HEAD ================= -->
 <section class="book-hero">
   <div class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span class="sep">›</span><span>Book your service</span></nav>
     <div class="kicker">Online booking</div>
     <h1>Book your <span class="yellow">service</span></h1>
     <p class="book-sub">We come to you, service done at your home. <b>Saturdays and Sundays, 7am to 5pm</b>, in the Miami area. Pick a time below and we'll be there.</p>
@@ -213,7 +258,7 @@ footer{background:#08080a; border-top:1px solid var(--line); padding:50px 0 120p
       <div class="sum-card"><div class="sn">Flat repair</div><div class="sp">$49 <small>+ tube</small></div></div>
       <div class="sum-card"><div class="sn">E-bike flat</div><div class="sp">$120 <small>+ tube</small></div></div>
     </div>
-    <p class="sum-note">Prices are for labor only, parts not included. <a href="/#pricing">See what's included in each package</a></p>
+    <p class="sum-note">Prices are for labor only, parts not included. Prices updated July 2026. <a href="/#pricing">See what's included in each package</a></p>
   </div>
 </section>
 
@@ -292,13 +337,17 @@ footer{background:#08080a; border-top:1px solid var(--line); padding:50px 0 120p
     return true;
   }
 
-  // ---- Google Analytics (GA4): evento em todo clique de WhatsApp (wa.me) e telefone (tel:) ----
+  // ---- Google Analytics (GA4): eventos de conversao (WhatsApp, telefone, booking, reviews) ----
   // Nao substitui as conversoes do Google Ads acima; as duas medicoes convivem.
   (function(){
     document.addEventListener('click', function(e){
-      var a = e.target && e.target.closest ? e.target.closest('a[href*="wa.me"], a[href^="tel:"]') : null;
+      var a = e.target && e.target.closest ? e.target.closest('a[href*="wa.me"], a[href^="tel:"], a[href*="calendar.app.google"], a[href*="g.page"], a[href*="search.google.com/local/writereview"]') : null;
       if (!a) return;
-      var tipo = (a.getAttribute('href').indexOf('wa.me') > -1) ? 'whatsapp_click' : 'phone_click';
+      var h = a.getAttribute('href') || '';
+      var tipo = h.indexOf('wa.me') > -1 ? 'whatsapp_click'
+               : h.indexOf('tel:') === 0 ? 'phone_click'
+               : (h.indexOf('g.page') > -1 || h.indexOf('writereview') > -1) ? 'google_reviews_click'
+               : 'book_appointment_click';
       var rotulo = (a.textContent || '').replace(/\s+/g, ' ').trim().slice(0, 60)
                 || (a.getAttribute('aria-label') || '').slice(0, 60) || 'icone';
       if (typeof window.gtag === 'function') {
