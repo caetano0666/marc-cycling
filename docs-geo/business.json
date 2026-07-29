@@ -20,6 +20,7 @@
   "openingHours": "Saturday and Sunday, 07:00-17:00 America/New_York (confirmado pelo proprietario em 27/07/2026 nesta sessao; contato por telefone/WhatsApp responde 7 dias)",
   "languages": ["en", "pt", "es"],
   "founder": { "name": "Caetano Marc Zammataro", "alternateNames": ["Marc", "Cae"], "jobTitle": "Founder and Bicycle Mechanic" },
+  "serviceCallFee": { "amount": 75, "currency": "USD", "policy": "Cobrada pela visita; descontada do preco final se o servico for aprovado. Confirmada pelo proprietario em 29/07/2026." },
   "currency": "USD",
   "paymentAccepted": ["Zelle", "Venmo", "Apple Pay", "Check", "Cash"],
   "pricesUpdated": "2026-07",
