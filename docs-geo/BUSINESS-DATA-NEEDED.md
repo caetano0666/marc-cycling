@@ -22,6 +22,13 @@ O que so o Caetano pode fornecer ou confirmar. Nada disso foi inventado nem publ
 8. **Business registration / seguro / certificacoes**: existem? So publicamos se forem comprovaveis.
 9. **Politica de cancelamento** do agendamento (ex.: avisar com X horas): definir para publicar no /book.
 
-## Divergencia ja resolvida
+## Ja resolvidos pelo proprietario
 
-- Horario oficial: **sabado e domingo, 7am as 5pm ET** (voce confirmou em 27/07/2026 ao ampliar a agenda). Site, agenda e schema ja estao alinhados.
+- Horario oficial: **sabado e domingo, 7am as 5pm ET** (confirmado em 27/07/2026). Site, agenda e schema alinhados.
+- **Service call fee: $75, descontado do preco final se o servico for aprovado** (confirmado em 29/07/2026). Publicado na FAQ, llms.txt e business.json.
+- E-mail marcbikebr@gmail.com aprovado para o schema (29/07/2026).
+
+## Pendencia de politica ainda aberta
+
+- FAQ #3 afirma "We do not rebuild batteries or modify motors" [DEDUZIDA do prompt]. Confirmar se esta correto ou ajustar.
+- Divergencia registrada (21-B): a pagina /book e a descricao da agenda do Google dizem "Miami area"; o resto do site diz "Broward County & South Florida + 12 cidades". Decidir o texto padrao de area para os dois pontos.
