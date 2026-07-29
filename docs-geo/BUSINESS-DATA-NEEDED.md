@@ -34,6 +34,7 @@ O que so o Caetano pode fornecer ou confirmar. Nada disso foi inventado nem publ
 - Cliente pode assistir ao servico; preparo pre-atendimento publicado (bike acessivel, bateria carregada).
 - Mau tempo: politica DESCARTADA pelo proprietario; nao publicar.
 
-## Divergencia registrada (21-B), ainda aberta
+## Divergencia 21-B: RESOLVIDA no site (29/07/2026)
 
-- A pagina /book e a descricao da agenda do Google dizem "Miami area"; o resto do site diz "Broward County & South Florida + 12 cidades". Decidir o texto padrao de area para os dois pontos.
+- /book corrigida para "in Miami". A descricao da agenda do Google o proprietario ajusta por fora (unica ponta restante).
+- Lista oficial de areas: 13 cidades (incluida Doral em 29/07/2026) + Broward County, igual ao Google Business Profile.

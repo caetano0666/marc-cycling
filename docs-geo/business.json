@@ -16,7 +16,7 @@
   "googleBusinessProfile": "https://g.page/marccycling",
   "googleReviewLink": "https://g.page/marccycling/review",
   "socialProfiles": "NEEDS-OWNER-INPUT (Instagram, Facebook, Yelp, Nextdoor, LinkedIn)",
-  "serviceAreas": ["Broward County", "Fort Lauderdale", "Hollywood", "Pembroke Pines", "Pompano Beach", "Coral Springs", "Davie", "Plantation", "Sunrise", "Weston", "Miramar", "Coconut Creek", "Miami"],
+  "serviceAreas": ["Broward County", "Fort Lauderdale", "Hollywood", "Pembroke Pines", "Pompano Beach", "Coral Springs", "Davie", "Plantation", "Sunrise", "Weston", "Miramar", "Coconut Creek", "Miami", "Doral"],
   "openingHours": "Saturday and Sunday, 07:00-17:00 America/New_York (confirmado pelo proprietario em 27/07/2026 nesta sessao; contato por telefone/WhatsApp responde 7 dias)",
   "languages": ["en", "pt", "es"],
   "founder": { "name": "Caetano Marc Zammataro", "alternateNames": ["Marc", "Cae"], "jobTitle": "Founder and Bicycle Mechanic" },
@@ -39,5 +39,5 @@
   ],
   "notOffered": ["Internal battery repairs and rebuilds", "Internal motor repairs", "Wiring and electrical fault troubleshooting", "Motor conversion kits", "Controller programming"],
   "_notOfferedNote": "Politica adotada pelo proprietario em 29/07/2026: todo servico de e-bike e mecanico; trabalho eletrico interno fica fora do escopo. Redacao propria, nao copiar concorrente.",
-  "reviews": { "rating": "5.0", "count": "115+", "asOf": "2026-07", "source": "https://g.page/marccycling", "rule": "numero muda; nunca hard-codar sem data 'as of'" }
+  "reviews": { "rating": "5.0", "count": "over 100", "asOf": "2026-07", "source": "https://g.page/marccycling", "rule": "NUNCA numero exato em texto fixo; usar marco redondo (over 100, over 150 ao cruzar) + as of [mes ano]" }
 }

@@ -1,4 +1,4 @@
-# GEO-TESTS - 56 perguntas reais para medir presenca nas IAs
+# GEO-TESTS - 58 perguntas reais para medir presenca nas IAs
 
 Uso: rodar mensalmente (ver AI-VISIBILITY-TRACKING.md) no ChatGPT, Claude, Perplexity, Copilot e Google (AI Overviews). Por pergunta e plataforma, registrar: APARECEU COM LINK / APARECEU SEM LINK / NAO APARECEU + quem apareceu no lugar.
 
@@ -71,3 +71,5 @@ Uso: rodar mensalmente (ver AI-VISIBILITY-TRACKING.md) no ChatGPT, Claude, Perpl
 54. Portuguese speaking bike mechanic Florida
 55. 5 star bike mechanic Fort Lauderdale
 56. Marc Cycling reviews (a marca deve dominar esta)
+57. Mobile bike repair in Doral
+58. Bike mechanic Doral FL

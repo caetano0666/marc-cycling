@@ -12,6 +12,10 @@ JSON-LD @graph da home e do /book (entidades e @id do ENTITY-MAP.md), canonicals
 4. Pagina nova: title/description/canonical proprios, WebPage schema com isPartOf #website e about #localbusiness, breadcrumb visivel + schema, entrada no sitemap.xml, link interno.
 5. Apos publicar: ping IndexNow (comando no BING-WEBMASTER-SETUP.md).
 
+## Regra de numero de reviews (29/07/2026)
+
+NUNCA publicar numero exato de reviews em texto fixo (meta, schema, FAQ, llms.txt, texto visivel). Usar marco redondo: "over 100" hoje; atualizar para "over 150" so quando cruzar 150, e assim por diante. Contagem visivel sempre acompanhada de "as of [mes ano]". O numero exato vive apenas no Google, na fonte.
+
 ## Rotinas
 
 - **Mensal**: GEO-TESTS + AI-VISIBILITY-TRACKING; conferir reviews (meta 4-8/mes) e responder em 24h.
