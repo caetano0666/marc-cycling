@@ -38,3 +38,14 @@ O que so o Caetano pode fornecer ou confirmar. Nada disso foi inventado nem publ
 
 - /book corrigida para "in Miami". Descricao da agenda do Google corrigida em 29/07/2026 para "Mobile bike service in Broward County and South Florida" (feito via Chrome). DIVERGENCIA TOTALMENTE FECHADA.
 - Lista oficial de areas: 13 cidades (incluida Doral em 29/07/2026) + Broward County, igual ao Google Business Profile.
+
+
+## Divergencias GBP x site descobertas na importacao do Bing (31/07/2026)
+
+A descricao do Google Business Profile diz coisas que o site nao diz (decidir qual vale e alinhar):
+1. GBP: "25+ years of experience" x site: "since 2005" (21 anos). Qual e o numero oficial?
+2. GBP: "electrical fixes" x site (politica de 29/07): trabalho eletrico interno FORA do escopo. ALINHAR: ou o GBP remove "electrical fixes" ou a politica muda.
+3. GBP: especialista tambem em "e-Dirt Bikes" (Surron etc.) - o site nao menciona. Adicionar ao site?
+4. GBP: "former pro downhill rider" - fato novo, otimo para a pagina About.
+5. GBP: categoria secundaria "Estacionamento de bicicletas" (bike parking) parece erro; revisar no painel do GBP.
+6. GBP menciona 10 reviews no Yelp e link de Instagram: enviar as duas URLs para o sameAs do schema.
