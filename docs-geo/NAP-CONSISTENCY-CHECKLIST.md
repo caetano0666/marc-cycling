@@ -20,7 +20,8 @@ Valores oficiais (fonte: docs-geo/business.json):
 | 5 | Facebook | URL nao esta no repositorio | Idem |
 | 6 | Instagram | URL nao esta no repositorio | Idem |
 | 7 | Nextdoor | Nao verificado | Criar perfil de negocio; bairro e onde cliente local pergunta "quem conserta bike?" |
-| 8 | BBB / diretorios locais | Opcional | So diretorios legitimos; nunca cadastro em massa |
+| 8 | **Yahoo Local** | JA EXISTE (descoberto em 31/07: ChatGPT citou como fonte!) | Conferir/reivindicar: local.yahoo.com listing "marc-cycling-mobile-bicycle-repair-weston"; alinhar telefone, area e link |
+| 9 | BBB / diretorios locais | Opcional | So diretorios legitimos; nunca cadastro em massa |
 | 9 | Site (schema/OG/metadata) | ALINHADO nesta rodada | Manter via FUTURE-MAINTENANCE.md |
 
 Contexto: estudos de GEO indicam que a maior parte das mencoes de marca em respostas de IA vem de paginas de TERCEIROS. Esta checklist vale metade do jogo. Nao criar cadastros falsos nem automatizados.
