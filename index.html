@@ -492,6 +492,17 @@ table.cmp{width:100%; border-collapse:collapse}
 .crumbs a:hover{color:var(--yellow)}
 .crumbs .sep{margin:0 7px; color:var(--muted)}
 
+/* Certifications (diplomas emoldurados) */
+.cert-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:14px; margin-top:6px}
+.cert-card{background:#fff; border-radius:10px; padding:8px; cursor:zoom-in; border:1px solid var(--line2);
+  transition:transform .15s ease, box-shadow .15s ease, border-color .15s ease; display:block; width:100%; text-align:left; font-family:inherit}
+.cert-card:hover{transform:translateY(-3px); box-shadow:0 16px 34px -14px rgba(247,198,0,.45); border-color:var(--yellow)}
+.cert-card img{width:100%; aspect-ratio:4/3; object-fit:contain; border-radius:6px; background:#fff}
+.cert-cap{font-size:12.5px; color:#26262b; font-weight:700; padding:7px 4px 4px; line-height:1.3}
+.cert-cap span{display:block; color:#84848c; font-weight:500; font-size:11.5px; margin-top:2px}
+@media(min-width:760px){ .cert-grid{grid-template-columns:repeat(4,1fr)} }
+@media(min-width:1060px){ .cert-grid{grid-template-columns:repeat(5,1fr)} }
+
 /* Trilingual flag badge (top right, below phone) */
 .lang-badge-wrap{position:absolute; top:14px; left:0; right:0; z-index:6; width:100%; max-width:1120px; margin:0 auto; padding:0 22px; display:flex; justify-content:flex-end; pointer-events:none}
 .lang-badge{pointer-events:auto; display:inline-flex; align-items:center; gap:9px; background:rgba(20,20,23,.72); border:1px solid var(--line2); padding:6px 12px; border-radius:100px; backdrop-filter:blur(8px)}
@@ -515,6 +526,7 @@ table.cmp{width:100%; border-collapse:collapse}
       <a href="#services">Services</a>
       <a href="#how">How it works</a>
       <a href="#area">Service area</a>
+      <a href="#credentials">Credentials</a>
       <a href="#faq">FAQ</a>
       <a href="https://g.page/marccycling/review" target="_blank" rel="noopener">Reviews</a>
     </nav>
@@ -544,7 +556,7 @@ table.cmp{width:100%; border-collapse:collapse}
 <!-- ================= GEO: resposta direta (quem, o que, onde, como) ================= -->
 <section class="intro-sec" aria-label="About Marc Cycling">
   <div class="wrap">
-    <p><b>Marc Cycling is a mobile bicycle and e-bike repair service in Broward County and South Florida.</b> Marc, a mechanic working on bikes since 2005, comes to your home or office with professional tools and fixes most problems on the spot. Labor prices are published upfront: flat tires from $49, tune-ups from $95, e-bike service from $150, parts not included. <a href="/book/">Book a Saturday or Sunday visit online (7am to 5pm)</a>, or call and WhatsApp any day at <a href="tel:+17542525245" onclick="trackCall()">(754) 252-5245</a>. Service in English, Portuguese and Spanish.</p>
+    <p><b>Marc Cycling is a mobile bicycle and e-bike repair service in Broward County and South Florida.</b> Marc, a mechanic working on bikes since 2005 and factory-trained by Trek, Bosch, Shimano, SRAM and Specialized, comes to your home or office with professional tools and fixes most problems on the spot. Labor prices are published upfront: flat tires from $49, tune-ups from $95, e-bike service from $150, parts not included. <a href="/book/">Book a Saturday or Sunday visit online (7am to 5pm)</a>, or call and WhatsApp any day at <a href="tel:+17542525245" onclick="trackCall()">(754) 252-5245</a>. Service in English, Portuguese and Spanish.</p>
   </div>
 </section>
 
@@ -940,6 +952,29 @@ table.cmp{width:100%; border-collapse:collapse}
   </div>
 </section>
 
+<!-- ================= CREDENTIALS (certificados reais, ver docs-geo/business.json) ================= -->
+<section class="sec" id="credentials">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">Factory-trained</div>
+      <h2>Certified by the bike industry's biggest names</h2>
+      <p>Real training, real certificates. Marc has been in the bike industry since 2005, ran an authorized Trek and Shimano service shop, and holds factory certifications from Trek, Bosch, Shimano, SRAM, Specialized, Retul and bikefitting.com. Tap any certificate to see it in full.</p>
+    </div>
+    <div class="cert-grid">
+      <button type="button" class="cert-card" onclick="openCertLb(0)"><img src="img/certs/thumbs/cert-trek-bosch-ebike-2018.jpg" alt="Trek and Bosch e-bike systems training certificate issued to Caetano Zammataro in 2018" loading="lazy"><div class="cert-cap">Trek &amp; Bosch<span>E-Bike Systems Training · 2018</span></div></button>
+      <button type="button" class="cert-card" onclick="openCertLb(1)"><img src="img/certs/thumbs/cert-shimano-service-center-2013.jpg" alt="Shimano Service Center certificate for mechanic Caetano Zammataro, 2013" loading="lazy"><div class="cert-cap">Shimano<span>Service Center Certification · 2013</span></div></button>
+      <button type="button" class="cert-card" onclick="openCertLb(2)"><img src="img/certs/thumbs/cert-shimano-training-2019.jpg" alt="Shimano mechanics training certificate covering Di2, STEPS and XTR, issued to Caetano Zammataro in 2019" loading="lazy"><div class="cert-cap">Shimano<span>Mechanics Training: Di2, STEPS, XTR · 2019</span></div></button>
+      <button type="button" class="cert-card" onclick="openCertLb(3)"><img src="img/certs/thumbs/cert-sram-rockshox-2019.jpg" alt="SRAM and RockShox authorized service certificate naming Caetano Zammataro as certified technician, 2019" loading="lazy"><div class="cert-cap">SRAM &amp; RockShox<span>Authorized Service · 2019</span></div></button>
+      <button type="button" class="cert-card" onclick="openCertLb(4)"><img src="img/certs/thumbs/cert-specialized-sbcu-retul-2021.jpg" alt="Specialized Bicycle Components University certificate, Retul Level One, issued to Marc Zammataro in 2021" loading="lazy"><div class="cert-cap">Specialized SBCU<span>Retul Level One · 2021</span></div></button>
+      <button type="button" class="cert-card" onclick="openCertLb(5)"><img src="img/certs/thumbs/cert-retul-university-2013.jpg" alt="Retul University Custom Fit course certificate issued to Caetano Zammataro in 2013" loading="lazy"><div class="cert-cap">Retul University<span>Custom Fit Course · 2013</span></div></button>
+      <button type="button" class="cert-card" onclick="openCertLb(6)"><img src="img/certs/thumbs/cert-bikefitting-2018.jpg" alt="bikefitting.com Static Fit level 1 certificate issued to Caetano Zammataro in 2018" loading="lazy"><div class="cert-cap">bikefitting.com<span>Static Fit Level 1 · 2018</span></div></button>
+      <button type="button" class="cert-card" onclick="openCertLb(7)"><img src="img/certs/thumbs/cert-trek-precision-fit.jpg" alt="Trek Precision Fit Technician certificate issued to Caetano Zammataro in 2011" loading="lazy"><div class="cert-cap">Trek<span>Precision Fit Technician · 2011</span></div></button>
+      <button type="button" class="cert-card" onclick="openCertLb(8)"><img src="img/certs/thumbs/cert-elite-shimano-2019.jpg" alt="Elite technical training certificate from the Shimano Service Center program, issued to Caetano Zammataro in 2019" loading="lazy"><div class="cert-cap">Elite<span>Technical Training · 2019</span></div></button>
+      <button type="button" class="cert-card" onclick="openCertLb(9)"><img src="img/certs/thumbs/cert-trek-world-2008.jpg" alt="Trek World 2008 dealer participation certificate awarded to Bike Tech Jardins, Marc's bike shop in Sao Paulo" loading="lazy"><div class="cert-cap">Trek World<span>Dealer Participation · 2008</span></div></button>
+    </div>
+  </div>
+</section>
+
 <!-- ================= LEAD FORM (bottom) ================= -->
 <section class="sec how lead-sec" id="callback">
   <div class="wrap lead-wrap">
@@ -1056,6 +1091,10 @@ table.cmp{width:100%; border-collapse:collapse}
         <summary>Can I watch while you work on my bike?</summary>
         <div class="fa">Of course. You're welcome to watch and ask questions during the service, or just hand over the bike and go about your day.</div>
       </details>
+      <details class="faq-item">
+        <summary>Is the mechanic certified?</summary>
+        <div class="fa">Yes. Marc is factory-trained: Trek &amp; Bosch e-bike systems (2018), Shimano Service Center (2013), Shimano Di2, STEPS and XTR training (2019), SRAM &amp; RockShox authorized service (2019), Specialized SBCU Retul Level One (2021), Retul University (2013), bikefitting.com Static Fit (2018) and Trek Precision Fit (2011). The original certificates are published in the <a href="#credentials">Credentials section</a> of this site.</div>
+      </details>
     </div>
   </div>
 </section>
@@ -1112,6 +1151,14 @@ table.cmp{width:100%; border-collapse:collapse}
   <button class="lb-nav prev" type="button" onclick="lbStep(-1)" aria-label="Previous photo">&#8249;</button>
   <img id="lbImg" src="" alt="">
   <button class="lb-nav next" type="button" onclick="lbStep(1)" aria-label="Next photo">&#8250;</button>
+</div>
+
+<!-- ================= CERT LIGHTBOX ================= -->
+<div class="lightbox" id="certLightbox" hidden>
+  <button class="lb-close" type="button" onclick="closeCertLb()" aria-label="Close">&#10005;</button>
+  <button class="lb-nav prev" type="button" onclick="certStep(-1)" aria-label="Previous certificate">&#8249;</button>
+  <img id="certLbImg" src="" alt="">
+  <button class="lb-nav next" type="button" onclick="certStep(1)" aria-label="Next certificate">&#8250;</button>
 </div>
 
 <!-- ================= FLOATING WHATSAPP (all screens) ================= -->
@@ -1197,12 +1244,23 @@ table.cmp{width:100%; border-collapse:collapse}
       "name": "Caetano Marc Zammataro",
       "alternateName": ["Marc", "Cae"],
       "jobTitle": "Founder and Bicycle Mechanic",
-      "description": "Professional bicycle mechanic working on bikes since 2005, with long experience in bicycle assembly, maintenance, diagnostics and customer service. Runs Marc Cycling, a mobile repair service in South Florida.",
+      "description": "Professional bicycle mechanic working on bikes since 2005, with long experience in bicycle assembly, maintenance, diagnostics and customer service. Factory-trained by Trek, Bosch, Shimano, SRAM, Specialized, Retul and bikefitting.com. Runs Marc Cycling, a mobile repair service in South Florida.",
       "image": "https://marccycling.com/img/marc.jpg",
       "url": "https://marccycling.com/",
       "worksFor": { "@id": "https://marccycling.com/#localbusiness" },
       "knowsLanguage": ["en", "pt", "es"],
-      "knowsAbout": ["Bicycle repair", "Bicycle assembly", "Bicycle maintenance", "Bicycle tune-ups", "Brake adjustment", "Drivetrain maintenance", "Wheel truing", "Mobile bicycle service", "E-bike mechanical service"]
+      "knowsAbout": ["Bicycle repair", "Bicycle assembly", "Bicycle maintenance", "Bicycle tune-ups", "Brake adjustment", "Drivetrain maintenance", "Wheel truing", "Mobile bicycle service", "E-bike mechanical service", "Bike fitting"],
+      "hasCredential": [
+        { "@type": "EducationalOccupationalCredential", "name": "Trek & Bosch E-Bike Systems Training (2018)", "recognizedBy": { "@type": "Organization", "name": "Trek Bicycle Corporation" } },
+        { "@type": "EducationalOccupationalCredential", "name": "Shimano Service Center Certification (2013)", "recognizedBy": { "@type": "Organization", "name": "Shimano" } },
+        { "@type": "EducationalOccupationalCredential", "name": "Shimano Mechanics Training: Di2, STEPS, XTR (2019)", "recognizedBy": { "@type": "Organization", "name": "Shimano" } },
+        { "@type": "EducationalOccupationalCredential", "name": "SRAM & RockShox Authorized Service Certification (2019)", "recognizedBy": { "@type": "Organization", "name": "SRAM" } },
+        { "@type": "EducationalOccupationalCredential", "name": "Retul Level One, Specialized Bicycle Components University (2021)", "recognizedBy": { "@type": "Organization", "name": "Specialized Bicycle Components" } },
+        { "@type": "EducationalOccupationalCredential", "name": "Retul University Custom Fit Course (2013)", "recognizedBy": { "@type": "Organization", "name": "Retul" } },
+        { "@type": "EducationalOccupationalCredential", "name": "bikefitting.com Static Fit Level 1 (2018)", "recognizedBy": { "@type": "Organization", "name": "bikefitting.com" } },
+        { "@type": "EducationalOccupationalCredential", "name": "Elite Technical Training, Shimano Service Center program (2019)", "recognizedBy": { "@type": "Organization", "name": "Elite" } },
+        { "@type": "EducationalOccupationalCredential", "name": "Trek Precision Fit Technician (2011)", "recognizedBy": { "@type": "Organization", "name": "Trek Bicycle Corporation" } }
+      ]
     },
     {
       "@type": "WebSite",
@@ -1238,7 +1296,8 @@ table.cmp{width:100%; border-collapse:collapse}
         { "@type": "Question", "name": "Can I cancel or reschedule my appointment?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. There is no fee to cancel or reschedule: if your plans change, call or WhatsApp (754) 252-5245 and we'll move your visit to another day at no cost. If we arrive and the appointment wasn't canceled (a no-show), the $75 service-call fee is charged." } },
         { "@type": "Question", "name": "What if something isn't right after the service?", "acceptedAnswer": { "@type": "Answer", "text": "Workmanship is guaranteed. If something isn't right after a service, contact us within 15 days and we'll make it right at no charge." } },
         { "@type": "Question", "name": "How should I prepare for a mobile service appointment?", "acceptedAnswer": { "@type": "Answer", "text": "Have the bike accessible: a garage, driveway or building lobby is perfect. If it's an e-bike, have the battery charged so we can test the bike after the service." } },
-        { "@type": "Question", "name": "Can I watch while you work on my bike?", "acceptedAnswer": { "@type": "Answer", "text": "Of course. You're welcome to watch and ask questions during the service, or just hand over the bike and go about your day." } }
+        { "@type": "Question", "name": "Can I watch while you work on my bike?", "acceptedAnswer": { "@type": "Answer", "text": "Of course. You're welcome to watch and ask questions during the service, or just hand over the bike and go about your day." } },
+        { "@type": "Question", "name": "Is the mechanic certified?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Marc is factory-trained: Trek & Bosch e-bike systems (2018), Shimano Service Center (2013), Shimano Di2, STEPS and XTR training (2019), SRAM & RockShox authorized service (2019), Specialized SBCU Retul Level One (2021), Retul University (2013), bikefitting.com Static Fit (2018) and Trek Precision Fit (2011). The original certificates are published in the Credentials section of marccycling.com." } }
       ]
     }
   ]
@@ -1390,6 +1449,25 @@ table.cmp{width:100%; border-collapse:collapse}
     else if (e.key === 'ArrowRight') lbStep(1);
   });
   document.getElementById('lightbox').addEventListener('click', function(e){ if (e.target === this) closeLightbox(); });
+
+  // ---- Lightbox dos certificados (independente do carrossel) ----
+  var certFiles = ['cert-trek-bosch-ebike-2018','cert-shimano-service-center-2013','cert-shimano-training-2019','cert-sram-rockshox-2019','cert-specialized-sbcu-retul-2021','cert-retul-university-2013','cert-bikefitting-2018','cert-trek-precision-fit','cert-elite-shimano-2019','cert-trek-world-2008'];
+  var certIdx = 0;
+  function setCertLb(){
+    var im = document.getElementById('certLbImg');
+    im.src = 'img/certs/' + certFiles[certIdx] + '.jpg';
+    im.alt = document.querySelectorAll('.cert-card img')[certIdx].alt;
+  }
+  function openCertLb(i){ certIdx = i; setCertLb(); document.getElementById('certLightbox').hidden = false; document.body.style.overflow = 'hidden'; }
+  function certStep(d){ certIdx = (certIdx + d + certFiles.length) % certFiles.length; setCertLb(); }
+  function closeCertLb(){ document.getElementById('certLightbox').hidden = true; document.body.style.overflow = ''; }
+  document.getElementById('certLightbox').addEventListener('click', function(e){ if (e.target === this) closeCertLb(); });
+  document.addEventListener('keydown', function(e){
+    if (document.getElementById('certLightbox').hidden) return;
+    if (e.key === 'Escape') closeCertLb();
+    else if (e.key === 'ArrowLeft') certStep(-1);
+    else if (e.key === 'ArrowRight') certStep(1);
+  });
 
   // ---- Google Analytics (GA4): eventos de conversao (WhatsApp, telefone, booking, reviews) ----
   // Nao substitui as conversoes do Google Ads acima; as duas medicoes convivem.

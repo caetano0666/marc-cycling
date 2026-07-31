@@ -25,6 +25,10 @@
   "guaranteePolicy": "Workmanship guaranteed; reclamacoes em ate 15 dias apos o servico sao resolvidas sem custo (aprovado em 29/07/2026)",
   "customerPolicies": "Cliente pode assistir ao servico; preparo: bike acessivel (garagem/entrada/lobby) e bateria carregada em e-bikes (aprovado em 29/07/2026). Politica de mau tempo: DESCARTADA pelo proprietario, nao publicar",
   "founderExperienceSince": 2005,
+  "certifications": {
+    "_fonte": "PDF de diplomas escaneados fornecido pelo proprietario em 30/07/2026; originais em img/certs/ e expostos em /#credentials (secao + lightbox). 9 credenciais pessoais no Person schema (hasCredential); Trek World 2008 e participacao da loja Bike Tech Jardins (SP), exposta na galeria com legenda honesta, fora do hasCredential",
+    "lista": ["Trek & Bosch E-Bike Systems Training 2018", "Shimano Service Center 2013", "Shimano Di2/STEPS/XTR 2019", "SRAM & RockShox Authorized Service 2019", "Specialized SBCU Retul Level One 2021", "Retul University Custom Fit 2013", "bikefitting.com Static Fit Level 1 2018", "Trek Precision Fit Technician 2011 (ano confirmado pelo proprietario em 30/07/2026; sem data impressa no certificado)", "Elite Technical Training 2019", "Trek World 2008 (loja)"]
+  },
   "currency": "USD",
   "paymentAccepted": ["Zelle", "Venmo", "Apple Pay", "Check", "Cash"],
   "pricesUpdated": "2026-07",
