@@ -15,7 +15,7 @@
   "businessModel": "service-area business, no retail store, no public address",
   "googleBusinessProfile": "https://g.page/marccycling",
   "googleReviewLink": "https://g.page/marccycling/review",
-  "socialProfiles": "NEEDS-OWNER-INPUT (Instagram, Facebook, Yelp, Nextdoor, LinkedIn)",
+  "socialProfiles": { "instagram": "https://www.instagram.com/marc_cycling/", "yelpAdmin": "https://biz.yelp.com/home/Fpdy-_3zJbgX5eqp103Mnw (painel; achar URL publica yelp.com/biz/... para o sameAs)", "pendentes": "Facebook, Nextdoor, LinkedIn" },
   "serviceAreas": ["Broward County", "Fort Lauderdale", "Hollywood", "Pembroke Pines", "Pompano Beach", "Coral Springs", "Davie", "Plantation", "Sunrise", "Weston", "Miramar", "Coconut Creek", "Miami", "Doral"],
   "openingHours": "Saturday and Sunday, 07:00-17:00 America/New_York (confirmado pelo proprietario em 27/07/2026 nesta sessao; contato por telefone/WhatsApp responde 7 dias)",
   "languages": ["en", "pt", "es"],
@@ -24,7 +24,8 @@
   "cancellationPolicy": "Sem taxa para cancelar ou reagendar; NO-SHOW (reserva nao cancelada) conta como visita recusada e aplica o trip charge de $75 (31/07/2026)",
   "guaranteePolicy": "Workmanship guaranteed; reclamacoes em ate 15 dias apos o servico sao resolvidas sem custo (aprovado em 29/07/2026)",
   "customerPolicies": "Cliente pode assistir ao servico; preparo: bike acessivel (garagem/entrada/lobby) e bateria carregada em e-bikes (aprovado em 29/07/2026). Politica de mau tempo: DESCARTADA pelo proprietario, nao publicar",
-  "founderExperienceSince": 2005,
+  "founderExperienceSince": 2000,
+  "founderRacing": "Piloto profissional de downhill + provas de ciclismo de estrada, competiu 20 anos (2000-2020), ultima corrida janeiro de 2020 (confirmado em 31/07/2026)",
   "founderHistory": "Confirmado pelo proprietario em 31/07/2026: dono da Bike Tech Jardins de 2005 a 2020, loja-conceito no bairro Jardins, Sao Paulo (entre a Rua da Consolacao e a Rua Oscar Freire, regiao das principais grifes de luxo). Uma das unicas lojas do Brasil a representar Trek E Specialized ao mesmo tempo, gracas aos resultados de vendas. Vendeu a loja em 2020 para se mudar aos EUA. Premios da Trek e da Specialized a caminho (aguardando arquivos) + 1 certificado adicional.",
   "certifications": {
     "_fonte": "Proprietario confirmou em 31/07/2026 que os documentos Shimano Brasil e Park Tool sao os MESMOS ja publicados na galeria (nao ha scan novo a esperar). PDF de diplomas escaneados fornecido pelo proprietario em 30/07/2026; originais em img/certs/ e expostos em /#credentials (secao + lightbox). 9 credenciais pessoais no Person schema (hasCredential); Trek World 2008 e participacao da loja Bike Tech Jardins (SP), exposta na galeria com legenda honesta, fora do hasCredential",
