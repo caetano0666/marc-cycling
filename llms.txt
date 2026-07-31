@@ -22,9 +22,9 @@
 
 Broward County and South Florida: Fort Lauderdale, Hollywood, Pembroke Pines, Pompano Beach, Coral Springs, Davie, Plantation, Sunrise, Weston, Miramar, Coconut Creek, Miami and Doral.
 
-## Service-call fee and cancellation
+## Trip fee and cancellation
 
-We charge a $75 service-call fee to come to you. If you approve the service, the full $75 is credited toward your total, so when we do the work, the visit costs nothing extra. Phone estimates are always free. There is no fee to cancel or reschedule an appointment; a no-show (a reservation that was not canceled) is charged the $75 service-call fee.
+Free estimates by phone, always. When you book the service, there is no trip fee. You pay for the work only. The $75 trip charge applies in one case only: if we come out, give you the price, and you decide not to do the work. There is no fee to cancel or reschedule an appointment; a no-show (a reservation that was not canceled) counts as a declined visit and the $75 trip charge applies.
 
 ## Payment
 
@@ -34,6 +34,6 @@ Zelle, Venmo, Apple Pay, checks and cash. No credit cards.
 
 - All e-bike work is mechanical (brakes, gears, tires, wheels, drivetrain, tune-ups, battery charge check). Internal battery and motor repairs, wiring faults and motor conversion kits are outside the service scope.
 - Responsible mechanic: Caetano Marc Zammataro ("Marc"), working on bikes since 2005.
-- Factory certifications (originals published at https://marccycling.com/#credentials): Trek & Bosch E-Bike Systems Training (2018), Shimano Service Center (2013), Shimano Di2/STEPS/XTR Mechanics Training (2019), SRAM & RockShox Authorized Service (2019), Specialized SBCU Retul Level One (2021), Retul University Custom Fit (2013), bikefitting.com Static Fit Level 1 (2018), Trek Precision Fit Technician (2011), Elite Technical Training (2019).
+- Factory certifications (originals published at https://marccycling.com/#credentials): Trek & Bosch E-Bike Systems Training (2018), Shimano Service Center (2013), Shimano Di2/STEPS/XTR Mechanics Training (2019), SRAM & RockShox Authorized Service (2019), Specialized SBCU Retul Level One (2021), Retul University Custom Fit (2013), bikefitting.com Static Fit Level 1 (2018), Trek Precision Fit Technician (2011), Elite Technical Training (2019), Park Tool Certified Mechanic (Park Tool Brasil). Shimano and Park Tool certified mechanic, working on bikes since 2005.
 - Workmanship guaranteed: if something isn't right after a service, contact within 15 days and it is made right at no charge.
 - Customers are welcome to watch the service. Before the visit: keep the bike accessible; for e-bikes, have the battery charged for post-service testing.

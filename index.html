@@ -503,6 +503,14 @@ table.cmp{width:100%; border-collapse:collapse}
 @media(min-width:760px){ .cert-grid{grid-template-columns:repeat(4,1fr)} }
 @media(min-width:1060px){ .cert-grid{grid-template-columns:repeat(5,1fr)} }
 
+/* When we come out */
+.hours-sec{padding:44px 0 6px}
+.hour-card{background:var(--bg2); border:1px solid var(--line); border-radius:var(--radius); padding:22px 24px}
+.hour-card h3{font-size:19px; margin-bottom:4px}
+.hc-time{font-family:'Oswald',sans-serif; font-weight:700; font-size:26px; color:var(--yellow); margin:4px 0 8px}
+.hour-card p{color:var(--muted2); font-size:15px}
+.hour-card a{color:var(--yellow); font-weight:600}
+
 /* Trilingual flag badge (top right, below phone) */
 .lang-badge-wrap{position:absolute; top:14px; left:0; right:0; z-index:6; width:100%; max-width:1120px; margin:0 auto; padding:0 22px; display:flex; justify-content:flex-end; pointer-events:none}
 .lang-badge{pointer-events:auto; display:inline-flex; align-items:center; gap:9px; background:rgba(20,20,23,.72); border:1px solid var(--line2); padding:6px 12px; border-radius:100px; backdrop-filter:blur(8px)}
@@ -542,6 +550,7 @@ table.cmp{width:100%; border-collapse:collapse}
 </header>
 
 <a id="top"></a>
+<main>
 
 <!-- ================= HERO ================= -->
 <section class="hero-art" id="hero">
@@ -556,7 +565,7 @@ table.cmp{width:100%; border-collapse:collapse}
 <!-- ================= GEO: resposta direta (quem, o que, onde, como) ================= -->
 <section class="intro-sec" aria-label="About Marc Cycling">
   <div class="wrap">
-    <p><b>Marc Cycling is a mobile bicycle and e-bike repair service in Broward County and South Florida.</b> Marc, a mechanic working on bikes since 2005 and factory-trained by Trek, Bosch, Shimano, SRAM and Specialized, comes to your home or office with professional tools and fixes most problems on the spot. Labor prices are published upfront: flat tires from $49, tune-ups from $95, e-bike service from $150, parts not included. <a href="/book/">Book a Saturday or Sunday visit online (7am to 5pm)</a>, or call and WhatsApp any day at <a href="tel:+17542525245" onclick="trackCall()">(754) 252-5245</a>. Service in English, Portuguese and Spanish.</p>
+    <p><b>Marc Cycling is a mobile bicycle and e-bike repair service in Broward County and South Florida.</b> Marc, a mobile bike mechanic working on bikes since 2005 and factory-trained by Trek, Bosch, Shimano, SRAM and Specialized, comes to your home or office with professional tools and fixes most problems on the spot. Labor prices are published upfront: flat tires from $49, tune-ups from $95, e-bike service from $150, parts not included. <a href="/book/">Book a Saturday or Sunday visit online (7am to 5pm)</a>, or call and WhatsApp any day at <a href="tel:+17542525245" onclick="trackCall()">(754) 252-5245</a>. Service in English, Portuguese and Spanish.</p>
   </div>
 </section>
 
@@ -573,6 +582,29 @@ table.cmp{width:100%; border-collapse:collapse}
         <h3>Flat tire, e-bike</h3>
         <div class="flat-price">$120 <small>+ tube</small></div>
         <p>Front or rear, any e-bike. We do the heavy lifting.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= WHEN WE COME OUT (disponibilidade real; janelas de semana SO por telefone, fora do agendador) ================= -->
+<section class="sec hours-sec" id="hours">
+  <div class="wrap">
+    <div class="sec-head" style="margin-bottom:22px">
+      <div class="kicker">When we come out</div>
+      <h2>Weekends for everything. Weekdays for quick fixes.</h2>
+    </div>
+    <div class="flat-grid">
+      <div class="hour-card">
+        <h3>Saturday and Sunday</h3>
+        <div class="hc-time">7am to 5pm</div>
+        <p>Full service, including tune-ups. <a href="/book/">Book online</a>.</p>
+      </div>
+      <div class="hour-card">
+        <h3>Weekday early mornings and evenings</h3>
+        <div class="hc-time">Limited slots</div>
+        <p>Quick repairs only: flats, brakes, gears. By <a href="tel:+17542525245" onclick="trackCall()">phone</a> or <a href="https://wa.me/17542525245?text=Hi%20Marc%2C%20I%20need%20a%20quick%20repair%20on%20a%20weekday." target="_blank" rel="noopener" onclick="trackWhatsApp()">WhatsApp</a>.</p>
       </div>
     </div>
   </div>
@@ -618,7 +650,7 @@ table.cmp{width:100%; border-collapse:collapse}
     <div class="sec-head">
       <div class="kicker">What we fix</div>
       <h2>E-bikes &amp; traditional bikes, done right, on-site</h2>
-      <p>From a full e-bike tune-up to a quick flat-tire fix, everything is handled where you are, with professional-grade tools.</p>
+      <p>From a full bike tune-up, e-bike service or new bicycle assembly to a quick flat-tire fix, everything is handled where you are, with professional-grade tools.</p>
     </div>
     <div class="svc-grid">
       <div class="svc">
@@ -640,6 +672,8 @@ table.cmp{width:100%; border-collapse:collapse}
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>Brake service</li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>Flat tire repair</li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>Gear adjustments</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>Drivetrain cleaning</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>Bike assembly at home</li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>Preventive maintenance</li>
         </ul>
       </div>
@@ -695,6 +729,7 @@ table.cmp{width:100%; border-collapse:collapse}
     <div class="sec-head">
       <div class="kicker">Honest pricing</div>
       <h2>Bike Service Packages</h2>
+      <p>Mobile bicycle tune-up and bike maintenance packages, done at your door across Broward County and South Florida.</p>
     </div>
     <div class="pkg-grid bikes">
       <div class="pkg">
@@ -764,6 +799,7 @@ table.cmp{width:100%; border-collapse:collapse}
       <p><b>How we work:</b> we come to you, the price is the price, no pickup fees. Every service is done based on what your bike actually needs. If your bike doesn't need something on the list, we tell you on the spot.</p>
       <p>Prices are for labor only, parts not included. Free estimates by phone, no hidden fees. We accept Zelle, Venmo, Apple Pay, checks and cash.</p>
     </div>
+    <p class="guarantee"><span class="ck">✓</span> No trip fee when you book. You only pay for the work.</p>
     <p class="guarantee"><span class="ck">✓</span> Workmanship guaranteed. If something isn't right, we make it right.</p>
     <p class="price-upd">Prices updated July 2026.</p>
     <div class="cta-row">
@@ -959,6 +995,12 @@ table.cmp{width:100%; border-collapse:collapse}
       <div class="kicker">Factory-trained</div>
       <h2>Certified by the bike industry's biggest names</h2>
       <p>Real training, real certificates. Marc has been in the bike industry since 2005, ran an authorized Trek and Shimano service shop, and holds factory certifications from Trek, Bosch, Shimano, SRAM, Specialized, Retul and bikefitting.com. Tap any certificate to see it in full.</p>
+      <p class="guarantee"><span class="ck">✓</span> Shimano and Park Tool certified mechanic, with factory training from Trek, Bosch, SRAM, Specialized and Retul. Working on bikes since 2005.</p>
+      <!-- ESPACO PREPARADO: certificado Park Tool Brasil. Quando o Caetano enviar o scan, salvar em
+           img/certs/cert-park-tool-brasil.jpg (+ thumbs/) e descomentar o card abaixo, adicionando
+           'cert-park-tool-brasil' ao array certFiles no script.
+      <button type="button" class="cert-card" onclick="openCertLb(10)"><img src="img/certs/thumbs/cert-park-tool-brasil.jpg" alt="Park Tool Brasil certified mechanic certificate issued to Caetano Zammataro" loading="lazy"><div class="cert-cap">Park Tool<span>Certified Mechanic</span></div></button>
+      -->
     </div>
     <div class="cert-grid">
       <button type="button" class="cert-card" onclick="openCertLb(0)"><img src="img/certs/thumbs/cert-trek-bosch-ebike-2018.jpg" alt="Trek and Bosch e-bike systems training certificate issued to Caetano Zammataro in 2018" loading="lazy"><div class="cert-cap">Trek &amp; Bosch<span>E-Bike Systems Training · 2018</span></div></button>
@@ -1045,7 +1087,7 @@ table.cmp{width:100%; border-collapse:collapse}
     <div class="faq-list">
       <details class="faq-item">
         <summary>Do you come to the customer's location?</summary>
-        <div class="fa">Yes. Marc Cycling is a fully mobile service: the mechanic comes to your home, office or building with professional tools, and most repairs are done on the spot. There is no shop to visit and no pickup fee; see our service-call fee policy below.</div>
+        <div class="fa">Yes. Marc Cycling is a fully mobile service: the mechanic comes to your home, office or building with professional tools, and most repairs are done on the spot. There is no shop to visit and no trip fee when you book; see our trip fee policy below.</div>
       </details>
       <details class="faq-item">
         <summary>Which areas do you serve?</summary>
@@ -1061,11 +1103,11 @@ table.cmp{width:100%; border-collapse:collapse}
       </details>
       <details class="faq-item">
         <summary>How do I schedule an appointment?</summary>
-        <div class="fa">Book online at <a href="/book/">marccycling.com/book</a>, with Saturday and Sunday appointments from 7am to 5pm Eastern. You can also call or WhatsApp <a href="tel:+17542525245" onclick="trackCall()">(754) 252-5245</a> any day of the week, we usually reply within minutes.</div>
+        <div class="fa">Book online at <a href="/book/">marccycling.com/book</a>, with Saturday and Sunday appointments from 7am to 5pm Eastern. You can also call or WhatsApp <a href="tel:+17542525245" onclick="trackCall()">(754) 252-5245</a> any day of the week, we usually reply within minutes. On weekdays we keep limited early morning and evening slots for quick repairs (flats, brakes, gears), arranged by phone or WhatsApp only.</div>
       </details>
       <details class="faq-item">
-        <summary>Is there a service-call fee?</summary>
-        <div class="fa">We charge a $75 service-call fee to come to you. If you approve the service, the full $75 is credited toward your total, so when we do the work, the visit costs nothing extra. Phone estimates are always free.</div>
+        <summary>Is there a trip fee?</summary>
+        <div class="fa">Free estimates by phone, always. When you book the service, there is no trip fee. You pay for the work only. The $75 trip charge applies in one case only: if we come out, give you the price, and you decide not to do the work.</div>
       </details>
       <details class="faq-item">
         <summary>Do you provide the parts?</summary>
@@ -1077,7 +1119,7 @@ table.cmp{width:100%; border-collapse:collapse}
       </details>
       <details class="faq-item">
         <summary>Can I cancel or reschedule my appointment?</summary>
-        <div class="fa">Yes. There is no fee to cancel or reschedule: if your plans change, <a href="tel:+17542525245" onclick="trackCall()">call</a> or WhatsApp (754) 252-5245 and we'll move your visit to another day at no cost. If we arrive and the appointment wasn't canceled (a no-show), the $75 service-call fee is charged.</div>
+        <div class="fa">Yes. There is no fee to cancel or reschedule: if your plans change, <a href="tel:+17542525245" onclick="trackCall()">call</a> or WhatsApp (754) 252-5245 and we'll move your visit to another day at no cost. If we come out and the appointment wasn't canceled (a no-show), the $75 trip charge applies.</div>
       </details>
       <details class="faq-item">
         <summary>What if something isn't right after the service?</summary>
@@ -1117,6 +1159,8 @@ table.cmp{width:100%; border-collapse:collapse}
   </div>
 </section>
 
+</main>
+
 <!-- ================= FOOTER ================= -->
 <footer>
   <div class="wrap foot-grid">
@@ -1149,7 +1193,7 @@ table.cmp{width:100%; border-collapse:collapse}
 <div class="lightbox" id="lightbox" hidden>
   <button class="lb-close" type="button" onclick="closeLightbox()" aria-label="Close">&#10005;</button>
   <button class="lb-nav prev" type="button" onclick="lbStep(-1)" aria-label="Previous photo">&#8249;</button>
-  <img id="lbImg" src="" alt="">
+  <img id="lbImg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="">
   <button class="lb-nav next" type="button" onclick="lbStep(1)" aria-label="Next photo">&#8250;</button>
 </div>
 
@@ -1157,7 +1201,7 @@ table.cmp{width:100%; border-collapse:collapse}
 <div class="lightbox" id="certLightbox" hidden>
   <button class="lb-close" type="button" onclick="closeCertLb()" aria-label="Close">&#10005;</button>
   <button class="lb-nav prev" type="button" onclick="certStep(-1)" aria-label="Previous certificate">&#8249;</button>
-  <img id="certLbImg" src="" alt="">
+  <img id="certLbImg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="">
   <button class="lb-nav next" type="button" onclick="certStep(1)" aria-label="Next certificate">&#8250;</button>
 </div>
 
@@ -1192,7 +1236,7 @@ table.cmp{width:100%; border-collapse:collapse}
       "name": "Marc Cycling",
       "legalName": "Marc Cycling LLC",
       "url": "https://marccycling.com/",
-      "description": "Marc Cycling provides professional mobile bicycle repair, assembly, maintenance and diagnostic services at the customer's location across Broward County and South Florida. Service-area business: the mechanic comes to you. A $75 service-call fee applies and is fully credited toward the total when the service is approved.",
+      "description": "Marc Cycling provides professional mobile bicycle repair, assembly, maintenance and diagnostic services at the customer's location across Broward County and South Florida. Service-area business: the mechanic comes to you. Free phone estimates, and no trip fee when you book the service: you pay for the work only.",
       "image": "https://marccycling.com/img/marc.jpg",
       "logo": { "@type": "ImageObject", "@id": "https://marccycling.com/#logo", "url": "https://marccycling.com/img/logo-white.png", "caption": "Marc Cycling logo" },
       "telephone": "+1-754-252-5245",
@@ -1259,6 +1303,7 @@ table.cmp{width:100%; border-collapse:collapse}
         { "@type": "EducationalOccupationalCredential", "name": "Retul University Custom Fit Course (2013)", "recognizedBy": { "@type": "Organization", "name": "Retul" } },
         { "@type": "EducationalOccupationalCredential", "name": "bikefitting.com Static Fit Level 1 (2018)", "recognizedBy": { "@type": "Organization", "name": "bikefitting.com" } },
         { "@type": "EducationalOccupationalCredential", "name": "Elite Technical Training, Shimano Service Center program (2019)", "recognizedBy": { "@type": "Organization", "name": "Elite" } },
+        { "@type": "EducationalOccupationalCredential", "name": "Park Tool Certified Mechanic (Park Tool Brasil)", "recognizedBy": { "@type": "Organization", "name": "Park Tool" } },
         { "@type": "EducationalOccupationalCredential", "name": "Trek Precision Fit Technician (2011)", "recognizedBy": { "@type": "Organization", "name": "Trek Bicycle Corporation" } }
       ]
     },
@@ -1285,15 +1330,15 @@ table.cmp{width:100%; border-collapse:collapse}
       "@type": "FAQPage",
       "@id": "https://marccycling.com/#faq",
       "mainEntity": [
-        { "@type": "Question", "name": "Do you come to the customer's location?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Marc Cycling is a fully mobile service: the mechanic comes to your home, office or building with professional tools, and most repairs are done on the spot. There is no shop to visit and no pickup fee; a $75 service-call fee applies and is fully credited toward your total when the service is approved." } },
+        { "@type": "Question", "name": "Do you come to the customer's location?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Marc Cycling is a fully mobile service: the mechanic comes to your home, office or building with professional tools, and most repairs are done on the spot. There is no shop to visit. When you book the service there is no trip fee, you pay for the work only." } },
         { "@type": "Question", "name": "Which areas do you serve?", "acceptedAnswer": { "@type": "Answer", "text": "Broward County and South Florida, including Fort Lauderdale, Hollywood, Pembroke Pines, Pompano Beach, Coral Springs, Davie, Plantation, Sunrise, Weston, Miramar, Coconut Creek, Miami and Doral. Not sure about your city? Call (754) 252-5245 and we'll tell you right away." } },
         { "@type": "Question", "name": "Do you work on e-bikes?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. All e-bike work we do is mechanical: brakes, gears, tires, wheels, drivetrain, safety inspections and full tune-ups (E-Bike Silver from $150, E-Bike Gold from $220), plus a battery charge check. Internal battery and motor repairs, wiring faults and motor conversion kits are outside our scope." } },
         { "@type": "Question", "name": "How much does a mobile bike tune-up cost?", "acceptedAnswer": { "@type": "Answer", "text": "Tune-up packages start at $95: Bronze from $95, Silver from $140 and Gold from $215. For e-bikes, Silver is from $150 and Gold from $220. A standard flat tire repair is $49 plus tube. Prices are for labor only, parts not included. Prices updated July 2026." } },
-        { "@type": "Question", "name": "How do I schedule an appointment?", "acceptedAnswer": { "@type": "Answer", "text": "Book online at marccycling.com/book, with Saturday and Sunday appointments from 7am to 5pm Eastern. You can also call or WhatsApp (754) 252-5245 any day of the week, we usually reply within minutes." } },
-        { "@type": "Question", "name": "Is there a service-call fee?", "acceptedAnswer": { "@type": "Answer", "text": "We charge a $75 service-call fee to come to you. If you approve the service, the full $75 is credited toward your total, so when we do the work, the visit costs nothing extra. Phone estimates are always free." } },
+        { "@type": "Question", "name": "How do I schedule an appointment?", "acceptedAnswer": { "@type": "Answer", "text": "Book online at marccycling.com/book, with Saturday and Sunday appointments from 7am to 5pm Eastern. You can also call or WhatsApp (754) 252-5245 any day of the week, we usually reply within minutes. On weekdays we keep limited early morning and evening slots for quick repairs (flats, brakes, gears), arranged by phone or WhatsApp only." } },
+        { "@type": "Question", "name": "Is there a trip fee?", "acceptedAnswer": { "@type": "Answer", "text": "Free estimates by phone, always. When you book the service, there is no trip fee. You pay for the work only. The $75 trip charge applies in one case only: if we come out, give you the price, and you decide not to do the work." } },
         { "@type": "Question", "name": "Do you provide the parts?", "acceptedAnswer": { "@type": "Answer", "text": "Prices cover labor only; parts are charged separately. Common parts like inner tubes are installed on-site (tubes run $24 to $40 depending on size)." } },
         { "@type": "Question", "name": "What payment methods do you accept?", "acceptedAnswer": { "@type": "Answer", "text": "Zelle, Venmo, Apple Pay, checks and cash. Credit cards are not accepted." } },
-        { "@type": "Question", "name": "Can I cancel or reschedule my appointment?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. There is no fee to cancel or reschedule: if your plans change, call or WhatsApp (754) 252-5245 and we'll move your visit to another day at no cost. If we arrive and the appointment wasn't canceled (a no-show), the $75 service-call fee is charged." } },
+        { "@type": "Question", "name": "Can I cancel or reschedule my appointment?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. There is no fee to cancel or reschedule: if your plans change, call or WhatsApp (754) 252-5245 and we'll move your visit to another day at no cost. If we come out and the appointment wasn't canceled (a no-show), the $75 trip charge applies." } },
         { "@type": "Question", "name": "What if something isn't right after the service?", "acceptedAnswer": { "@type": "Answer", "text": "Workmanship is guaranteed. If something isn't right after a service, contact us within 15 days and we'll make it right at no charge." } },
         { "@type": "Question", "name": "How should I prepare for a mobile service appointment?", "acceptedAnswer": { "@type": "Answer", "text": "Have the bike accessible: a garage, driveway or building lobby is perfect. If it's an e-bike, have the battery charged so we can test the bike after the service." } },
         { "@type": "Question", "name": "Can I watch while you work on my bike?", "acceptedAnswer": { "@type": "Answer", "text": "Of course. You're welcome to watch and ask questions during the service, or just hand over the bike and go about your day." } },
