@@ -369,7 +369,9 @@ h2{font-size:clamp(30px,6.5vw,44px)}
 /* Footer */
 footer{background:#08080a; border-top:1px solid var(--line); padding:50px 0 120px}
 .foot-grid{display:grid; grid-template-columns:1fr; gap:30px}
-.foot-logo{height:34px; width:auto; margin-bottom:16px}
+/* mesmo logo aprovado do cabecalho; o retangulo escuro faz parte da arte
+   e o rodape ja e escuro, entao so arredonda o canto. */
+.foot-logo{height:44px; width:auto; display:block; border-radius:5px; margin-bottom:16px}
 .foot-tag{font-family:'Oswald',sans-serif; font-weight:600; text-transform:uppercase; letter-spacing:.05em;
   color:var(--yellow); font-size:15px; line-height:1.5; margin-bottom:14px}
 .foot-col h4{font-family:'Oswald',sans-serif; text-transform:uppercase; font-size:13px; letter-spacing:.1em; color:var(--muted); margin-bottom:12px}
@@ -1398,7 +1400,7 @@ table.cmp{width:100%; border-collapse:collapse}
 <footer>
   <div class="wrap foot-grid">
     <div>
-      <img class="foot-logo" src="img/logo-white.png" loading="lazy" decoding="async" alt="Marc Cycling">
+      <img class="foot-logo" src="img/logo-marc-cycling.jpg" width="600" height="198" loading="lazy" decoding="async" alt="Marc Cycling, mobile bike repair service">
       <div class="foot-tag">Experienced. Reliable. Professional.<br>Your ride is our priority.</div>
       <p style="color:var(--muted);font-size:14px">Mobile bike &amp; e-bike repair service.<br>English · Español · Português</p>
     </div>
@@ -1471,7 +1473,7 @@ table.cmp{width:100%; border-collapse:collapse}
       "url": "https://marccycling.com/",
       "description": "Marc Cycling provides professional mobile bicycle repair, assembly, maintenance and diagnostic services at the customer's location across Broward County and South Florida. Service-area business: the mechanic comes to you. Free phone estimates, and no trip fee when you book the service: you pay for the work only.",
       "image": "https://marccycling.com/img/marc.jpg",
-      "logo": { "@type": "ImageObject", "@id": "https://marccycling.com/#logo", "url": "https://marccycling.com/img/logo-white.png", "caption": "Marc Cycling logo" },
+      "logo": { "@type": "ImageObject", "@id": "https://marccycling.com/#logo", "url": "https://marccycling.com/img/logo-marc-cycling.jpg", "width": 600, "height": 198, "caption": "Marc Cycling logo" },
       "telephone": "+1-754-252-5245",
       "email": "marcbikebr@gmail.com",
       "founder": { "@id": "https://marccycling.com/#person-caetano" },
