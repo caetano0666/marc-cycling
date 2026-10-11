@@ -403,9 +403,13 @@ a.qr:hover{border-color:var(--yellow)}
 }
 .wa-float:hover{background:#2ee36f; transform:scale(1.06)}
 .wa-float svg{width:33px; height:33px}
+/* Ate 820px a barra fixa inferior esta na tela e ja oferece Ligar e WhatsApp.
+   A bolha flutuante repetia o WhatsApp e passava por cima do conteudo (cobria o
+   preco do E-Bike Silver), e o telefone do header repetia o Ligar da barra.
+   Os dois saem nessa faixa: tres acoes distintas, nenhuma sobreposta. */
 @media(max-width:820px){
-  .wa-float{ bottom:90px; right:14px; width:54px; height:54px }
-  .wa-float svg{width:30px; height:30px}
+  .wa-float{ display:none }
+  .nav-call{ display:none }
 }
 
 /* Book Now button (header) */
@@ -415,7 +419,8 @@ a.qr:hover{border-color:var(--yellow)}
   box-shadow:0 0 0 3px rgba(232,53,43,.22), 0 8px 22px -6px rgba(232,53,43,.6)}
 .nav-book:hover{background:#ff4a40}
 .nav-book svg{width:16px;height:16px}
-@media(max-width:820px){ .nav-book{padding:9px 13px; font-size:13px; margin-left:8px} }
+/* 44px e o alvo de toque minimo recomendado. Estava em 38. */
+@media(max-width:820px){ .nav-book{padding:12px 15px; min-height:44px; font-size:13px; margin-left:8px} }
 @media(max-width:359px){ .nav-book span{display:none} .nav-book{padding:9px 12px} }
 
 /* Flat tire highlight cards */
@@ -494,6 +499,20 @@ table.cmp{width:100%; border-collapse:collapse}
 
 /* Certifications: molduras estilo galeria (grafite + filete dourado) */
 .cert-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:16px; margin-top:6px; align-items:stretch}
+
+/* Credenciais colapsadas. Eram 17 miniaturas abertas de uma vez, 3,5 telas de
+   papel escaneado ilegivel no celular. Nada foi removido nem reordenado: os
+   indices de openCertLb() dependem da ordem. O resto abre no botao. */
+.cert-grid.is-collapsed > .cert-card:nth-child(n+5){display:none}
+.cert-grid.awards.is-collapsed > .cert-card:nth-child(n+3){display:none}
+.cert-more{
+  display:block; margin:16px auto 0; padding:12px 22px; min-height:44px;
+  background:transparent; color:var(--yellow); font-family:'Oswald',sans-serif;
+  font-size:13px; font-weight:600; letter-spacing:.09em; text-transform:uppercase;
+  border:1px solid rgba(247,198,0,.45); border-radius:100px; cursor:pointer;
+  transition:background .18s ease, border-color .18s ease}
+.cert-more:hover{background:rgba(247,198,0,.1); border-color:var(--yellow)}
+.cert-more:focus-visible{outline:3px solid var(--yellow); outline-offset:2px}
 .cert-card{position:relative; background:linear-gradient(180deg,#1a1a1e,#111113); border-radius:6px; padding:12px 12px 8px;
   cursor:zoom-in; border:1px solid rgba(247,198,0,.4); display:flex; flex-direction:column; width:100%; text-align:center; font-family:inherit;
   box-shadow:0 14px 30px -14px rgba(0,0,0,.85), inset 0 1px 0 rgba(255,255,255,.05);
@@ -878,10 +897,10 @@ table.cmp{width:100%; border-collapse:collapse}
     <div class="carousel" id="carousel">
       <button class="car-arrow prev" type="button" onclick="carScroll(-1)" aria-label="Previous photo">&#8249;</button>
       <div class="car-track" id="carTrack">
-        <figure class="car-slide"><img src="img/gallery/g01.jpg" alt="Marc Cycling branded mobile service van" onclick="openLightbox(0)"></figure>
-        <figure class="car-slide"><img src="img/gallery/g02.jpg" alt="Bike on a repair stand in a driveway" onclick="openLightbox(1)"></figure>
-        <figure class="car-slide"><img src="img/gallery/g03.jpg" alt="Bikes set up for mobile service on a deck" onclick="openLightbox(2)"></figure>
-        <figure class="car-slide"><img src="img/gallery/g04.jpg" alt="On-location bike service at sunset in South Florida" onclick="openLightbox(3)"></figure>
+        <figure class="car-slide"><img loading="lazy" decoding="async" src="img/gallery/g01.jpg" alt="Marc Cycling branded mobile service van" onclick="openLightbox(0)"></figure>
+        <figure class="car-slide"><img loading="lazy" decoding="async" src="img/gallery/g02.jpg" alt="Bike on a repair stand in a driveway" onclick="openLightbox(1)"></figure>
+        <figure class="car-slide"><img loading="lazy" decoding="async" src="img/gallery/g03.jpg" alt="Bikes set up for mobile service on a deck" onclick="openLightbox(2)"></figure>
+        <figure class="car-slide"><img loading="lazy" decoding="async" src="img/gallery/g04.jpg" alt="On-location bike service at sunset in South Florida" onclick="openLightbox(3)"></figure>
         <figure class="car-slide"><img data-src="img/gallery/g05.jpg" alt="E-bikes and scooters serviced at the customer's home" onclick="openLightbox(4)"></figure>
         <figure class="car-slide"><img data-src="img/gallery/g06.jpg" alt="Marc working on a bike at the customer's location" onclick="openLightbox(5)"></figure>
         <figure class="car-slide"><img data-src="img/gallery/g07.jpg" alt="Close-up of Marc servicing a bike" onclick="openLightbox(6)"></figure>
@@ -954,7 +973,7 @@ table.cmp{width:100%; border-collapse:collapse}
         <div class="rev-badge">Over 100 reviews · 0 below 5 stars · as of July 2026</div>
       </a>
       <a class="qr" href="https://g.page/marccycling/review" target="_blank" rel="noopener">
-        <img src="img/qr-google.png" alt="Scan or click to read Marc Cycling reviews on Google">
+        <img src="img/qr-google.png" width="400" height="400" loading="lazy" decoding="async" alt="Scan or click to read Marc Cycling reviews on Google">
         <div class="qt">
           <b>Read our reviews</b>
           <p>On your phone, scan the code. On a computer, just click here to see what riders across South Florida say on Google.</p>
@@ -1009,7 +1028,7 @@ table.cmp{width:100%; border-collapse:collapse}
       <p>Real training, real certificates. Marc has been in the bike world since 2000, raced downhill professionally for two decades, ran an authorized Trek and Shimano service shop, and holds factory certifications from Trek, Bosch, Shimano, SRAM, Specialized, Retul and bikefitting.com. Tap any certificate to see it in full.</p>
       <p class="guarantee"><span class="ck">✓</span> Shimano and Park Tool certified mechanic, with factory training from Trek, Bosch, SRAM, Specialized and Retul. Working on bikes since 2000.</p>
     </div>
-    <div class="cert-grid">
+    <div class="cert-grid is-collapsed" id="certGrid">
       <button type="button" class="cert-card" onclick="openCertLb(0)"><img src="img/certs/thumbs/cert-trek-bosch-ebike-2018.jpg" alt="Trek and Bosch e-bike systems training certificate issued to Caetano Zammataro in 2018" loading="lazy"><div class="cert-cap">Trek &amp; Bosch<span>E-Bike Systems Training · 2018</span></div></button>
       <button type="button" class="cert-card" onclick="openCertLb(1)"><img src="img/certs/thumbs/cert-shimano-service-center-2013.jpg" alt="Shimano Service Center certificate for mechanic Caetano Zammataro, 2013" loading="lazy"><div class="cert-cap">Shimano<span>Service Center Certification · 2013</span></div></button>
       <button type="button" class="cert-card" onclick="openCertLb(2)"><img src="img/certs/thumbs/cert-shimano-training-2019.jpg" alt="Shimano mechanics training certificate covering Di2, STEPS and XTR, issued to Caetano Zammataro in 2019" loading="lazy"><div class="cert-cap">Shimano<span>Mechanics Training: Di2, STEPS, XTR · 2019</span></div></button>
@@ -1023,9 +1042,10 @@ table.cmp{width:100%; border-collapse:collapse}
       <button type="button" class="cert-card" onclick="openCertLb(10)"><img src="img/certs/thumbs/cert-shimano-tec-usa.jpg" alt="Shimano T.E.C. Technology Education and Certification plates: certified technician for Di2, hydraulic disc brakes, wheel and hub, drivetrain road and mountain, and service department operations" loading="lazy"><div class="cert-cap">Shimano T.E.C. (USA)<span>Certified Technician: Di2, Disc Brakes, Wheels, Drivetrain</span></div></button>
     </div>
 
+    <button type="button" class="cert-more" id="certMore" aria-expanded="false" aria-controls="certGrid" onclick="toggleCerts(this,'certGrid','Show all 11 certificates','Show fewer certificates')">Show all 11 certificates</button>
     <h3 class="pkg-sub">Awards from the S&atilde;o Paulo years</h3>
     <p class="cert-awards-intro">Before moving to Florida, Marc owned Bike Tech Jardins (2005 to 2020), a concept store in S&atilde;o Paulo's Jardins district and one of the only shops in Brazil representing Trek and Specialized at the same time. The store won dealer awards from both brands.</p>
-    <div class="cert-grid awards">
+    <div class="cert-grid awards is-collapsed" id="awardGrid">
       <button type="button" class="cert-card award" onclick="openCertLb(11)"><img src="img/certs/thumbs/award-trek-ebikes-dealer-2019.jpg" alt="Trek World Brasil 2019 E-Bikes Dealer of the Year award plaque, Bike Tech Jardins" loading="lazy"><div class="cert-cap">Trek World Brasil<span>E-Bikes Dealer of the Year · 2019</span></div></button>
       <button type="button" class="cert-card award" onclick="openCertLb(12)"><img src="img/certs/thumbs/award-trek-retailer-of-the-year-2012.jpg" alt="Trek 2012 Retailer of the Year award, Bike Tech Jardins" loading="lazy"><div class="cert-cap">Trek<span>Retailer of the Year · 2012</span></div></button>
       <button type="button" class="cert-card award" onclick="openCertLb(13)"><img src="img/certs/thumbs/award-trek-top-sales-2014.jpg" alt="Trek 2014 Top Sales award, Bike Tech Jardins" loading="lazy"><div class="cert-cap">Trek<span>Top Sales · 2014</span></div></button>
@@ -1033,6 +1053,7 @@ table.cmp{width:100%; border-collapse:collapse}
       <button type="button" class="cert-card award" onclick="openCertLb(15)"><img src="img/certs/thumbs/award-specialized-lojista-2009-infantil.jpg" alt="Specialized 2009 Retailer of the Year award, Kids category, Bike Tech Jardins" loading="lazy"><div class="cert-cap">Specialized<span>Retailer of the Year, Kids · 2009</span></div></button>
       <button type="button" class="cert-card award" onclick="openCertLb(16)"><img src="img/certs/thumbs/award-specialized-lojista-2009-comfort.jpg" alt="Specialized 2009 Retailer of the Year award, Comfort category, Bike Tech Jardins" loading="lazy"><div class="cert-cap">Specialized<span>Retailer of the Year, Comfort · 2009</span></div></button>
     </div>
+    <button type="button" class="cert-more" id="awardMore" aria-expanded="false" aria-controls="awardGrid" onclick="toggleCerts(this,'awardGrid','Show all 6 awards','Show fewer awards')">Show all 6 awards</button>
   </div>
 </section>
 
@@ -1184,7 +1205,7 @@ table.cmp{width:100%; border-collapse:collapse}
 <footer>
   <div class="wrap foot-grid">
     <div>
-      <img class="foot-logo" src="img/logo-white.png" alt="Marc Cycling">
+      <img class="foot-logo" src="img/logo-white.png" loading="lazy" decoding="async" alt="Marc Cycling">
       <div class="foot-tag">Experienced. Reliable. Professional.<br>Your ride is our priority.</div>
       <p style="color:var(--muted);font-size:14px">Mobile bike &amp; e-bike repair service.<br>English · Español · Português</p>
     </div>
@@ -1526,6 +1547,17 @@ table.cmp{width:100%; border-collapse:collapse}
     im.alt = document.querySelectorAll('.cert-card img')[certIdx].alt;
   }
   function openCertLb(i){ certIdx = i; setCertLb(); document.getElementById('certLightbox').hidden = false; document.body.style.overflow = 'hidden'; }
+
+  // Abre e fecha as grades de credenciais. Nada e removido do DOM, so escondido
+  // por CSS, entao os indices de openCertLb() continuam validos abertos ou nao.
+  function toggleCerts(btn, gridId, labelMore, labelLess){
+    var g = document.getElementById(gridId);
+    if (!g) return;
+    var expanded = !g.classList.toggle('is-collapsed');
+    btn.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+    btn.textContent = expanded ? labelLess : labelMore;
+    if (!expanded) { btn.scrollIntoView({block:'nearest'}); }
+  }
   function certStep(d){ certIdx = (certIdx + d + certFiles.length) % certFiles.length; setCertLb(); }
   function closeCertLb(){ document.getElementById('certLightbox').hidden = true; document.body.style.overflow = ''; }
   document.getElementById('certLightbox').addEventListener('click', function(e){ if (e.target === this) closeCertLb(); });
