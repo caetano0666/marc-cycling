@@ -54,11 +54,19 @@
 </script>
 
 <style>
+/* EXPERIMENTO: paleta unica no site inteiro.
+   Ate aqui o site rodava uma paleta e a hero outra. Os quatro tokens de base
+   passam a ser os da paleta aprovada; bg2, bg3 e os amarelos derivados foram
+   recalculados a partir deles para nao destoarem.
+   Valores anteriores, caso seja preciso voltar:
+     --bg:#0c0c0e  --bg2:#151517  --bg3:#1d1d21
+     --ink:#ffffff --muted:#a7a7ae --muted2:#c9c9d0
+     --yellow:#F7C600 --yellow2:#FFD84A --yellowd:#c99f00          */
 :root{
-  --bg:#0c0c0e; --bg2:#151517; --bg3:#1d1d21;
-  --line:rgba(255,255,255,.09); --line2:rgba(255,255,255,.16);
-  --ink:#ffffff; --muted:#a7a7ae; --muted2:#c9c9d0;
-  --yellow:#F7C600; --yellow2:#FFD84A; --yellowd:#c99f00;
+  --bg:#111111; --bg2:#17171a; --bg3:#1f1f23;
+  --line:rgba(245,243,238,.09); --line2:rgba(245,243,238,.16);
+  --ink:#F5F3EE; --muted:#C8C8C8; --muted2:#DEDEDE;
+  --yellow:#F5B700; --yellow2:#FFCB2E; --yellowd:#c29100;
   --wa:#25D366; --wad:#1da851;
   --radius:16px;
 }
@@ -88,10 +96,11 @@ section{position:relative}
    formularios, entao nao foi tocado.
    ========================================================================== */
 .mh{
-  --mh-graphite:#111111;
-  --mh-paper:#F5F3EE;
-  --mh-yellow:#F5B700;
-  --mh-grey:#C8C8C8;
+  /* agora herda do :root, que passou a carregar a paleta aprovada */
+  --mh-graphite:var(--bg);
+  --mh-paper:var(--ink);
+  --mh-yellow:var(--yellow);
+  --mh-grey:var(--muted);
   position:relative; overflow:hidden; background:var(--mh-graphite);
 }
 /* mesma caixa do .wrap do resto do site, para o texto da hero alinhar com as demais secoes */
