@@ -634,17 +634,18 @@ table.cmp{width:100%; border-collapse:collapse}
 
 /* O que de fato chega na casa do cliente. Existe para corrigir expectativa:
    o texto dizia "van" em dois alt e a foto do carro estava enterrada como
-   slide 1 de 20 no carrossel, ou seja, invisivel na pratica. */
-.veh{margin:34px 0 0; background:var(--bg2); border:1px solid var(--line);
-     border-radius:var(--radius); overflow:hidden}
+   slide 1 de 20 no carrossel, ou seja, invisivel na pratica.
+   Destaque: foto em largura total, com filete amarelo e titulo grande. */
+.veh{margin:34px 0 0; background:var(--bg); border:1px solid rgba(247,198,0,.55);
+     border-radius:var(--radius); overflow:hidden; box-shadow:0 18px 50px rgba(0,0,0,.45)}
 .veh img{width:100%; height:auto; display:block}
-.veh-txt{padding:20px 22px}
-.veh-txt b{display:block; font-family:'Oswald',sans-serif; font-size:15px; font-weight:600;
-           letter-spacing:.08em; text-transform:uppercase; color:var(--yellow); margin-bottom:7px}
-.veh-txt p{margin:0; color:var(--muted); font-size:15.5px; line-height:1.6; max-width:62ch}
+.veh-txt{padding:22px 22px 24px; border-top:3px solid var(--yellow)}
+.veh-txt b{display:block; font-family:'Oswald',sans-serif; font-size:24px; font-weight:700; line-height:1.15;
+           letter-spacing:.04em; text-transform:uppercase; color:var(--yellow); margin-bottom:9px}
+.veh-txt p{margin:0; color:var(--muted2); font-size:16px; line-height:1.6; max-width:62ch}
 @media(min-width:760px){
-  .veh{display:grid; grid-template-columns:1.35fr 1fr; align-items:center}
-  .veh-txt{padding:26px 30px}
+  .veh-txt{display:grid; grid-template-columns:auto 1fr; gap:34px; align-items:center; padding:26px 34px 28px}
+  .veh-txt b{font-size:30px; margin-bottom:0}
 }
 
 /* Credenciais colapsadas. Eram 17 miniaturas abertas de uma vez, 3,5 telas de
@@ -924,8 +925,8 @@ table.cmp{width:100%; border-collapse:collapse}
     </div>
 
     <figure class="veh">
-      <img src="img/vehicle.jpg" width="1200" height="554" loading="lazy" decoding="async"
-           alt="The Marc Cycling vehicle parked on a driveway, a white VW Taos with the shop magnet and phone number on the door.">
+      <img src="img/vehicle-studio.webp" width="1672" height="941" loading="lazy" decoding="async"
+           alt="The Marc Cycling vehicle seen from the side, a white VW Taos with the yellow Marc Cycling Mobile Bike Repair magnet and the phone number (754) 252-5245 on the door.">
       <figcaption class="veh-txt">
         <b>This is what shows up</b>
         <p>No big van, no shop truck. A white VW Taos with the repair stand, the tools and the parts for most jobs already in the back.</p>
