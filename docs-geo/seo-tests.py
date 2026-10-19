@@ -67,8 +67,8 @@ for nome, html in htmls.items():
         check(f"JSON-LD #{i+1} sem aggregateRating proprio", "aggregateRating" not in raw)
     check("conteudo essencial no HTML bruto: telefone", "(754) 252-5245" in html)
     check("conteudo essencial no HTML bruto: booking", "/book" in html or "calendar.app.google" in html)
-    check("conteudo essencial no HTML bruto: preco", "$95" in html and "$49" in html)
-    check("data de preco visivel", "Prices updated July 2026" in html or "updated July 2026" in html)
+    check("conteudo essencial no HTML bruto: preco", "$95" in html and "$60" in html)
+    check("data de preco visivel", "Prices updated October 2026" in html)
 
 print("== Entidades e consistencia ==")
 home = htmls["home"]

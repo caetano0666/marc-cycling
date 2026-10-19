@@ -10,8 +10,9 @@
 
 ## Services and prices (labor only, parts not included; prices updated July 2026)
 
-- Flat tire, standard bike: $49 + tube (tubes run $24 to $40)
-- Flat tire, e-bike: $120 + tube
+- Flat tire, standard bike: $60 + tube (tubes run $24 to $40)
+- Flat tire, e-bike: $140 + tube front wheel, $165 + tube rear wheel
+- Flat tire, e-dirt bike (heavy moto-style wheel): $250 + tube
 - Bronze tune-up: from $95 (35-point safety inspection, chain lube, tire pressure, bolt check)
 - Silver tune-up: from $140 (Bronze + derailleur and brake adjustment, wheel truing, test ride)
 - Gold tune-up: from $215 (Silver + full wash, drivetrain degrease, bearing check, frame polish)
