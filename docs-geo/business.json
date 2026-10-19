@@ -48,5 +48,6 @@
   ],
   "notOffered": ["Internal battery repairs and rebuilds", "Internal motor repairs", "Wiring and electrical fault troubleshooting", "Motor conversion kits", "Controller programming"],
   "_notOfferedNote": "Politica adotada pelo proprietario em 29/07/2026: todo servico de e-bike e mecanico; trabalho eletrico interno fica fora do escopo. Redacao propria, nao copiar concorrente.",
-  "reviews": { "rating": "5.0", "count": "over 100", "asOf": "2026-07", "source": "https://g.page/marccycling", "rule": "NUNCA numero exato em texto fixo; usar marco redondo (over 100, over 150 ao cruzar) + as of [mes ano]" }
+  "competidores": { "verificadoEm": "2026-10-19", "fonte": "agendador da velofix com CEP 33131 (Miami)", "bikes": { "Bronze": 149, "Silver": 179, "Gold": 269, "Platinum": 519 }, "ebikes": { "eBike Silver Tune": 189, "eBike Gold Tune": 279, "eBike Flat Repair": 149 }, "nota": "velofix NAO atende e-dirt bikes, motos eletricas e patinetes" },
+  "reviews": { "rating": "5.0", "count": "over 100 (119 verificado em 19/10/2026)", "asOf": "2026-10", "source": "https://g.page/marccycling", "rule": "NUNCA numero exato em texto fixo; usar marco redondo (over 100, over 150 ao cruzar) + as of [mes ano]" }
 }
