@@ -43,7 +43,7 @@
     { "name": "Bronze Bike Tune-Up", "priceFrom": 95 },
     { "name": "Silver Bike Tune-Up", "priceFrom": 140 },
     { "name": "Gold Bike Tune-Up", "priceFrom": 215, "note": "most popular" },
-    { "name": "E-Bike Silver Service", "priceFrom": 150 },
+    { "name": "E-Bike Silver Service", "priceFrom": 185, "note": "atualizado 19/10/2026" },
     { "name": "E-Bike Gold Service", "priceFrom": 220 }
   ],
   "notOffered": ["Internal battery repairs and rebuilds", "Internal motor repairs", "Wiring and electrical fault troubleshooting", "Motor conversion kits", "Controller programming"],
