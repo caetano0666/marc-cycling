@@ -10,7 +10,7 @@ Perfil: https://g.page/marccycling. O GBP e a fonte primaria que Google e IAs co
 - [ ] Telefone: (754) 252-5245. Website: https://marccycling.com. Link de agendamento: https://marccycling.com/book/ (ou o link direto do Google Calendar).
 - [ ] Horario: sabado e domingo, 7am-5pm (igual ao site).
 - [ ] Descricao: usar a descricao do docs-geo/business.json (mobile, Broward/South Florida, trilingue, precos publicados).
-- [ ] Servicos cadastrados com os precos "from" aprovados (Bronze $95, Silver $140, Gold $215, E-Bike $150/$220, Flat $49/$120).
+- [ ] Servicos cadastrados com os precos "from" aprovados (Bronze $95, Silver $140, Gold $215, E-Bike $150/$220, Flat $49/$120). [SUPERADO EM 10/11/2026: E-Bike $185/$250, Flat $60 e e-bike $140/$165, diagnostico $95, pastilha e-bike $120/$150, instalacao eletrica $165 por peca]
 - [ ] Idiomas/atributos: espanhol e portugues, se o campo existir.
 
 ## Rotina (o que move o ponteiro)

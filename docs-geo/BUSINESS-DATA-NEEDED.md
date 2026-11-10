@@ -13,7 +13,7 @@ O que so o Caetano pode fornecer ou confirmar. Nada disso foi inventado nem publ
    - voce trabalhando no cavalete na casa de cliente (rosto + ferramenta);
    - antes/depois de drivetrain sujo vs. limpo (melhor foto de prova que existe);
    - kit de ferramentas aberto na van;
-   - troca de camara em e-bike (justifica o preco $120);
+   - troca de camara em e-bike (justifica o preco $120); [SUPERADO: e-bike hoje $140 dianteiro / $165 traseiro]
    - foto sua sorrindo com cliente e bike (com autorizacao).
 6. **Casos reais** (2 ou 3): problema, cidade, o que foi feito, resultado. Sem nome do cliente sem autorizacao.
 7. **Tempo medio de atendimento** por pacote (ex.: Bronze ~45min, Gold ~2h30) se quiser publicar; so com numero real.
@@ -23,13 +23,13 @@ O que so o Caetano pode fornecer ou confirmar. Nada disso foi inventado nem publ
 ## Ja resolvidos pelo proprietario
 
 - Horario oficial: **sabado e domingo, 7am as 5pm ET** (confirmado em 27/07/2026). Site, agenda e schema alinhados.
-- **Service call fee: $75, descontado do preco final se o servico for aprovado** (confirmado em 29/07/2026). Publicado na FAQ, llms.txt e business.json.
+- **Service call fee: $75, descontado do preco final se o servico for aprovado** (confirmado em 29/07/2026). Publicado na FAQ, llms.txt e business.json. [SUPERADO EM 10/11/2026: virou taxa de diagnostico de $95, cobrada so quando o problema e desconhecido, descontada se o servico for feito]
 - E-mail marcbikebr@gmail.com aprovado para o schema (29/07/2026).
 
 ## Politicas: TODAS RESOLVIDAS em 29/07/2026
 
 - E-bike: so mecanica; bateria/motor interno, fiacao e kits fora do escopo (publicado com redacao propria).
-- Cancelamento/reagendamento: sem taxa. No-show (reserva nao cancelada): cobra o service-call fee de $75 (valor amarrado ao service-call; avisar se o proprietario definir outro valor).
+- Cancelamento/reagendamento: sem taxa. No-show (reserva nao cancelada): cobra o service-call fee de $75 [SUPERADO EM 10/11/2026: no-show agora e $95] (valor amarrado ao service-call; avisar se o proprietario definir outro valor).
 - Garantia: reclamacao em ate 15 dias, resolvida sem custo.
 - Cliente pode assistir ao servico; preparo pre-atendimento publicado (bike acessivel, bateria carregada).
 - Mau tempo: politica DESCARTADA pelo proprietario; nao publicar.

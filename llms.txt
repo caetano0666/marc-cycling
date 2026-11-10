@@ -8,9 +8,9 @@
 - Languages: English, Portuguese, Spanish
 - Rating: 5.0 on Google (over 100 reviews, as of October 2026), see https://g.page/marccycling
 
-## Services and prices (labor only, parts not included; prices updated October 2026)
+## Services and prices (labor only, parts not included; prices updated November 2026)
 
-- Flat tire, standard bike: $60 + tube (tubes run $24 to $40)
+- Flat tire, standard bike: $60 + tube (tubes run $20 to $40)
 - Flat tire, e-bike: $140 + tube front wheel, $165 + tube rear wheel
 - Flat tire, e-dirt bike (heavy moto-style wheel): $250 + tube
 - Bronze tune-up: from $95 (35-point safety inspection, chain lube, tire pressure, bolt check)
@@ -18,14 +18,18 @@
 - Gold tune-up: from $215 (Silver + full wash, drivetrain degrease, bearing check, frame polish)
 - E-Bike Silver: from $185
 - E-Bike Gold: from $250
+- E-bike tire replacement: $140 front wheel, $165 rear wheel, plus tire and tube
+- E-bike brake pads: $120 front or rear, $150 front and rear, plus pads (sold in pairs)
+- E-bike display, controller or motor installation: $165 per part, plus the part
+- Diagnostic visit (any bike, when the problem is unknown): $95, taken off the bill if the customer goes ahead with the repair
 
 ## Service area
 
 Broward County and South Florida: Fort Lauderdale, Hollywood, Pembroke Pines, Pompano Beach, Coral Springs, Davie, Plantation, Sunrise, Weston, Miramar, Coconut Creek, Miami and Doral.
 
-## Trip fee and cancellation
+## Trip fee, diagnostic visit and cancellation
 
-Free estimates by phone, always. When you book the service, there is no trip fee. You pay for the work only. The $75 trip charge applies in one case only: if we come out, give you the price, and you decide not to do the work. There is no fee to cancel or reschedule an appointment; a no-show (a reservation that was not canceled) counts as a declined visit and the $75 trip charge applies.
+Free estimates by phone, always. If the customer already knows what they need, there is no trip fee: they pay for the work only. If the problem is unknown, it is a $95 diagnostic visit. If the customer goes ahead with the repair, the $95 comes off the bill. If they decide not to, or the problem needs the manufacturer, the $95 covers the visit. There is no fee to cancel or reschedule an appointment; a no-show (a reservation that was not canceled) is charged the $95 visit fee.
 
 ## Payment
 
@@ -33,7 +37,7 @@ Zelle, Venmo, Apple Pay, checks and cash. No credit cards.
 
 ## Notes
 
-- All e-bike work is mechanical (brakes, gears, tires, wheels, drivetrain, tune-ups, battery charge check). Internal battery and motor repairs, wiring faults and motor conversion kits are outside the service scope.
+- E-bike work covers brakes, gears, tires, wheels, drivetrain, tune-ups, battery charge check, and installation of displays, controllers and motors. Batteries are not opened, motors are not repaired internally, and conversion kits and wiring repairs are outside the service scope.
 - Responsible mechanic: Caetano Marc Zammataro ("Marc"), in the bike world since 2000; former professional downhill racer (competed 2000-2020). Instagram: https://www.instagram.com/marc_cycling/
 - Factory certifications (originals published at https://marccycling.com/#credentials): Trek & Bosch E-Bike Systems Training (2018), Shimano Service Center (2013), Shimano Di2/STEPS/XTR Mechanics Training (2019), SRAM & RockShox Authorized Service (2019), Specialized SBCU Retul Level One (2021), Retul University Custom Fit (2013), bikefitting.com Static Fit Level 1 (2018), Trek Precision Fit Technician (2011), Elite Technical Training (2019), Park Tool Certified Mechanic (Park Tool Brasil), Shimano T.E.C. Certified Technician USA (Di2, hydraulic disc brakes, wheel and hub, drivetrain road and mountain). Shimano and Park Tool certified mechanic, working on bikes since 2000.
 - Business history: Marc owned Bike Tech Jardins (2005-2020), a concept bike store in Sao Paulo, Brazil, that represented Trek and Specialized simultaneously and won dealer awards from both: Trek Retailer of the Year 2012, Trek Top Sales 2014, Trek Bontrager Store of the Year 2018, Trek World Brasil E-Bikes Dealer of the Year 2019, Specialized Retailer of the Year 2009 (Kids and Comfort categories).

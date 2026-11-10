@@ -791,7 +791,7 @@ table.cmp{width:100%; border-collapse:collapse}
       <div class="flat-card">
         <h3>Flat tire, standard bike</h3>
         <div class="flat-price">$60 <small>+ tube</small></div>
-        <p>New tube installed on-site, tire and pressure check included. Tubes run $24 to $40 depending on size.</p>
+        <p>New tube installed on-site, tire and pressure check included. Tubes run $20 to $40 depending on size.</p>
       </div>
       <div class="flat-card">
         <h3>Flat tire, e-bike</h3>
@@ -1153,10 +1153,70 @@ table.cmp{width:100%; border-collapse:collapse}
       </table>
     </div>
 
-    <p class="pl-notes"><b>Labor only, parts extra.</b> Tubes run $24 to $40 depending on size. No trip fee when you book. The $75 trip charge applies only if we come out and you decide not to do the work, or if the visit is missed. Franchise prices compared with leading mobile bike service franchises in Miami, October 2026.</p>
+    <p class="pl-notes"><b>Labor only, parts extra.</b> Tubes run $20 to $40 depending on size. No trip fee when you book a repair. Not sure what's wrong? A $95 diagnostic visit, taken off your bill if you go ahead with the repair. A missed visit is $95. E-bike prices: see <a href="#ebike" style="color:var(--pl-y)">E-bike service</a>. Franchise prices compared with leading mobile bike service franchises in Miami, October 2026.</p>
   </div>
 </section>
 <!-- ===== /PRICE LIST ===== -->
+
+<style>
+.eb{--eb-g:#0E5E35;--eb-g2:#0A4A29;--eb-y:var(--yellow,#F5B700);--eb-w:#FFFFFF;--eb-m:rgba(255,255,255,.72);--eb-line:rgba(255,255,255,.16);
+    background:linear-gradient(160deg,var(--eb-g) 0%,var(--eb-g2) 100%);color:var(--eb-w);position:relative;overflow:hidden}
+.eb .wrap{position:relative;z-index:1}
+.eb-bolt{position:absolute;right:-40px;top:20px;width:320px;height:auto;opacity:.10;z-index:0;pointer-events:none}
+.eb-head{display:flex;align-items:center;gap:16px;margin-bottom:10px}
+.eb-head svg{width:44px;height:44px;flex:none}
+.eb .kicker{color:var(--eb-y)}
+.eb h2{font:700 clamp(36px,6vw,56px)/1.02 Oswald,sans-serif;text-transform:uppercase;color:var(--eb-w);margin:0}
+.eb-sub{font:400 16px/1.5 Inter,sans-serif;color:var(--eb-m);margin:8px 0 0}
+.eb-diag{margin-top:34px;border:1.5px solid var(--eb-y);border-radius:14px;padding:22px 24px;display:grid;grid-template-columns:1fr auto;gap:8px 24px;align-items:center;background:rgba(0,0,0,.14)}
+.eb-diag h3{font:600 22px/1.1 Oswald,sans-serif;letter-spacing:.04em;text-transform:uppercase;margin:0;color:var(--eb-w)}
+.eb-diag p{grid-column:1/-1;margin:0;font:400 15px/1.6 Inter,sans-serif;color:var(--eb-m);max-width:760px}
+.eb-diag .eb-p{font-size:34px}
+.eb-t{width:100%;border-collapse:collapse;margin-top:26px}
+.eb-t td{padding:16px 0;border-bottom:1px solid var(--eb-line);vertical-align:middle}
+.eb-n{font:500 18px/1.3 Inter,sans-serif;color:var(--eb-w)}
+.eb-n small{display:block;font:400 14px/1.4 Inter,sans-serif;color:var(--eb-m);margin-top:2px}
+.eb-p{font:600 28px/1 Oswald,sans-serif;color:var(--eb-y);text-align:right;white-space:nowrap;padding-left:16px}
+.eb-p i{display:block;font:400 13px/1.4 Inter,sans-serif;font-style:normal;color:var(--eb-m);margin-top:4px}
+.eb-notes{margin-top:24px;font:400 14px/1.6 Inter,sans-serif;color:var(--eb-m);max-width:760px}
+.eb-notes b{color:var(--eb-w);font-weight:500}
+@media (max-width:640px){
+  .eb-bolt{width:200px;right:-50px}
+  .eb-head svg{display:none}
+  .eb-diag{padding:18px;grid-template-columns:1fr auto}
+  .eb-diag .eb-p{font-size:28px}
+  .eb-p{font-size:22px}
+  .eb-n{font-size:16px}
+}
+</style>
+<section class="sec eb" id="ebike" aria-labelledby="eb-title">
+  <svg class="eb-bolt" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 2 4 13.5h6.5L9 22l11-12.5h-6.8L13.5 2z" fill="#F5B700"/></svg>
+  <div class="wrap">
+    <div class="kicker">E-bike service</div>
+    <div class="eb-head"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 2 4 13.5h6.5L9 22l11-12.5h-6.8L13.5 2z" fill="#F5B700"/></svg><h2 id="eb-title">E-bikes, priced upfront</h2></div>
+    <p class="eb-sub">Labor prices for e-bikes. Parts are extra.</p>
+
+    <div class="eb-diag">
+      <h3>Diagnostic visit</h3>
+      <div class="eb-p">$95</div>
+      <p>Not sure what's wrong? Book a $95 diagnostic visit. We find the problem and give you the price. If you go ahead with the repair, the $95 comes off your bill. If you decide not to, or the problem needs the manufacturer, the $95 covers the visit.</p>
+    </div>
+
+    <table class="eb-t">
+      <tr><td class="eb-n">Front wheel<small>Flat repair or tire replacement</small></td><td class="eb-p">$140<i>+ tire or tube</i></td></tr>
+      <tr><td class="eb-n">Rear wheel<small>Flat repair or tire replacement</small></td><td class="eb-p">$165<i>+ tire or tube</i></td></tr>
+      <tr><td class="eb-n">Brake pads, front or rear</td><td class="eb-p">$120<i>+ pads</i></td></tr>
+      <tr><td class="eb-n">Brake pads, front and rear</td><td class="eb-p">$150<i>+ pads</i></td></tr>
+      <tr><td class="eb-n">E-Bike Silver tune-up<small>Inspection, gears, brakes, chain lube, test ride</small></td><td class="eb-p">$185<i>starting at</i></td></tr>
+      <tr><td class="eb-n">E-Bike Gold tune-up<small>Silver plus wash, drivetrain degrease, spoke re-tension</small></td><td class="eb-p">$250<i>starting at</i></td></tr>
+      <tr><td class="eb-n">Display, controller or motor install</td><td class="eb-p">$165<i>per part + part</i></td></tr>
+    </table>
+
+    <p class="eb-notes"><b>Parts are extra.</b> Tubes run $20 to $40 depending on size. Brake pads are sold in pairs, price depends on the model. Tires and parts are priced by model.</p>
+  </div>
+</section>
+<!-- ===== /E-BIKE ===== -->
+
 
 <!-- ================= PHOTO SHOWCASE (merged gallery + carousel) ================= -->
 <section class="showcase" id="gallery">
@@ -1408,7 +1468,7 @@ table.cmp{width:100%; border-collapse:collapse}
       </details>
       <details class="faq-item">
         <summary>Do you work on e-bikes?</summary>
-        <div class="fa">Yes. All e-bike work we do is mechanical: brakes, gears, tires, wheels, drivetrain, safety inspections and full tune-ups (E-Bike Silver from $185, E-Bike Gold from $250), plus a battery charge check. Internal battery and motor repairs, wiring faults and motor conversion kits are outside our scope.</div>
+        <div class="fa">Yes. We handle brakes, gears, tires, wheels, drivetrain, safety inspections and full tune-ups (E-Bike Silver from $185, E-Bike Gold from $250), plus a battery charge check. We also install displays, controllers and motors ($165 per part, part extra). Not sure what's wrong? Book a $95 diagnostic visit. We don't open batteries or repair motors internally, and we don't do conversion kits or wiring repairs.</div>
       </details>
       <details class="faq-item">
         <summary>How much does a mobile bike tune-up cost?</summary>
@@ -1420,11 +1480,11 @@ table.cmp{width:100%; border-collapse:collapse}
       </details>
       <details class="faq-item">
         <summary>Is there a trip fee?</summary>
-        <div class="fa">Free estimates by phone, always. When you book the service, there is no trip fee. You pay for the work only. The $75 trip charge applies in one case only: if we come out, give you the price, and you decide not to do the work.</div>
+        <div class="fa">Free estimates by phone, always. If you already know what you need, like a tune-up, a flat or new brake pads, there is no trip fee: you pay for the work only. If you don't know what's wrong, we book a $95 diagnostic visit. We find the problem and give you the price. If you go ahead with the repair, the $95 comes off your bill. If you decide not to, or the problem needs the manufacturer, the $95 covers the visit.</div>
       </details>
       <details class="faq-item">
         <summary>Do you provide the parts?</summary>
-        <div class="fa">Prices cover labor only; parts are charged separately. Common parts like inner tubes are installed on-site (tubes run $24 to $40 depending on size).</div>
+        <div class="fa">Prices cover labor only; parts are charged separately. Common parts like inner tubes are installed on-site (tubes run $20 to $40 depending on size).</div>
       </details>
       <details class="faq-item">
         <summary>What payment methods do you accept?</summary>
@@ -1432,7 +1492,7 @@ table.cmp{width:100%; border-collapse:collapse}
       </details>
       <details class="faq-item">
         <summary>Can I cancel or reschedule my appointment?</summary>
-        <div class="fa">Yes. There is no fee to cancel or reschedule: if your plans change, <a href="tel:+17542525245" onclick="trackCall()">call</a> or WhatsApp (754) 252-5245 and we'll move your visit to another day at no cost. If we come out and the appointment wasn't canceled (a no-show), the $75 trip charge applies.</div>
+        <div class="fa">Yes. There is no fee to cancel or reschedule: if your plans change, <a href="tel:+17542525245" onclick="trackCall()">call</a> or WhatsApp (754) 252-5245 and we'll move your visit to another day at no cost. If we come out and the appointment wasn't canceled (a no-show), the $95 visit fee applies.</div>
       </details>
       <details class="faq-item">
         <summary>What if something isn't right after the service?</summary>
@@ -1588,6 +1648,10 @@ table.cmp{width:100%; border-collapse:collapse}
           { "@type": "Offer", "url": "https://marccycling.com/#flat", "priceSpecification": { "@type": "PriceSpecification", "minPrice": 60, "priceCurrency": "USD" }, "description": "New tube installed on-site, tire and pressure check included. Tube not included in labor price.", "itemOffered": { "@type": "Service", "name": "Flat Tire Repair (standard bike)", "serviceType": "Bicycle flat tire repair", "provider": { "@id": "https://marccycling.com/#localbusiness" } } },
           { "@type": "Offer", "url": "https://marccycling.com/#flat", "priceSpecification": { "@type": "PriceSpecification", "minPrice": 140, "priceCurrency": "USD" }, "description": "Flat tire on any e-bike, repaired on-site: front wheel $140, rear wheel $165. Tube not included in labor price.", "itemOffered": { "@type": "Service", "name": "Flat Tire Repair (e-bike)", "serviceType": "E-bike flat tire repair", "provider": { "@id": "https://marccycling.com/#localbusiness" } } },
 { "@type": "Offer", "url": "https://marccycling.com/#flat", "priceSpecification": { "@type": "PriceSpecification", "minPrice": 250, "priceCurrency": "USD" }, "description": "Flat tire on an electric dirt bike, repaired on-site. Heavy moto-style wheel and tire. Tube not included in labor price.", "itemOffered": { "@type": "Service", "name": "Flat Tire Repair (e-dirt bike)", "serviceType": "Electric dirt bike flat tire repair", "provider": { "@id": "https://marccycling.com/#localbusiness" } } },
+          { "@type": "Offer", "url": "https://marccycling.com/#ebike", "priceSpecification": { "@type": "PriceSpecification", "minPrice": 95, "priceCurrency": "USD" }, "description": "Diagnostic visit when the problem is unknown. Taken off the final bill if the customer goes ahead with the repair.", "itemOffered": { "@type": "Service", "name": "Diagnostic Visit", "serviceType": "Bicycle and e-bike diagnostic" } },
+          { "@type": "Offer", "url": "https://marccycling.com/#ebike", "priceSpecification": { "@type": "PriceSpecification", "minPrice": 120, "priceCurrency": "USD" }, "description": "Brake pad replacement on one wheel, front or rear. Pads extra, sold in pairs.", "itemOffered": { "@type": "Service", "name": "E-Bike Brake Pads (front or rear)", "serviceType": "E-bike brake service" } },
+          { "@type": "Offer", "url": "https://marccycling.com/#ebike", "priceSpecification": { "@type": "PriceSpecification", "minPrice": 150, "priceCurrency": "USD" }, "description": "Brake pad replacement on both wheels. Pads extra, sold in pairs.", "itemOffered": { "@type": "Service", "name": "E-Bike Brake Pads (front and rear)", "serviceType": "E-bike brake service" } },
+          { "@type": "Offer", "url": "https://marccycling.com/#ebike", "priceSpecification": { "@type": "PriceSpecification", "minPrice": 165, "priceCurrency": "USD" }, "description": "Installation of an e-bike display, controller or motor, per part. Part extra.", "itemOffered": { "@type": "Service", "name": "E-Bike Display, Controller or Motor Installation", "serviceType": "E-bike component installation" } },
           { "@type": "Offer", "url": "https://marccycling.com/#pricing", "priceSpecification": { "@type": "PriceSpecification", "minPrice": 95, "priceCurrency": "USD" }, "description": "Quick safety check: 35-point safety inspection, chain lube, tire pressure check and inflation, bolt check.", "itemOffered": { "@type": "Service", "name": "Bronze Bike Tune-Up", "serviceType": "Bicycle tune-up", "provider": { "@id": "https://marccycling.com/#localbusiness" } } },
           { "@type": "Offer", "url": "https://marccycling.com/#pricing", "priceSpecification": { "@type": "PriceSpecification", "minPrice": 140, "priceCurrency": "USD" }, "description": "Full mechanical tune: Bronze plus derailleur and brake adjustment, wheel truing, frame wipe-down, test ride.", "itemOffered": { "@type": "Service", "name": "Silver Bike Tune-Up", "serviceType": "Bicycle tune-up", "provider": { "@id": "https://marccycling.com/#localbusiness" } } },
           { "@type": "Offer", "url": "https://marccycling.com/#pricing", "priceSpecification": { "@type": "PriceSpecification", "minPrice": 215, "priceCurrency": "USD" }, "description": "Deep service: Silver plus full wash and detailing, drivetrain degrease, bearing check and adjustment, frame polish.", "itemOffered": { "@type": "Service", "name": "Gold Bike Tune-Up", "serviceType": "Bicycle tune-up", "provider": { "@id": "https://marccycling.com/#localbusiness" } } },
@@ -1649,13 +1713,13 @@ table.cmp{width:100%; border-collapse:collapse}
       "mainEntity": [
         { "@type": "Question", "name": "Do you come to the customer's location?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Marc Cycling is a fully mobile service: the mechanic comes to your home, office or building with professional tools, and most repairs are done on the spot. There is no shop to visit. When you book the service there is no trip fee, you pay for the work only." } },
         { "@type": "Question", "name": "Which areas do you serve?", "acceptedAnswer": { "@type": "Answer", "text": "Broward County and South Florida, including Fort Lauderdale, Hollywood, Pembroke Pines, Pompano Beach, Coral Springs, Davie, Plantation, Sunrise, Weston, Miramar, Coconut Creek, Miami and Doral. Not sure about your city? Call (754) 252-5245 and we'll tell you right away." } },
-        { "@type": "Question", "name": "Do you work on e-bikes?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. All e-bike work we do is mechanical: brakes, gears, tires, wheels, drivetrain, safety inspections and full tune-ups (E-Bike Silver from $185, E-Bike Gold from $250), plus a battery charge check. Internal battery and motor repairs, wiring faults and motor conversion kits are outside our scope." } },
+        { "@type": "Question", "name": "Do you work on e-bikes?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. We handle brakes, gears, tires, wheels, drivetrain, safety inspections and full tune-ups (E-Bike Silver from $185, E-Bike Gold from $250), plus a battery charge check. We also install displays, controllers and motors ($165 per part, part extra). Not sure what's wrong? Book a $95 diagnostic visit. We don't open batteries or repair motors internally, and we don't do conversion kits or wiring repairs." } },
         { "@type": "Question", "name": "How much does a mobile bike tune-up cost?", "acceptedAnswer": { "@type": "Answer", "text": "Tune-up packages start at $95: Bronze from $95, Silver from $140 and Gold from $215. For e-bikes, Silver is from $185 and Gold from $250. A standard flat tire repair is $60 plus tube. Prices are for labor only, parts not included. Prices updated October 2026." } },
         { "@type": "Question", "name": "How do I schedule an appointment?", "acceptedAnswer": { "@type": "Answer", "text": "Book online at marccycling.com/book, with Saturday and Sunday appointments from 7am to 5pm Eastern. You can also call or WhatsApp (754) 252-5245 any day of the week, we usually reply within minutes. On weekdays we keep limited early morning and evening slots for quick repairs (flats, brakes, gears), arranged by phone or WhatsApp only." } },
-        { "@type": "Question", "name": "Is there a trip fee?", "acceptedAnswer": { "@type": "Answer", "text": "Free estimates by phone, always. When you book the service, there is no trip fee. You pay for the work only. The $75 trip charge applies in one case only: if we come out, give you the price, and you decide not to do the work." } },
-        { "@type": "Question", "name": "Do you provide the parts?", "acceptedAnswer": { "@type": "Answer", "text": "Prices cover labor only; parts are charged separately. Common parts like inner tubes are installed on-site (tubes run $24 to $40 depending on size)." } },
+        { "@type": "Question", "name": "Is there a trip fee?", "acceptedAnswer": { "@type": "Answer", "text": "Free estimates by phone, always. If you already know what you need, like a tune-up, a flat or new brake pads, there is no trip fee: you pay for the work only. If you don't know what's wrong, we book a $95 diagnostic visit. We find the problem and give you the price. If you go ahead with the repair, the $95 comes off your bill. If you decide not to, or the problem needs the manufacturer, the $95 covers the visit." } },
+        { "@type": "Question", "name": "Do you provide the parts?", "acceptedAnswer": { "@type": "Answer", "text": "Prices cover labor only; parts are charged separately. Common parts like inner tubes are installed on-site (tubes run $20 to $40 depending on size)." } },
         { "@type": "Question", "name": "What payment methods do you accept?", "acceptedAnswer": { "@type": "Answer", "text": "Zelle, Venmo, Apple Pay, checks and cash. Credit cards are not accepted." } },
-        { "@type": "Question", "name": "Can I cancel or reschedule my appointment?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. There is no fee to cancel or reschedule: if your plans change, call or WhatsApp (754) 252-5245 and we'll move your visit to another day at no cost. If we come out and the appointment wasn't canceled (a no-show), the $75 trip charge applies." } },
+        { "@type": "Question", "name": "Can I cancel or reschedule my appointment?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. There is no fee to cancel or reschedule: if your plans change, call or WhatsApp (754) 252-5245 and we'll move your visit to another day at no cost. If we come out and the appointment wasn't canceled (a no-show), the $95 visit fee applies." } },
         { "@type": "Question", "name": "What if something isn't right after the service?", "acceptedAnswer": { "@type": "Answer", "text": "Workmanship is guaranteed. If something isn't right after a service, contact us within 15 days and we'll make it right at no charge." } },
         { "@type": "Question", "name": "How should I prepare for a mobile service appointment?", "acceptedAnswer": { "@type": "Answer", "text": "Have the bike accessible: a garage, driveway or building lobby is perfect. If it's an e-bike, have the battery charged so we can test the bike after the service." } },
         { "@type": "Question", "name": "Can I watch while you work on my bike?", "acceptedAnswer": { "@type": "Answer", "text": "Of course. You're welcome to watch and ask questions during the service, or just hand over the bike and go about your day." } },

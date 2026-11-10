@@ -15,13 +15,48 @@
   "businessModel": "service-area business, no retail store, no public address",
   "googleBusinessProfile": "https://g.page/marccycling",
   "googleReviewLink": "https://g.page/marccycling/review",
-  "socialProfiles": { "instagram": "https://www.instagram.com/marc_cycling/", "yelp": "https://www.yelp.com/biz/marc-cycling-mobile-bicycle-repair-weston-2 (11 reviews 5 estrelas, 73 fotos; painel: biz.yelp.com/home/Fpdy-_3zJbgX5eqp103Mnw)", "pendentes": "Facebook, Nextdoor, LinkedIn" },
-  "serviceAreas": ["Broward County", "Fort Lauderdale", "Hollywood", "Pembroke Pines", "Pompano Beach", "Coral Springs", "Davie", "Plantation", "Sunrise", "Weston", "Miramar", "Coconut Creek", "Miami", "Doral"],
+  "socialProfiles": {
+    "instagram": "https://www.instagram.com/marc_cycling/",
+    "yelp": "https://www.yelp.com/biz/marc-cycling-mobile-bicycle-repair-weston-2 (11 reviews 5 estrelas, 73 fotos; painel: biz.yelp.com/home/Fpdy-_3zJbgX5eqp103Mnw)",
+    "pendentes": "Facebook, Nextdoor, LinkedIn"
+  },
+  "serviceAreas": [
+    "Broward County",
+    "Fort Lauderdale",
+    "Hollywood",
+    "Pembroke Pines",
+    "Pompano Beach",
+    "Coral Springs",
+    "Davie",
+    "Plantation",
+    "Sunrise",
+    "Weston",
+    "Miramar",
+    "Coconut Creek",
+    "Miami",
+    "Doral"
+  ],
   "openingHours": "Saturday and Sunday, 07:00-17:00 America/New_York (confirmado pelo proprietario em 27/07/2026 nesta sessao; contato por telefone/WhatsApp responde 7 dias)",
-  "languages": ["en", "pt", "es"],
-  "founder": { "name": "Caetano Marc Zammataro", "alternateNames": ["Marc", "Cae"], "jobTitle": "Founder and Bicycle Mechanic" },
-  "tripCharge": { "amount": 75, "currency": "USD", "policy": "TEXTO OFICIAL (31/07/2026, corrige versao errada de 29/07): Free estimates by phone, always. When you book the service, there is no trip fee. You pay for the work only. The $75 trip charge applies in one case only: if we come out, give you the price, and you decide not to do the work. Versao curta: No trip fee when you book. You only pay for the work." },
-  "cancellationPolicy": "Sem taxa para cancelar ou reagendar; NO-SHOW (reserva nao cancelada) conta como visita recusada e aplica o trip charge de $75 (31/07/2026)",
+  "languages": [
+    "en",
+    "pt",
+    "es"
+  ],
+  "founder": {
+    "name": "Caetano Marc Zammataro",
+    "alternateNames": [
+      "Marc",
+      "Cae"
+    ],
+    "jobTitle": "Founder and Bicycle Mechanic"
+  },
+  "tripCharge": {
+    "amount": 95,
+    "currency": "USD",
+    "policy": "Atualizado 10/11/2026 (substitui os $75): Free estimates by phone, always. Known repair: no trip fee, pay for the work only. Unknown problem: $95 diagnostic visit, taken off the bill if the customer goes ahead with the repair. Charged if the customer declines or the problem needs the manufacturer.",
+    "_superado": "Ate 09/11/2026 era trip charge de $75 (texto oficial de 31/07/2026)."
+  },
+  "cancellationPolicy": "Sem taxa para cancelar ou reagendar; NO-SHOW cobra a taxa de visita de $95 (atualizado 10/11/2026; antes $75, SUPERADO)",
   "guaranteePolicy": "Workmanship guaranteed; reclamacoes em ate 15 dias apos o servico sao resolvidas sem custo (aprovado em 29/07/2026)",
   "customerPolicies": "Cliente pode assistir ao servico; preparo: bike acessivel (garagem/entrada/lobby) e bateria carregada em e-bikes (aprovado em 29/07/2026). Politica de mau tempo: DESCARTADA pelo proprietario, nao publicar",
   "founderExperienceSince": 2000,
@@ -29,25 +64,136 @@
   "founderHistory": "Confirmado pelo proprietario em 31/07/2026: dono da Bike Tech Jardins de 2005 a 2020, loja-conceito no bairro Jardins, Sao Paulo (entre a Rua da Consolacao e a Rua Oscar Freire, regiao das principais grifes de luxo). Uma das unicas lojas do Brasil a representar Trek E Specialized ao mesmo tempo, gracas aos resultados de vendas. Vendeu a loja em 2020 para se mudar aos EUA. Premios da Trek e da Specialized a caminho (aguardando arquivos) + 1 certificado adicional.",
   "certifications": {
     "_fonte": "Proprietario confirmou em 31/07/2026 que os documentos Shimano Brasil e Park Tool sao os MESMOS ja publicados na galeria (nao ha scan novo a esperar). PDF de diplomas escaneados fornecido pelo proprietario em 30/07/2026; originais em img/certs/ e expostos em /#credentials (secao + lightbox). 9 credenciais pessoais no Person schema (hasCredential); Trek World 2008 e participacao da loja Bike Tech Jardins (SP), exposta na galeria com legenda honesta, fora do hasCredential",
-    "lista": ["Trek & Bosch E-Bike Systems Training 2018", "Shimano Service Center 2013", "Shimano Di2/STEPS/XTR 2019", "SRAM & RockShox Authorized Service 2019", "Specialized SBCU Retul Level One 2021", "Retul University Custom Fit 2013", "bikefitting.com Static Fit Level 1 2018", "Trek Precision Fit Technician 2011 (ano confirmado pelo proprietario em 30/07/2026; sem data impressa no certificado)", "Elite Technical Training 2019", "Trek World 2008 (loja)", "Shimano T.E.C. Certified Technician USA (Di2, disc brakes, wheel/hub, drivetrain road+mountain; placas fisicas fotografadas em 31/07/2026)"],
-    "premiosLoja": ["Trek World Brasil E-Bikes Dealer of the Year 2019", "Trek Retailer of the Year 2012", "Trek Top Sales 2014", "Trek Bontrager Store of the Year 2018", "Specialized Lojista do Ano 2009 Infantil", "Specialized Lojista do Ano 2009 Comfort"]
+    "lista": [
+      "Trek & Bosch E-Bike Systems Training 2018",
+      "Shimano Service Center 2013",
+      "Shimano Di2/STEPS/XTR 2019",
+      "SRAM & RockShox Authorized Service 2019",
+      "Specialized SBCU Retul Level One 2021",
+      "Retul University Custom Fit 2013",
+      "bikefitting.com Static Fit Level 1 2018",
+      "Trek Precision Fit Technician 2011 (ano confirmado pelo proprietario em 30/07/2026; sem data impressa no certificado)",
+      "Elite Technical Training 2019",
+      "Trek World 2008 (loja)",
+      "Shimano T.E.C. Certified Technician USA (Di2, disc brakes, wheel/hub, drivetrain road+mountain; placas fisicas fotografadas em 31/07/2026)"
+    ],
+    "premiosLoja": [
+      "Trek World Brasil E-Bikes Dealer of the Year 2019",
+      "Trek Retailer of the Year 2012",
+      "Trek Top Sales 2014",
+      "Trek Bontrager Store of the Year 2018",
+      "Specialized Lojista do Ano 2009 Infantil",
+      "Specialized Lojista do Ano 2009 Comfort"
+    ]
   },
   "currency": "USD",
-  "paymentAccepted": ["Zelle", "Venmo", "Apple Pay", "Check", "Cash"],
-  "pricesUpdated": "2026-10",
-  "services": [
-    { "name": "Flat Tire Repair (standard bike)", "priceFrom": 60, "note": "+ tube; tubes run $24-$40 (atualizado 19/10/2026)" },
-    { "name": "Flat Tire Repair (e-bike front wheel)", "priceFrom": 140, "note": "+ tube (atualizado 19/10/2026)" },
-    { "name": "Flat Tire Repair (e-bike rear wheel)", "priceFrom": 165, "note": "+ tube (atualizado 19/10/2026)" },
-    { "name": "Flat Tire Repair (e-dirt bike)", "priceFrom": 250, "note": "+ tube; roda estilo moto" },
-    { "name": "Bronze Bike Tune-Up", "priceFrom": 95 },
-    { "name": "Silver Bike Tune-Up", "priceFrom": 140 },
-    { "name": "Gold Bike Tune-Up", "priceFrom": 215, "note": "most popular" },
-    { "name": "E-Bike Silver Service", "priceFrom": 185, "note": "atualizado 19/10/2026" },
-    { "name": "E-Bike Gold Service", "priceFrom": 250, "note": "atualizado 19/10/2026" }
+  "paymentAccepted": [
+    "Zelle",
+    "Venmo",
+    "Apple Pay",
+    "Check",
+    "Cash"
   ],
-  "notOffered": ["Internal battery repairs and rebuilds", "Internal motor repairs", "Wiring and electrical fault troubleshooting", "Motor conversion kits", "Controller programming"],
-  "_notOfferedNote": "Politica adotada pelo proprietario em 29/07/2026: todo servico de e-bike e mecanico; trabalho eletrico interno fica fora do escopo. Redacao propria, nao copiar concorrente.",
-  "competidores": { "verificadoEm": "2026-10-19", "fonte": "agendador da velofix com CEP 33131 (Miami)", "bikes": { "Bronze": 149, "Silver": 179, "Gold": 269, "Platinum": 519 }, "ebikes": { "eBike Silver Tune": 189, "eBike Gold Tune": 279, "eBike Flat Repair": 149 }, "nota": "velofix NAO atende e-dirt bikes, motos eletricas e patinetes" },
-  "reviews": { "rating": "5.0", "count": "over 100 (119 verificado em 19/10/2026)", "asOf": "2026-10", "source": "https://g.page/marccycling", "rule": "NUNCA numero exato em texto fixo; usar marco redondo (over 100, over 150 ao cruzar) + as of [mes ano]" }
+  "pricesUpdated": "2026-11",
+  "services": [
+    {
+      "name": "Flat Tire Repair (standard bike)",
+      "priceFrom": 60,
+      "note": "+ tube; tubes run $20-$40 (atualizado 19/10/2026)"
+    },
+    {
+      "name": "Flat Tire Repair (e-bike front wheel)",
+      "priceFrom": 140,
+      "note": "+ tube (atualizado 19/10/2026)"
+    },
+    {
+      "name": "Flat Tire Repair (e-bike rear wheel)",
+      "priceFrom": 165,
+      "note": "+ tube (atualizado 19/10/2026)"
+    },
+    {
+      "name": "Flat Tire Repair (e-dirt bike)",
+      "priceFrom": 250,
+      "note": "+ tube; roda estilo moto"
+    },
+    {
+      "name": "Bronze Bike Tune-Up",
+      "priceFrom": 95
+    },
+    {
+      "name": "Silver Bike Tune-Up",
+      "priceFrom": 140
+    },
+    {
+      "name": "Gold Bike Tune-Up",
+      "priceFrom": 215,
+      "note": "most popular"
+    },
+    {
+      "name": "E-Bike Silver Service",
+      "priceFrom": 185,
+      "note": "atualizado 19/10/2026"
+    },
+    {
+      "name": "E-Bike Gold Service",
+      "priceFrom": 250,
+      "note": "atualizado 19/10/2026"
+    },
+    {
+      "name": "Diagnostic Visit (any bike)",
+      "priceFrom": 95,
+      "note": "problema desconhecido; descontado do valor final se o cliente fizer o servico (10/11/2026)"
+    },
+    {
+      "name": "E-Bike Tire Replacement (front / rear)",
+      "priceFrom": 140,
+      "note": "$140 dianteiro, $165 traseiro, + pneu e camara (10/11/2026)"
+    },
+    {
+      "name": "E-Bike Brake Pads (front or rear)",
+      "priceFrom": 120,
+      "note": "+ pastilhas, vendidas por par (10/11/2026)"
+    },
+    {
+      "name": "E-Bike Brake Pads (front and rear)",
+      "priceFrom": 150,
+      "note": "+ pastilhas, vendidas por par (10/11/2026)"
+    },
+    {
+      "name": "E-Bike Display, Controller or Motor Installation",
+      "priceFrom": 165,
+      "note": "por peca, + a peca (10/11/2026)"
+    }
+  ],
+  "notOffered": [
+    "Internal battery repairs and rebuilds",
+    "Internal motor repairs",
+    "Wiring and electrical fault troubleshooting",
+    "Motor conversion kits",
+    "Controller programming"
+  ],
+  "_notOfferedNote": "Politica adotada pelo proprietario em 29/07/2026: todo servico de e-bike e mecanico; trabalho eletrico interno fica fora do escopo. Redacao propria, nao copiar concorrente. [ATUALIZADO 10/11/2026: instalacao de display, controller e motor passou a ser oferecida ($165 por peca). Continua fora: abrir bateria, reparo interno de motor, kit de conversao, reparo de fiacao.]",
+  "competidores": {
+    "verificadoEm": "2026-10-19",
+    "fonte": "agendador da velofix com CEP 33131 (Miami)",
+    "bikes": {
+      "Bronze": 149,
+      "Silver": 179,
+      "Gold": 269,
+      "Platinum": 519
+    },
+    "ebikes": {
+      "eBike Silver Tune": 189,
+      "eBike Gold Tune": 279,
+      "eBike Flat Repair": 149
+    },
+    "nota": "velofix NAO atende e-dirt bikes, motos eletricas e patinetes"
+  },
+  "reviews": {
+    "rating": "5.0",
+    "count": "over 100 (119 verificado em 19/10/2026)",
+    "asOf": "2026-10",
+    "source": "https://g.page/marccycling",
+    "rule": "NUNCA numero exato em texto fixo; usar marco redondo (over 100, over 150 ao cruzar) + as of [mes ano]"
+  }
 }

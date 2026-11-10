@@ -23,7 +23,7 @@ Decisao registrada: `#organization` foi fundido em `#localbusiness` (LocalBusine
 Marc Cycling ─ legalName ─→ Marc Cycling LLC
 Marc Cycling ─ founder ──→ Caetano Marc Zammataro (Person #person-caetano)
 Caetano ────── worksFor ─→ Marc Cycling
-Marc Cycling ─ provides ─→ Flat Tire Repair (standard $49+, e-bike $120+)
+Marc Cycling ─ provides ─→ Flat Tire Repair (standard $49+, e-bike $120+) [SUPERADO EM 10/11/2026: standard $60+, e-bike $140/$165+]
 Marc Cycling ─ provides ─→ Tune-Ups Bronze $95 / Silver $140 / Gold $215
 Marc Cycling ─ provides ─→ E-Bike Service Silver $150 / Gold $220
 Marc Cycling ─ serves ───→ Broward County + Fort Lauderdale, Hollywood, Pembroke Pines,

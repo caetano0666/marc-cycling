@@ -6,7 +6,7 @@ Regra: nenhum artigo completo sem evidencia/insumo do proprietario (BUSINESS-DAT
 
 | URL | Pergunta principal | H1 sugerido | Precisa do dono |
 |---|---|---|---|
-| /services/flat-tire-repair/ | Can someone fix my flat at home today? | Flat Tire Repair at Your Home, from $49 | foto troca de camara; tempo medio |
+| /services/flat-tire-repair/ | Can someone fix my flat at home today? | Flat Tire Repair at Your Home, from $49 [SUPERADO: hoje $60] | foto troca de camara; tempo medio |
 | /services/bicycle-tune-up/ | What does a tune-up include and cost? | Mobile Bicycle Tune-Up: Bronze, Silver and Gold | fotos antes/depois drivetrain; tempo medio por pacote |
 | /services/e-bike-service/ | Does anyone service e-bikes near me? | Mobile E-Bike Service in South Florida | foto e-bike no cavalete; limites (sem rebuild de bateria) ja definidos |
 | /services/mobile-bike-repair/ | How does mobile bike repair work? | Mobile Bike Repair: We Come to You | foto van + setup; processo passo a passo |
