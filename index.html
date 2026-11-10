@@ -714,6 +714,7 @@ table.cmp{width:100%; border-collapse:collapse}
     <a href="#top" class="nav-brand"><img class="logo" src="img/logo-marc-cycling.jpg" width="600" height="198" alt="Marc Cycling, mobile bike repair service"></a>
     <nav class="nav-links">
       <a href="#services">Services</a>
+      <a href="#prices">Prices</a>
       <a href="#how">How it works</a>
       <a href="#area">Service area</a>
       <a href="#credentials">Credentials</a>
@@ -1045,177 +1046,111 @@ table.cmp{width:100%; border-collapse:collapse}
   </div>
 </section>
 
-<!-- ================= PRICE COMPARISON ================= -->
-<section class="sec" id="compare">
-  <div class="wrap">
-    <div class="sec-head">
-      <div class="kicker">Compare and save</div>
-      <h2>Same mobile service. Around 20% less.</h2>
-    </div>
-    <div class="cmp-wrap">
-      <table class="cmp">
-        <thead>
-          <tr>
-            <th>Package</th>
-            <th class="me">Marc Cycling</th>
-            <th>Mobile bike franchises in Miami</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Bronze</td>
-            <td class="me">$95<span class="save">Save 36%</span></td>
-            <td>$149</td>
-          </tr>
-          <tr>
-            <td>Silver</td>
-            <td class="me">$140<span class="save">Save 22%</span></td>
-            <td>$179</td>
-          </tr>
-          <tr>
-            <td>Gold</td>
-            <td class="me">$215<span class="save">Save 20%</span></td>
-            <td>$269</td>
-          </tr>
-        </tbody>
-      </table>
-      <p class="cmp-note">Prices compared with leading mobile bike service franchises in Miami, October 2026.</p>
-    </div>
-  </div>
-</section>
-
-<!-- ===== PRICE LIST (tabela de precos) ===== -->
+<!-- ================= PRICES (todos os precos num lugar so, 10/11/2026) ================= -->
 <style>
-.pl{--pl-y:var(--yellow,#F5B700);--pl-ink:var(--ink,#F5F3EE);--pl-mut:#a7a7ae;--pl-line:rgba(245,243,238,.10)}
-.pl h2{font:700 clamp(36px,6vw,56px)/1.02 Oswald,sans-serif;text-transform:uppercase;color:var(--pl-ink);margin:0 0 10px}
-.pl-sub{font:400 16px/1.5 Inter,sans-serif;color:var(--pl-mut);margin:0 0 8px}
-.pl-grp{margin-top:44px}
-.pl-gh{display:flex;justify-content:space-between;align-items:baseline;gap:12px;border-bottom:2px solid var(--pl-y);padding-bottom:10px}
-.pl-gh h3{font:600 22px/1 Oswald,sans-serif;letter-spacing:.04em;text-transform:uppercase;color:var(--pl-ink);margin:0}
-.pl-gh span{font:500 11px/1 Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--pl-mut)}
-.pl-t{width:100%;border-collapse:collapse}
-.pl-t th{padding-left:16px;font:500 11px/1 Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--pl-mut);text-align:right;padding:14px 0 4px}
-.pl-t td{padding:16px 0;border-bottom:1px solid var(--pl-line);vertical-align:middle}
-.pl-n{font:500 18px/1.3 Inter,sans-serif;color:var(--pl-ink);text-align:left}
-.pl-n small{display:block;font:400 14px/1.4 Inter,sans-serif;color:var(--pl-mut);margin-top:2px}
-.pl-p{font:600 28px/1 Oswald,sans-serif;color:var(--pl-y);text-align:right;white-space:nowrap;padding-left:16px}
-.pl-p i{font:400 14px Inter,sans-serif;font-style:normal;color:var(--pl-mut);margin-left:6px}
-.pl-c{font:500 20px/1 Oswald,sans-serif;color:var(--pl-mut);text-align:right;text-decoration:line-through;width:120px}
-.pl-s{text-align:right;width:110px}
-.pl-s span{display:inline-block;font:600 12px/1 Inter,sans-serif;color:#111;background:var(--pl-y);border-radius:999px;padding:6px 10px;white-space:nowrap}
-.pl-col-p{width:130px}
-.pl-notes{margin-top:28px;font:400 14px/1.6 Inter,sans-serif;color:var(--pl-mut);max-width:760px}
-.pl-notes b{color:var(--pl-ink);font-weight:500}
-@media (max-width:640px){
-  .pl-t tr:first-child th{display:none}
-  .pl-t td{padding:14px 0}
-  .pl-p,.pl-c,.pl-s{padding-left:10px!important}
-  .pl-col-p,.pl-c,.pl-s{width:auto}
-  .pl-p{font-size:22px}
-  .pl-p i{display:block;margin:4px 0 0;font-size:12px}
-  .pl-c{font-size:15px}
-  .pl-s span{font-size:11px;padding:5px 8px}
-  .pl-n{font-size:16px}
-  .pl-n small{font-size:13px}
+.px{--px-y:var(--yellow,#F5B700);--px-ink:var(--ink,#F5F3EE);--px-mut:#a7a7ae;--px-line:rgba(245,243,238,.10);--px-g:#0E5E35;--px-g2:#0A4A29;--px-wl:rgba(255,255,255,.16);--px-wm:rgba(255,255,255,.74)}
+.px h2.px-title{font:700 clamp(36px,6vw,56px)/1.02 Oswald,sans-serif;text-transform:uppercase;color:var(--px-ink);margin:0 0 10px}
+.px-sub{font:400 16px/1.5 Inter,sans-serif;color:var(--px-mut);margin:0}
+.px-diag{margin-top:34px;border:1.5px solid var(--px-y);border-radius:14px;padding:20px 24px}
+.px-dh{display:flex;justify-content:space-between;align-items:center;gap:16px}
+.px-diag h3{font:600 24px/1.1 Oswald,sans-serif;letter-spacing:.03em;text-transform:uppercase;color:var(--px-ink);margin:0}
+.px-diag p{margin:6px 0 0;font:400 15px/1.6 Inter,sans-serif;color:var(--px-mut);max-width:680px}
+.px-diag .px-p{font-size:44px}
+.px-grp{margin-top:44px}
+.px-gh{display:flex;justify-content:space-between;align-items:baseline;gap:12px;border-bottom:2px solid var(--px-y);padding-bottom:10px}
+.px-gh h3{font:600 22px/1 Oswald,sans-serif;letter-spacing:.04em;text-transform:uppercase;color:var(--px-ink);margin:0;display:flex;align-items:center;gap:10px}
+.px-gh h3 svg{width:22px;height:22px;flex:none}
+.px-gh span{font:500 11px/1 Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--px-mut);white-space:nowrap}
+.px-t{width:100%;border-collapse:collapse}
+.px-t th{font:500 11px/1 Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--px-mut);text-align:right;padding:14px 0 4px 16px}
+.px-t td{padding:15px 0;border-bottom:1px solid var(--px-line);vertical-align:middle}
+.px-n{font:500 18px/1.3 Inter,sans-serif;color:var(--px-ink);text-align:left}
+.px-n small{display:block;font:400 14px/1.4 Inter,sans-serif;color:var(--px-mut);margin-top:2px}
+.px-p{font:600 28px/1 Oswald,sans-serif;color:var(--px-y);text-align:right;white-space:nowrap;padding-left:16px}
+.px-p i{display:block;font:400 13px/1.4 Inter,sans-serif;font-style:normal;color:var(--px-mut);margin-top:4px}
+.px-c{font:500 20px/1 Oswald,sans-serif;color:var(--px-mut);text-align:right;text-decoration:line-through;padding-left:16px;width:110px}
+.px-s{text-align:right;width:112px;padding-left:12px}
+.px-s span{display:inline-block;font:600 12px/1 Inter,sans-serif;color:#111;background:var(--px-y);border-radius:999px;padding:6px 10px;white-space:nowrap}
+.px-two{display:grid;grid-template-columns:1fr 1fr;gap:0 48px}
+.px-eb{margin-top:48px;background:linear-gradient(160deg,var(--px-g),var(--px-g2));border-radius:18px;padding:24px 28px 10px;color:#fff}
+.px-eb .px-gh h3{color:#fff}.px-eb .px-gh span{color:var(--px-wm)}
+.px-eb .px-t td{border-color:var(--px-wl)}
+.px-eb .px-n{color:#fff}.px-eb .px-n small,.px-eb .px-p i{color:var(--px-wm)}
+.px-eb .px-t tr:last-child td{border-bottom:none}
+.px-notes{margin-top:28px;font:400 14px/1.6 Inter,sans-serif;color:var(--px-mut);max-width:820px}
+.px-notes b{color:var(--px-ink);font-weight:500}
+@media (max-width:760px){
+  .px-two{grid-template-columns:1fr}
+  .px-two .px-grp + .px-grp{margin-top:36px}
+  .px-diag{padding:18px}
+  #compare .px-t tr:first-child{display:none}
+  #compare .px-t tr{display:grid;grid-template-columns:auto auto 1fr;align-items:center;column-gap:14px;padding:14px 0;border-bottom:1px solid var(--px-line)}
+  #compare .px-t td{border:none;padding:0;width:auto}
+  #compare .px-n{grid-column:1/-1;margin-bottom:8px}
+  #compare .px-p{text-align:left}
+  #compare .px-s{text-align:right}
+  .px-diag .px-p{font-size:34px}
+  .px-p{font-size:23px}
+  .px-n{font-size:16px}.px-n small{font-size:13px}
+  .px-c{font-size:15px;width:auto;padding-left:10px}
+  .px-s{width:auto;padding-left:8px}.px-s span{font-size:11px;padding:5px 8px}
+  .px-t th{display:none}
+  .px-eb{padding:20px 18px 6px;margin-top:40px}
 }
 </style>
-<section class="sec pl" id="prices" aria-labelledby="pl-title">
+<section class="sec px" id="prices" aria-labelledby="px-title">
   <div class="wrap">
     <div class="kicker">Price list</div>
-    <h2 id="pl-title">All prices, upfront</h2>
-    <p class="pl-sub">Mobile bike and e-bike repair across Broward County and South Florida. We come to you.</p>
+    <h2 class="px-title" id="px-title">All prices, upfront</h2>
+    <p class="px-sub">Labor prices. Parts extra. We come to you across Broward County and South Florida.</p>
 
-    <div class="pl-grp">
-      <div class="pl-gh"><h3>Flat tire repair</h3><span>Tube extra</span></div>
-      <table class="pl-t">
-        <tr><td class="pl-n">Standard bike</td><td class="pl-p">$60<i>+ tube</i></td></tr>
-        <tr><td class="pl-n">E-bike, front wheel</td><td class="pl-p">$140<i>+ tube</i></td></tr>
-        <tr><td class="pl-n">E-bike, rear wheel</td><td class="pl-p">$165<i>+ tube</i></td></tr>
-        <tr><td class="pl-n">E-dirt bike</td><td class="pl-p">$250<i>+ tube</i></td></tr>
+    <div class="px-diag">
+      <div class="px-dh"><h3>Diagnostic visit</h3><div class="px-p">$95</div></div>
+      <p>Not sure what's wrong? We come out, find the problem and give you the price. If you go ahead with the repair, the $95 comes off your bill. If you decide not to, or the problem needs the manufacturer, the $95 covers the visit.</p>
+    </div>
+
+    <div class="px-grp" id="compare">
+      <div class="px-gh"><h3>Bike tune-up</h3><span>Starting at</span></div>
+      <table class="px-t">
+        <tr><th></th><th>Marc Cycling</th><th>Franchises</th><th></th></tr>
+        <tr><td class="px-n">Bronze<small>Quick safety check</small></td><td class="px-p">$95</td><td class="px-c">$149</td><td class="px-s"><span>Save 36%</span></td></tr>
+        <tr><td class="px-n">Silver<small>The full mechanical tune</small></td><td class="px-p">$140</td><td class="px-c">$179</td><td class="px-s"><span>Save 22%</span></td></tr>
+        <tr><td class="px-n">Gold<small>The deep service, once a year</small></td><td class="px-p">$215</td><td class="px-c">$269</td><td class="px-s"><span>Save 20%</span></td></tr>
       </table>
     </div>
 
-    <div class="pl-grp">
-      <div class="pl-gh"><h3>Bike tune-up</h3><span>Starting at</span></div>
-      <table class="pl-t">
-        <tr><th></th><th class="pl-col-p">Marc Cycling</th><th class="pl-hc">Franchises</th><th></th></tr>
-        <tr><td class="pl-n">Bronze<small>Quick safety check</small></td><td class="pl-p">$95</td><td class="pl-c">$149</td><td class="pl-s"><span>Save 36%</span></td></tr>
-        <tr><td class="pl-n">Silver<small>The full mechanical tune</small></td><td class="pl-p">$140</td><td class="pl-c">$179</td><td class="pl-s"><span>Save 22%</span></td></tr>
-        <tr><td class="pl-n">Gold<small>The deep service, once a year</small></td><td class="pl-p">$215</td><td class="pl-c">$269</td><td class="pl-s"><span>Save 20%</span></td></tr>
+    <div class="px-two">
+      <div class="px-grp">
+        <div class="px-gh"><h3>Flat tire</h3><span>+ tube</span></div>
+        <table class="px-t">
+          <tr><td class="px-n">Standard bike</td><td class="px-p">$60</td></tr>
+          <tr><td class="px-n">E-dirt bike<small>Heavy moto-style wheel</small></td><td class="px-p">$250</td></tr>
+        </table>
+      </div>
+      <div class="px-grp">
+        <div class="px-gh"><h3>E-bike wheel</h3><span>Flat or new tire</span></div>
+        <table class="px-t">
+          <tr><td class="px-n">Front wheel</td><td class="px-p">$140<i>+ tire or tube</i></td></tr>
+          <tr><td class="px-n">Rear wheel</td><td class="px-p">$165<i>+ tire or tube</i></td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="px-eb" id="ebike">
+      <div class="px-gh"><h3><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 2 4 13.5h6.5L9 22l11-12.5h-6.8L13.5 2z" fill="#F5B700"/></svg>E-bike service</h3><span>Parts extra</span></div>
+      <table class="px-t">
+        <tr><td class="px-n">E-Bike Silver tune-up<small>Inspection, gears, brakes, chain lube, test ride</small></td><td class="px-p">$185<i>starting at</i></td></tr>
+        <tr><td class="px-n">E-Bike Gold tune-up<small>Silver plus wash, drivetrain degrease, spoke re-tension</small></td><td class="px-p">$250<i>starting at</i></td></tr>
+        <tr><td class="px-n">Brake pads, front or rear</td><td class="px-p">$120<i>+ pads</i></td></tr>
+        <tr><td class="px-n">Brake pads, front and rear</td><td class="px-p">$150<i>+ pads</i></td></tr>
+        <tr><td class="px-n">Display, controller or motor install</td><td class="px-p">$165<i>per part + part</i></td></tr>
       </table>
     </div>
 
-    <div class="pl-grp">
-      <div class="pl-gh"><h3>E-bike service</h3><span>Starting at</span></div>
-      <table class="pl-t">
-        <tr><td class="pl-n">E-Bike Silver<small>Inspection, gears, brakes, chain lube, test ride</small></td><td class="pl-p">$185</td></tr>
-        <tr><td class="pl-n">E-Bike Gold<small>Silver plus wash, drivetrain degrease, spoke re-tension</small></td><td class="pl-p">$250</td></tr>
-      </table>
-    </div>
-
-    <p class="pl-notes"><b>Labor only, parts extra.</b> Tubes run $20 to $40 depending on size. No trip fee when you book a repair. Not sure what's wrong? A $95 diagnostic visit, taken off your bill if you go ahead with the repair. A missed visit is $95. E-bike prices: see <a href="#ebike" style="color:var(--pl-y)">E-bike service</a>. Franchise prices compared with leading mobile bike service franchises in Miami, October 2026.</p>
+    <p class="px-notes"><b>No trip fee when you book a repair.</b> Tubes run $20 to $40 depending on size. Brake pads are sold in pairs, price depends on the model. Tires and parts are priced by model. A missed visit is $95. Franchise prices compared with leading mobile bike service franchises in Miami, October 2026.</p>
   </div>
 </section>
-<!-- ===== /PRICE LIST ===== -->
-
-<style>
-.eb{--eb-g:#0E5E35;--eb-g2:#0A4A29;--eb-y:var(--yellow,#F5B700);--eb-w:#FFFFFF;--eb-m:rgba(255,255,255,.72);--eb-line:rgba(255,255,255,.16);
-    background:linear-gradient(160deg,var(--eb-g) 0%,var(--eb-g2) 100%);color:var(--eb-w);position:relative;overflow:hidden}
-.eb .wrap{position:relative;z-index:1}
-.eb-bolt{position:absolute;right:-40px;top:20px;width:320px;height:auto;opacity:.10;z-index:0;pointer-events:none}
-.eb-head{display:flex;align-items:center;gap:16px;margin-bottom:10px}
-.eb-head svg{width:44px;height:44px;flex:none}
-.eb .kicker{color:var(--eb-y)}
-.eb h2{font:700 clamp(36px,6vw,56px)/1.02 Oswald,sans-serif;text-transform:uppercase;color:var(--eb-w);margin:0}
-.eb-sub{font:400 16px/1.5 Inter,sans-serif;color:var(--eb-m);margin:8px 0 0}
-.eb-diag{margin-top:34px;border:1.5px solid var(--eb-y);border-radius:14px;padding:22px 24px;display:grid;grid-template-columns:1fr auto;gap:8px 24px;align-items:center;background:rgba(0,0,0,.14)}
-.eb-diag h3{font:600 22px/1.1 Oswald,sans-serif;letter-spacing:.04em;text-transform:uppercase;margin:0;color:var(--eb-w)}
-.eb-diag p{grid-column:1/-1;margin:0;font:400 15px/1.6 Inter,sans-serif;color:var(--eb-m);max-width:760px}
-.eb-diag .eb-p{font-size:34px}
-.eb-t{width:100%;border-collapse:collapse;margin-top:26px}
-.eb-t td{padding:16px 0;border-bottom:1px solid var(--eb-line);vertical-align:middle}
-.eb-n{font:500 18px/1.3 Inter,sans-serif;color:var(--eb-w)}
-.eb-n small{display:block;font:400 14px/1.4 Inter,sans-serif;color:var(--eb-m);margin-top:2px}
-.eb-p{font:600 28px/1 Oswald,sans-serif;color:var(--eb-y);text-align:right;white-space:nowrap;padding-left:16px}
-.eb-p i{display:block;font:400 13px/1.4 Inter,sans-serif;font-style:normal;color:var(--eb-m);margin-top:4px}
-.eb-notes{margin-top:24px;font:400 14px/1.6 Inter,sans-serif;color:var(--eb-m);max-width:760px}
-.eb-notes b{color:var(--eb-w);font-weight:500}
-@media (max-width:640px){
-  .eb-bolt{width:200px;right:-50px}
-  .eb-head svg{display:none}
-  .eb-diag{padding:18px;grid-template-columns:1fr auto}
-  .eb-diag .eb-p{font-size:28px}
-  .eb-p{font-size:22px}
-  .eb-n{font-size:16px}
-}
-</style>
-<section class="sec eb" id="ebike" aria-labelledby="eb-title">
-  <svg class="eb-bolt" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 2 4 13.5h6.5L9 22l11-12.5h-6.8L13.5 2z" fill="#F5B700"/></svg>
-  <div class="wrap">
-    <div class="kicker">E-bike service</div>
-    <div class="eb-head"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 2 4 13.5h6.5L9 22l11-12.5h-6.8L13.5 2z" fill="#F5B700"/></svg><h2 id="eb-title">E-bikes, priced upfront</h2></div>
-    <p class="eb-sub">Labor prices for e-bikes. Parts are extra.</p>
-
-    <div class="eb-diag">
-      <h3>Diagnostic visit</h3>
-      <div class="eb-p">$95</div>
-      <p>Not sure what's wrong? Book a $95 diagnostic visit. We find the problem and give you the price. If you go ahead with the repair, the $95 comes off your bill. If you decide not to, or the problem needs the manufacturer, the $95 covers the visit.</p>
-    </div>
-
-    <table class="eb-t">
-      <tr><td class="eb-n">Front wheel<small>Flat repair or tire replacement</small></td><td class="eb-p">$140<i>+ tire or tube</i></td></tr>
-      <tr><td class="eb-n">Rear wheel<small>Flat repair or tire replacement</small></td><td class="eb-p">$165<i>+ tire or tube</i></td></tr>
-      <tr><td class="eb-n">Brake pads, front or rear</td><td class="eb-p">$120<i>+ pads</i></td></tr>
-      <tr><td class="eb-n">Brake pads, front and rear</td><td class="eb-p">$150<i>+ pads</i></td></tr>
-      <tr><td class="eb-n">E-Bike Silver tune-up<small>Inspection, gears, brakes, chain lube, test ride</small></td><td class="eb-p">$185<i>starting at</i></td></tr>
-      <tr><td class="eb-n">E-Bike Gold tune-up<small>Silver plus wash, drivetrain degrease, spoke re-tension</small></td><td class="eb-p">$250<i>starting at</i></td></tr>
-      <tr><td class="eb-n">Display, controller or motor install</td><td class="eb-p">$165<i>per part + part</i></td></tr>
-    </table>
-
-    <p class="eb-notes"><b>Parts are extra.</b> Tubes run $20 to $40 depending on size. Brake pads are sold in pairs, price depends on the model. Tires and parts are priced by model.</p>
-  </div>
-</section>
-<!-- ===== /E-BIKE ===== -->
+<!-- ================= /PRICES ================= -->
 
 
 <!-- ================= PHOTO SHOWCASE (merged gallery + carousel) ================= -->
