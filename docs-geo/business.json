@@ -34,7 +34,10 @@
     "Miramar",
     "Coconut Creek",
     "Miami",
-    "Doral"
+    "Doral",
+    "Miami Beach",
+    "Coral Gables",
+    "Kendall"
   ],
   "openingHours": "Saturday and Sunday, 07:00-17:00 America/New_York (confirmado pelo proprietario em 27/07/2026 nesta sessao; contato por telefone/WhatsApp responde 7 dias)",
   "languages": [
@@ -195,5 +198,6 @@
     "asOf": "2026-10",
     "source": "https://g.page/marccycling",
     "rule": "NUNCA numero exato em texto fixo; usar marco redondo (over 100, over 150 ao cruzar) + as of [mes ano]"
-  }
+  },
+  "_serviceAreasNote": "Atualizado 10/11/2026 pelo Caetano: atende Broward e Miami-Dade. Miami-Dade: Miami, Miami Beach, Coral Gables, Doral, Kendall."
 }

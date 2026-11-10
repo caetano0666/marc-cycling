@@ -339,6 +339,7 @@ h2{font-size:clamp(30px,6.5vw,44px)}
 .chip{border:1px solid var(--line2); background:var(--bg2); color:var(--muted2); font-size:14px; font-weight:500;
   padding:9px 16px; border-radius:100px}
 .chip.hl{border-color:var(--yellow); color:var(--yellow); background:rgba(247,198,0,.08)}
+.area-label{font:600 12px/1 Inter,sans-serif;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);margin:22px 0 10px}
 .area .note{margin-top:22px; color:var(--muted); font-size:15px}
 .area .note a{color:var(--yellow); font-weight:600}
 
@@ -1204,9 +1205,10 @@ table.cmp{width:100%; border-collapse:collapse}
   <div class="wrap">
     <div class="sec-head">
       <div class="kicker">Service area</div>
-      <h2>Serving Broward County &amp; South Florida</h2>
-      <p>Proudly serving Broward County and surrounding areas. If you're nearby, we've most likely got you covered.</p>
+      <h2>Serving Broward &amp; Miami-Dade</h2>
+      <p>We come to you anywhere in Broward and Miami-Dade counties.</p>
     </div>
+    <div class="area-label">Broward</div>
     <div class="chips">
       <span class="chip hl">Fort Lauderdale</span>
       <span class="chip">Hollywood</span>
@@ -1219,8 +1221,14 @@ table.cmp{width:100%; border-collapse:collapse}
       <span class="chip">Weston</span>
       <span class="chip">Miramar</span>
       <span class="chip">Coconut Creek</span>
+    </div>
+    <div class="area-label">Miami-Dade</div>
+    <div class="chips">
       <span class="chip">Miami</span>
+      <span class="chip">Miami Beach</span>
+      <span class="chip">Coral Gables</span>
       <span class="chip">Doral</span>
+      <span class="chip">Kendall</span>
     </div>
     <p class="note">Not sure if we cover your area? <a href="tel:+17542525245" onclick="trackCall()">Just call (754) 252-5245</a>, we'll let you know right away.</p>
   </div>
@@ -1399,7 +1407,7 @@ table.cmp{width:100%; border-collapse:collapse}
       </details>
       <details class="faq-item">
         <summary>Which areas do you serve?</summary>
-        <div class="fa">Broward County and South Florida, including Fort Lauderdale, Hollywood, Pembroke Pines, Pompano Beach, Coral Springs, Davie, Plantation, Sunrise, Weston, Miramar, Coconut Creek, Miami and Doral. Not sure about your city? <a href="tel:+17542525245" onclick="trackCall()">Call (754) 252-5245</a> and we'll tell you right away.</div>
+        <div class="fa">Broward and Miami-Dade counties. In Broward: Fort Lauderdale, Hollywood, Pembroke Pines, Pompano Beach, Coral Springs, Davie, Plantation, Sunrise, Weston, Miramar and Coconut Creek. In Miami-Dade: Miami, Miami Beach, Coral Gables, Doral and Kendall. Not sure about your city? <a href="tel:+17542525245" onclick="trackCall()">Call (754) 252-5245</a> and we'll tell you right away.</div>
       </details>
       <details class="faq-item">
         <summary>Do you work on e-bikes?</summary>
@@ -1565,8 +1573,12 @@ table.cmp{width:100%; border-collapse:collapse}
         { "@type": "City", "name": "Weston", "containedInPlace": { "@type": "State", "name": "Florida" } },
         { "@type": "City", "name": "Miramar", "containedInPlace": { "@type": "State", "name": "Florida" } },
         { "@type": "City", "name": "Coconut Creek", "containedInPlace": { "@type": "State", "name": "Florida" } },
+        { "@type": "AdministrativeArea", "name": "Miami-Dade County", "containedInPlace": { "@type": "State", "name": "Florida" } },
         { "@type": "City", "name": "Miami", "containedInPlace": { "@type": "State", "name": "Florida" } },
-        { "@type": "City", "name": "Doral", "containedInPlace": { "@type": "State", "name": "Florida" } }
+        { "@type": "City", "name": "Miami Beach", "containedInPlace": { "@type": "State", "name": "Florida" } },
+        { "@type": "City", "name": "Coral Gables", "containedInPlace": { "@type": "State", "name": "Florida" } },
+        { "@type": "City", "name": "Doral", "containedInPlace": { "@type": "State", "name": "Florida" } },
+        { "@type": "Place", "name": "Kendall", "containedInPlace": { "@type": "AdministrativeArea", "name": "Miami-Dade County" } }
       ],
       "openingHoursSpecification": [{
         "@type": "OpeningHoursSpecification",
@@ -1647,7 +1659,7 @@ table.cmp{width:100%; border-collapse:collapse}
       "@id": "https://marccycling.com/#faq",
       "mainEntity": [
         { "@type": "Question", "name": "Do you come to the customer's location?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Marc Cycling is a fully mobile service: the mechanic comes to your home, office or building with professional tools, and most repairs are done on the spot. There is no shop to visit. When you book the service there is no trip fee, you pay for the work only." } },
-        { "@type": "Question", "name": "Which areas do you serve?", "acceptedAnswer": { "@type": "Answer", "text": "Broward County and South Florida, including Fort Lauderdale, Hollywood, Pembroke Pines, Pompano Beach, Coral Springs, Davie, Plantation, Sunrise, Weston, Miramar, Coconut Creek, Miami and Doral. Not sure about your city? Call (754) 252-5245 and we'll tell you right away." } },
+        { "@type": "Question", "name": "Which areas do you serve?", "acceptedAnswer": { "@type": "Answer", "text": "Broward and Miami-Dade counties. In Broward: Fort Lauderdale, Hollywood, Pembroke Pines, Pompano Beach, Coral Springs, Davie, Plantation, Sunrise, Weston, Miramar and Coconut Creek. In Miami-Dade: Miami, Miami Beach, Coral Gables, Doral and Kendall. Not sure about your city? Call (754) 252-5245 and we'll tell you right away." } },
         { "@type": "Question", "name": "Do you work on e-bikes?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. We handle brakes, gears, tires, wheels, drivetrain, safety inspections and full tune-ups (E-Bike Silver from $185, E-Bike Gold from $250), plus a battery charge check. We also install displays, controllers and motors ($165 per part, part extra). Not sure what's wrong? Book a $95 diagnostic visit. We don't open batteries or repair motors internally, and we don't do conversion kits or wiring repairs." } },
         { "@type": "Question", "name": "How much does a mobile bike tune-up cost?", "acceptedAnswer": { "@type": "Answer", "text": "Tune-up packages start at $95: Bronze from $95, Silver from $140 and Gold from $215. For e-bikes, Silver is from $185 and Gold from $250. A standard flat tire repair is $60 plus tube. Prices are for labor only, parts not included. Prices updated October 2026." } },
         { "@type": "Question", "name": "How do I schedule an appointment?", "acceptedAnswer": { "@type": "Answer", "text": "Book online at marccycling.com/book, with Saturday and Sunday appointments from 7am to 5pm Eastern. You can also call or WhatsApp (754) 252-5245 any day of the week, we usually reply within minutes. On weekdays we keep limited early morning and evening slots for quick repairs (flats, brakes, gears), arranged by phone or WhatsApp only." } },

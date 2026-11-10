@@ -25,7 +25,7 @@
 
 ## Service area
 
-Broward County and South Florida: Fort Lauderdale, Hollywood, Pembroke Pines, Pompano Beach, Coral Springs, Davie, Plantation, Sunrise, Weston, Miramar, Coconut Creek, Miami and Doral.
+Broward and Miami-Dade counties. Broward: Fort Lauderdale, Hollywood, Pembroke Pines, Pompano Beach, Coral Springs, Davie, Plantation, Sunrise, Weston, Miramar, Coconut Creek. Miami-Dade: Miami, Miami Beach, Coral Gables, Doral, Kendall.
 
 ## Trip fee, diagnostic visit and cancellation
 
