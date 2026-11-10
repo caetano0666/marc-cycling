@@ -37,7 +37,13 @@
     "Doral",
     "Miami Beach",
     "Coral Gables",
-    "Kendall"
+    "Kendall",
+    "Sweetwater",
+    "Hialeah",
+    "Hialeah Gardens",
+    "Miami Springs",
+    "Virginia Gardens",
+    "Miami Lakes"
   ],
   "openingHours": "Saturday and Sunday, 07:00-17:00 America/New_York (confirmado pelo proprietario em 27/07/2026 nesta sessao; contato por telefone/WhatsApp responde 7 dias)",
   "languages": [
@@ -199,5 +205,5 @@
     "source": "https://g.page/marccycling",
     "rule": "NUNCA numero exato em texto fixo; usar marco redondo (over 100, over 150 ao cruzar) + as of [mes ano]"
   },
-  "_serviceAreasNote": "Atualizado 10/11/2026 pelo Caetano: atende Broward e Miami-Dade. Miami-Dade: Miami, Miami Beach, Coral Gables, Doral, Kendall."
+  "_serviceAreasNote": "Atualizado 10/11/2026 pelo Caetano: atende Broward e Miami-Dade. Miami-Dade: Miami, Miami Beach, Coral Gables, Doral, Kendall, Sweetwater, Hialeah, Hialeah Gardens, Miami Springs, Virginia Gardens, Miami Lakes."
 }
